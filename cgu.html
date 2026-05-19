@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conditions Générales d'Utilisation — SOPK Équilibre</title>
+    <meta name="description" content="Conditions Générales d'Utilisation du site SOPK Équilibre : règles d'usage, droits et obligations des utilisateurs." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="cgu.html" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/cormorant/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/outfit/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/jetbrains-mono/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display:['"Playfair Display Variable"','serif'],
+              serif:['"Cormorant Variable"','serif'],
+              sans:['"Outfit Variable"','sans-serif'],
+              mono:['"JetBrains Mono Variable"','monospace'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root{--cream:#fdfaf6;--sand:#f5ede4;--dark:#1a1614;--ink:#2c2420;--body:#5c524a;--muted:#9c8e82;--gold:#b8860b;--border:#e8dfd4;--shadow-card:0 2px 20px rgba(44,36,32,.06)}
+      *,*::before,*::after{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{margin:0;background:var(--cream);color:var(--body);font-family:"Outfit Variable",sans-serif;-webkit-font-smoothing:antialiased}
+      .site-header{transition:background 260ms ease,box-shadow 260ms ease}
+      .site-header.is-scrolled{background:rgba(253,250,246,.92);box-shadow:0 12px 30px rgba(44,36,32,.08)}
+      .nav-link{position:relative}
+      .nav-link::after{content:"";position:absolute;left:0;bottom:-.45rem;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform 240ms ease}
+      .nav-link:hover::after{transform:scaleX(1);transform-origin:left}
+      .mobile-panel{transform:translateX(100%);transition:transform 360ms cubic-bezier(.16,1,.3,1)}
+      .mobile-panel.is-open{transform:translateX(0)}
+      .back-to-top{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity 220ms ease,transform 220ms ease}
+      .back-to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+      .legal h2{font-family:"Cormorant Variable",serif;font-size:1.9rem;font-weight:700;color:var(--ink);margin-top:3rem;margin-bottom:.9rem;line-height:1.2;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+      .legal h3{font-family:"Cormorant Variable",serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-top:2rem;margin-bottom:.6rem}
+      .legal p{line-height:1.9;margin-bottom:1.2rem;font-size:1rem}
+      .legal ul{padding-left:1.4rem;margin-bottom:1.2rem}
+      .legal ul li{line-height:1.8;margin-bottom:.4rem}
+      .legal ul li::marker{color:var(--gold)}
+      .legal ol{padding-left:1.4rem;margin-bottom:1.2rem;counter-reset:item}
+      .legal ol li{line-height:1.8;margin-bottom:.5rem}
+      .legal ol li::marker{color:var(--gold);font-weight:700}
+      .legal strong{color:var(--ink);font-weight:700}
+      .legal a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+      .toc-link{color:var(--body);text-decoration:none;transition:color 160ms;display:block;padding:.35rem 0;border-bottom:1px dashed var(--border)}
+      .toc-link:hover{color:var(--gold)}
+      a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+      @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important}}
+    </style>
+  </head>
+  <body>
+    <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[var(--border)] bg-[rgba(253,250,246,.7)] backdrop-blur-xl">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-[var(--ink)] lg:flex">
+          <a class="nav-link" href="index.html#sopk">SOPK</a>
+          <a class="nav-link" href="article-sopk-keto.html">Keto</a>
+          <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
+          <a class="nav-link" href="article-sopk-bienetre.html">Bien-être</a>
+          <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
+          <a class="nav-link" href="a-propos.html">À propos</a>
+        </nav>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-[var(--border)] text-[var(--ink)] lg:hidden" type="button" aria-label="Ouvrir le menu" data-menu-open>
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-panel fixed inset-0 z-[60] bg-[var(--dark)] px-6 py-7 text-white lg:hidden" data-mobile-panel aria-hidden="true">
+      <div class="flex items-center justify-between">
+        <span class="font-display text-3xl italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></span>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-white/15" type="button" data-menu-close><i data-lucide="x" class="h-5 w-5"></i></button>
+      </div>
+      <nav class="mt-16 grid gap-5 font-serif text-4xl leading-none">
+        <a href="index.html" data-mobile-link>Accueil</a>
+        <a href="a-propos.html" data-mobile-link>À propos</a>
+        <a href="a-propos.html#contact" data-mobile-link>Contact</a>
+      </nav>
+    </div>
+
+    <main class="pt-20">
+      <div class="bg-[var(--sand)]">
+        <div class="mx-auto max-w-4xl px-5 py-16 sm:px-8">
+          <nav class="mb-6 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-[var(--muted)]">
+            <a href="index.html" class="hover:text-[var(--gold)]">Accueil</a><span>/</span>
+            <span class="text-[var(--ink)]">Conditions Générales d'Utilisation</span>
+          </nav>
+          <span class="mb-4 inline-block rounded-full border border-[var(--border)] px-4 py-1.5 font-mono text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--gold)]">Légal</span>
+          <h1 class="font-display text-5xl font-semibold leading-tight tracking-tight text-[var(--ink)]">Conditions Générales d'Utilisation</h1>
+          <p class="mt-4 text-[var(--muted)] font-mono text-xs uppercase tracking-widest">Dernière mise à jour : 19 mai 2026 — Version 1.0</p>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-5 pb-24 pt-12 sm:px-8 lg:pb-32">
+        <div class="grid gap-14 lg:grid-cols-[220px_1fr]">
+
+          <aside class="hidden lg:block">
+            <div class="sticky top-28 rounded-[1.25rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)]">
+              <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Sommaire</p>
+              <nav>
+                <a href="#objet" class="toc-link text-sm">1. Objet</a>
+                <a href="#acceptation" class="toc-link text-sm">2. Acceptation des CGU</a>
+                <a href="#acces" class="toc-link text-sm">3. Accès au site</a>
+                <a href="#contenu" class="toc-link text-sm">4. Nature des contenus</a>
+                <a href="#avertissement" class="toc-link text-sm">5. Avertissement médical</a>
+                <a href="#obligations" class="toc-link text-sm">6. Obligations utilisateur</a>
+                <a href="#newsletter" class="toc-link text-sm">7. Newsletter</a>
+                <a href="#propriete-int" class="toc-link text-sm">8. Propriété intellectuelle</a>
+                <a href="#responsabilite-cgu" class="toc-link text-sm">9. Responsabilité</a>
+                <a href="#donnees-cgu" class="toc-link text-sm">10. Données personnelles</a>
+                <a href="#modification" class="toc-link text-sm">11. Modification des CGU</a>
+                <a href="#droit-cgu" class="toc-link text-sm">12. Droit applicable</a>
+              </nav>
+            </div>
+            <div class="mt-5 rounded-[1.25rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)]">
+              <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--muted)] mb-3">Pages légales</p>
+              <nav class="grid gap-2 text-sm">
+                <a href="mentions-legales.html" class="text-[var(--body)] hover:text-[var(--gold)]">Mentions légales</a>
+                <a href="cgu.html" class="font-semibold text-[var(--gold)]">→ CGU</a>
+                <a href="politique-cookies.html" class="text-[var(--body)] hover:text-[var(--gold)]">Politique cookies</a>
+              </nav>
+            </div>
+          </aside>
+
+          <article class="legal max-w-3xl">
+
+            <div class="mb-8 rounded-[1.25rem] border-l-4 border-[var(--gold)] bg-[rgba(184,134,11,.06)] p-5 text-sm leading-7">
+              <strong>Important :</strong> En accédant au site SOPK Équilibre et en utilisant ses services, vous acceptez sans réserve les présentes Conditions Générales d'Utilisation. Si vous n'en acceptez pas les termes, veuillez ne pas utiliser ce site.
+            </div>
+
+            <section id="objet">
+              <h2>1. Objet</h2>
+              <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles SOPK Équilibre SAS (ci-après « l'Éditeur ») met à la disposition des utilisateurs (ci-après « l'Utilisateur » ou « vous ») le site internet accessible à l'adresse <strong>sopkequilibre.fr</strong> (ci-après « le Site »), ainsi que les droits et obligations des parties.</p>
+            </section>
+
+            <section id="acceptation">
+              <h2>2. Acceptation des CGU</h2>
+              <p>L'accès et l'utilisation du Site sont soumis à l'acceptation et au respect des présentes CGU. En naviguant sur le Site, l'Utilisateur reconnaît avoir pris connaissance des CGU et les accepter dans leur intégralité.</p>
+              <p>L'Éditeur se réserve le droit de modifier les CGU à tout moment. Les CGU modifiées prennent effet dès leur publication sur le Site. L'Utilisateur est invité à les consulter régulièrement. La date de dernière mise à jour est indiquée en haut de page.</p>
+            </section>
+
+            <section id="acces">
+              <h2>3. Accès au site</h2>
+              <p>Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. Tous les frais nécessaires pour l'accès aux services (matériel informatique, connexion Internet, etc.) sont à la charge de l'Utilisateur.</p>
+              <p>L'Éditeur se réserve le droit, sans préavis ni indemnité, de fermer temporairement ou définitivement le Site ou l'accès à un ou plusieurs services, notamment pour des raisons de maintenance, de mise à jour ou pour toute autre raison jugée nécessaire.</p>
+              <h3>Disponibilité</h3>
+              <p>L'Éditeur s'efforce de maintenir le Site accessible 24h/24 et 7j/7, mais ne peut garantir une disponibilité permanente du service en raison de contraintes techniques. Des interruptions pourront survenir, notamment pour des opérations de maintenance. L'Éditeur ne saurait être tenu responsable des conséquences éventuelles de ces interruptions.</p>
+            </section>
+
+            <section id="contenu">
+              <h2>4. Nature des contenus publiés</h2>
+              <p>SOPK Équilibre est un site éditorial spécialisé dans l'information sur le syndrome des ovaires polykystiques (SOPK). Les contenus publiés comprennent des articles, guides, conseils pratiques et ressources documentaires sur les thèmes suivants :</p>
+              <ul>
+                <li>Alimentation et nutrition adaptées au SOPK (dont alimentation cétogène, alimentation à index glycémique bas) ;</li>
+                <li>Fertilité et grossesse avec un SOPK ;</li>
+                <li>Bien-être hormonal, activité physique, gestion du stress ;</li>
+                <li>Compléments alimentaires étudiés dans le cadre du SOPK ;</li>
+                <li>Actualités médicales et scientifiques liées au SOPK.</li>
+              </ul>
+              <p>Ces contenus sont rédigés à des fins <strong>informatives et éducatives uniquement</strong>. Ils ne constituent pas des actes médicaux au sens de la réglementation française.</p>
+            </section>
+
+            <section id="avertissement">
+              <h2>5. Avertissement médical — limitation essentielle</h2>
+              <p>Les informations publiées sur le Site sont destinées exclusivement à un usage informatif. <strong>Elles ne constituent en aucun cas un conseil médical, un diagnostic médical, une prescription thérapeutique ou un traitement.</strong></p>
+              <p>En particulier :</p>
+              <ul>
+                <li>Les informations publiées ne remplacent pas une consultation médicale personnalisée ;</li>
+                <li>Toute décision de santé doit être prise avec l'accord de votre médecin ou d'un professionnel de santé qualifié ;</li>
+                <li>L'auto-diagnostic et l'auto-traitement à partir des contenus du Site sont fortement déconseillés ;</li>
+                <li>Les informations sur les compléments alimentaires ne constituent pas une recommandation d'achat ou de consommation personnalisée ;</li>
+                <li>En cas d'urgence médicale, appelez immédiatement le <strong>15 (SAMU)</strong> ou le <strong>112</strong>.</li>
+              </ul>
+              <p>L'Éditeur ne pourra être tenu responsable des préjudices directs ou indirects résultant de l'utilisation des informations publiées sur le Site à des fins de diagnostic ou de traitement.</p>
+            </section>
+
+            <section id="obligations">
+              <h2>6. Obligations et comportement de l'Utilisateur</h2>
+              <p>En utilisant le Site, l'Utilisateur s'engage à :</p>
+              <ul>
+                <li>respecter les présentes CGU et toutes les lois et réglementations applicables ;</li>
+                <li>ne pas utiliser le Site à des fins illicites, frauduleuses ou contraires aux bonnes mœurs ;</li>
+                <li>ne pas tenter de perturber ou d'interrompre le fonctionnement du Site ;</li>
+                <li>ne pas collecter de données personnelles d'autres utilisateurs ;</li>
+                <li>ne pas reproduire, représenter ou diffuser le contenu du Site sans autorisation préalable ;</li>
+                <li>ne pas utiliser de dispositifs automatisés (robots, scrapers) pour accéder au Site ;</li>
+                <li>ne pas introduire de logiciels malveillants ou de contenu nuisible.</li>
+              </ul>
+              <p>Tout manquement à ces obligations pourra entraîner la suspension ou l'interdiction d'accès au Site, sans préjudice des poursuites judiciaires éventuelles.</p>
+            </section>
+
+            <section id="newsletter">
+              <h2>7. Service de newsletter</h2>
+              <p>L'Éditeur propose un service de newsletter permettant aux utilisateurs de recevoir des contenus éditoriaux relatifs au SOPK. L'inscription à ce service est volontaire et nécessite la communication d'une adresse email valide.</p>
+              <h3>Modalités d'inscription et de désinscription</h3>
+              <ul>
+                <li><strong>Inscription</strong> : via le formulaire disponible sur le Site, en fournissant une adresse email valide et en cochant la case de consentement.</li>
+                <li><strong>Confirmation</strong> : un email de confirmation (double opt-in) est envoyé pour valider l'inscription.</li>
+                <li><strong>Désinscription</strong> : possible à tout moment via le lien de désinscription inclus dans chaque newsletter, ou en envoyant une demande à <a href="mailto:newsletter@sopkequilibre.fr">newsletter@sopkequilibre.fr</a>.</li>
+              </ul>
+              <p>L'Éditeur s'engage à ne pas transmettre les adresses email à des tiers à des fins commerciales non déclarées.</p>
+            </section>
+
+            <section id="propriete-int">
+              <h2>8. Propriété intellectuelle</h2>
+              <p>L'ensemble du contenu du Site (textes, articles, graphismes, logos, icônes, images, sons, vidéos, bases de données) est la propriété exclusive de l'Éditeur ou de ses partenaires et est protégé par le droit de la propriété intellectuelle.</p>
+              <p>Toute reproduction, représentation, modification, adaptation, traduction, publication ou communication de tout ou partie du Site est interdite sans autorisation préalable et écrite de l'Éditeur, sous peine de poursuites judiciaires pour contrefaçon.</p>
+              <p>Les droits concédés se limitent à un droit personnel, non exclusif et non transférable d'utilisation du Site pour les besoins propres de l'Utilisateur.</p>
+            </section>
+
+            <section id="responsabilite-cgu">
+              <h2>9. Limitation de responsabilité</h2>
+              <p>L'Éditeur ne pourra être tenu responsable des dommages de toute nature (direct, indirect, accessoire, spécial ou consécutif) résultant de :</p>
+              <ul>
+                <li>l'utilisation ou l'impossibilité d'utiliser le Site ;</li>
+                <li>l'utilisation des informations contenues sur le Site à des fins médicales ou thérapeutiques ;</li>
+                <li>toute erreur, inexactitude ou omission dans les contenus ;</li>
+                <li>l'accès à des sites tiers via des liens présents sur le Site ;</li>
+                <li>tout problème technique lié à l'accès Internet ou aux équipements de l'Utilisateur.</li>
+              </ul>
+              <p>La responsabilité de l'Éditeur est limitée dans les cas autorisés par la loi française. Cette limitation s'applique même si l'Éditeur a été informé de la possibilité de tels dommages.</p>
+            </section>
+
+            <section id="donnees-cgu">
+              <h2>10. Données personnelles</h2>
+              <p>L'Éditeur collecte et traite des données personnelles dans le cadre de l'utilisation du Site (newsletter, formulaires de contact, cookies analytiques). Ces traitements sont détaillés dans notre <a href="politique-cookies.html">Politique de cookies et de confidentialité</a>.</p>
+              <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits : <a href="mailto:dpo@sopkequilibre.fr">dpo@sopkequilibre.fr</a>.</p>
+            </section>
+
+            <section id="modification">
+              <h2>11. Modification des CGU</h2>
+              <p>L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment, notamment pour se conformer à toute nouvelle réglementation applicable ou pour améliorer l'utilisation du Site.</p>
+              <p>Les CGU modifiées entrent en vigueur dès leur publication sur le Site. L'Utilisateur est informé des modifications significatives par email (si son adresse est connue) et/ou par une notification sur le Site. La poursuite de l'utilisation du Site après modification vaut acceptation des nouvelles CGU.</p>
+            </section>
+
+            <section id="droit-cgu">
+              <h2>12. Droit applicable et juridiction</h2>
+              <p>Les présentes CGU sont soumises au <strong>droit français</strong>. Tout litige relatif à l'interprétation ou à l'exécution des présentes sera soumis, à défaut de règlement amiable, à la compétence exclusive des tribunaux français.</p>
+              <p>Si l'Utilisateur est un consommateur résidant dans l'Union Européenne, il peut également recourir à la <strong>plateforme de règlement en ligne des litiges</strong> de la Commission Européenne : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>.</p>
+            </section>
+
+            <div class="mt-12 rounded-[1.25rem] border border-[var(--border)] bg-[var(--sand)] p-5 text-sm leading-7 text-[var(--muted)]">
+              <p>Pour toute question relative aux présentes CGU, contactez-nous à <a href="mailto:contact@sopkequilibre.fr" class="text-[var(--gold)]">contact@sopkequilibre.fr</a>.</p>
+              <p class="mt-2">Voir aussi : <a href="mentions-legales.html" class="text-[var(--gold)]">Mentions légales</a> — <a href="politique-cookies.html" class="text-[var(--gold)]">Politique de cookies</a></p>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-[var(--dark)] px-5 py-14 text-white sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
+          <div>
+            <a href="index.html" class="font-display text-3xl font-semibold italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+            <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé SOPK : alimentation, fertilité, bien-être hormonal et compléments.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Rubriques</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-keto.html">Keto</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-grossesse.html">Grossesse</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-bienetre.html">Bien-être</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-complements.html">Compléments</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Informations</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-[var(--gold)]" href="a-propos.html">À propos</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="a-propos.html#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Légal</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-[var(--gold)]" href="mentions-legales.html">Mentions légales</a></li>
+                <li><a class="font-semibold text-white" href="cgu.html">CGU</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="politique-cookies.html">Cookies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 SOPK Équilibre. Tous droits réservés.</div>
+      </div>
+    </footer>
+
+    <button class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-[var(--gold)] text-white shadow-xl" type="button" aria-label="Retour en haut" data-back-to-top>
+      <i data-lucide="arrow-up" class="h-5 w-5"></i>
+    </button>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+      const header=document.querySelector(".site-header"),btt=document.querySelector("[data-back-to-top]"),panel=document.querySelector("[data-mobile-panel]"),ob=document.querySelector("[data-menu-open]"),cb=document.querySelector("[data-menu-close]");
+      function onScroll(){header.classList.toggle("is-scrolled",scrollY>24);btt.classList.toggle("is-visible",scrollY>400)}
+      function setMenu(o){panel.classList.toggle("is-open",o);panel.setAttribute("aria-hidden",String(!o));ob.setAttribute("aria-expanded",String(o));document.body.style.overflow=o?"hidden":""}
+      ob.addEventListener("click",()=>setMenu(true));cb.addEventListener("click",()=>setMenu(false));
+      document.querySelectorAll("[data-mobile-link]").forEach(l=>l.addEventListener("click",()=>setMenu(false)));
+      btt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+      window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+    </script>
+  </body>
+</html>

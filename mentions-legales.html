@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mentions légales — SOPK Équilibre</title>
+    <meta name="description" content="Mentions légales du site SOPK Équilibre : éditeur, hébergeur, propriété intellectuelle et responsabilités." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="mentions-legales.html" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/cormorant/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/outfit/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/jetbrains-mono/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Playfair Display Variable"', 'serif'],
+              serif:   ['"Cormorant Variable"', 'serif'],
+              sans:    ['"Outfit Variable"', 'sans-serif'],
+              mono:    ['"JetBrains Mono Variable"', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --cream:#fdfaf6; --sand:#f5ede4; --dark:#1a1614;
+        --ink:#2c2420; --body:#5c524a; --muted:#9c8e82;
+        --gold:#b8860b; --border:#e8dfd4;
+        --shadow-card:0 2px 20px rgba(44,36,32,.06);
+        --shadow-hover:0 8px 40px rgba(44,36,32,.12);
+      }
+      *,*::before,*::after{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{margin:0;background:var(--cream);color:var(--body);font-family:"Outfit Variable",sans-serif;-webkit-font-smoothing:antialiased}
+      .site-header{transition:background 260ms ease,box-shadow 260ms ease}
+      .site-header.is-scrolled{background:rgba(253,250,246,.92);box-shadow:0 12px 30px rgba(44,36,32,.08)}
+      .nav-link{position:relative}
+      .nav-link::after{content:"";position:absolute;left:0;bottom:-.45rem;width:100%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform 240ms ease}
+      .nav-link:hover::after{transform:scaleX(1);transform-origin:left}
+      .mobile-panel{transform:translateX(100%);transition:transform 360ms cubic-bezier(.16,1,.3,1)}
+      .mobile-panel.is-open{transform:translateX(0)}
+      .back-to-top{opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity 220ms ease,transform 220ms ease}
+      .back-to-top.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+      /* Prose légal */
+      .legal h2{font-family:"Cormorant Variable",serif;font-size:1.9rem;font-weight:700;color:var(--ink);margin-top:3rem;margin-bottom:.9rem;line-height:1.2;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+      .legal h3{font-family:"Cormorant Variable",serif;font-size:1.35rem;font-weight:600;color:var(--ink);margin-top:2rem;margin-bottom:.6rem}
+      .legal p{line-height:1.9;margin-bottom:1.2rem;font-size:1rem}
+      .legal ul{padding-left:1.4rem;margin-bottom:1.2rem}
+      .legal ul li{line-height:1.8;margin-bottom:.4rem}
+      .legal ul li::marker{color:var(--gold)}
+      .legal strong{color:var(--ink);font-weight:700}
+      .legal a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+      .legal table{width:100%;border-collapse:collapse;font-size:.9rem;margin-bottom:1.5rem}
+      .legal table th{background:var(--sand);padding:.6rem 1rem;text-align:left;font-family:"JetBrains Mono Variable",monospace;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink)}
+      .legal table td{padding:.6rem 1rem;border-bottom:1px solid var(--border)}
+      .legal table tr:last-child td{border-bottom:none}
+      .toc-link{color:var(--body);text-decoration:none;transition:color 160ms;display:block;padding:.35rem 0;border-bottom:1px dashed var(--border)}
+      .toc-link:hover{color:var(--gold)}
+      a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+      @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important}}
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[var(--border)] bg-[rgba(253,250,246,.7)] backdrop-blur-xl">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-[var(--ink)] lg:flex">
+          <a class="nav-link" href="index.html#sopk">SOPK</a>
+          <a class="nav-link" href="article-sopk-keto.html">Keto</a>
+          <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
+          <a class="nav-link" href="article-sopk-bienetre.html">Bien-être</a>
+          <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
+          <a class="nav-link" href="a-propos.html">À propos</a>
+        </nav>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-[var(--border)] text-[var(--ink)] lg:hidden" type="button" aria-label="Ouvrir le menu" data-menu-open>
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-panel fixed inset-0 z-[60] bg-[var(--dark)] px-6 py-7 text-white lg:hidden" data-mobile-panel aria-hidden="true">
+      <div class="flex items-center justify-between">
+        <span class="font-display text-3xl italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></span>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-white/15" type="button" data-menu-close><i data-lucide="x" class="h-5 w-5"></i></button>
+      </div>
+      <nav class="mt-16 grid gap-5 font-serif text-4xl leading-none">
+        <a href="index.html" data-mobile-link>Accueil</a>
+        <a href="a-propos.html" data-mobile-link>À propos</a>
+        <a href="a-propos.html#contact" data-mobile-link>Contact</a>
+      </nav>
+    </div>
+
+    <main class="pt-20">
+      <!-- Hero -->
+      <div class="bg-[var(--sand)]">
+        <div class="mx-auto max-w-4xl px-5 py-16 sm:px-8">
+          <nav class="mb-6 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.16em] text-[var(--muted)]" aria-label="Fil d'Ariane">
+            <a href="index.html" class="hover:text-[var(--gold)]">Accueil</a><span>/</span>
+            <span class="text-[var(--ink)]">Mentions légales</span>
+          </nav>
+          <span class="mb-4 inline-block rounded-full border border-[var(--border)] px-4 py-1.5 font-mono text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--gold)]">Légal</span>
+          <h1 class="font-display text-5xl font-semibold leading-tight tracking-tight text-[var(--ink)]">Mentions légales</h1>
+          <p class="mt-4 text-[var(--muted)] font-mono text-xs uppercase tracking-widest">Dernière mise à jour : 19 mai 2026</p>
+        </div>
+      </div>
+
+      <!-- Layout -->
+      <div class="mx-auto max-w-7xl px-5 pb-24 pt-12 sm:px-8 lg:pb-32">
+        <div class="grid gap-14 lg:grid-cols-[220px_1fr]">
+
+          <!-- Sommaire -->
+          <aside class="hidden lg:block">
+            <div class="sticky top-28 rounded-[1.25rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)]">
+              <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--gold)] mb-3">Sommaire</p>
+              <nav aria-label="Sommaire mentions légales">
+                <a href="#editeur" class="toc-link text-sm">1. Éditeur du site</a>
+                <a href="#directeur" class="toc-link text-sm">2. Directeur de publication</a>
+                <a href="#hebergeur" class="toc-link text-sm">3. Hébergeur</a>
+                <a href="#propriete" class="toc-link text-sm">4. Propriété intellectuelle</a>
+                <a href="#responsabilite" class="toc-link text-sm">5. Responsabilité</a>
+                <a href="#medical" class="toc-link text-sm">6. Avertissement médical</a>
+                <a href="#donnees" class="toc-link text-sm">7. Données personnelles</a>
+                <a href="#liens" class="toc-link text-sm">8. Liens hypertextes</a>
+                <a href="#droit" class="toc-link text-sm">9. Droit applicable</a>
+              </nav>
+            </div>
+            <!-- Liens légaux -->
+            <div class="mt-5 rounded-[1.25rem] border border-[var(--border)] bg-white p-5 shadow-[var(--shadow-card)]">
+              <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-[var(--muted)] mb-3">Pages légales</p>
+              <nav class="grid gap-2 text-sm">
+                <a href="mentions-legales.html" class="font-semibold text-[var(--gold)]">→ Mentions légales</a>
+                <a href="cgu.html" class="text-[var(--body)] hover:text-[var(--gold)]">CGU</a>
+                <a href="politique-cookies.html" class="text-[var(--body)] hover:text-[var(--gold)]">Politique cookies</a>
+              </nav>
+            </div>
+          </aside>
+
+          <!-- Contenu -->
+          <article class="legal max-w-3xl">
+
+            <section id="editeur">
+              <h2>1. Éditeur du site</h2>
+              <p>Le site <strong>SOPK Équilibre</strong> (accessible à l'adresse <strong>sopkequilibre.fr</strong>) est édité par :</p>
+              <table>
+                <tbody>
+                  <tr><td><strong>Dénomination sociale</strong></td><td>SOPK Équilibre SAS</td></tr>
+                  <tr><td><strong>Forme juridique</strong></td><td>Société par actions simplifiée (SAS)</td></tr>
+                  <tr><td><strong>Capital social</strong></td><td>10 000 €</td></tr>
+                  <tr><td><strong>Siège social</strong></td><td>12 rue des Hortensia, 75011 Paris, France</td></tr>
+                  <tr><td><strong>SIRET</strong></td><td>XXX XXX XXX 00000</td></tr>
+                  <tr><td><strong>N° TVA intracommunautaire</strong></td><td>FR XX XXX XXX XXX</td></tr>
+                  <tr><td><strong>Email</strong></td><td><a href="mailto:contact@sopkequilibre.fr">contact@sopkequilibre.fr</a></td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section id="directeur">
+              <h2>2. Directeur de publication</h2>
+              <p>Le directeur de la publication est la présidente de la société SOPK Équilibre SAS, <strong>[Nom du dirigeant]</strong>, joignable à l'adresse email : <a href="mailto:direction@sopkequilibre.fr">direction@sopkequilibre.fr</a>.</p>
+            </section>
+
+            <section id="hebergeur">
+              <h2>3. Hébergeur</h2>
+              <table>
+                <tbody>
+                  <tr><td><strong>Hébergeur</strong></td><td>OVHcloud</td></tr>
+                  <tr><td><strong>Adresse</strong></td><td>2 rue Kellermann, 59100 Roubaix, France</td></tr>
+                  <tr><td><strong>Site web</strong></td><td><a href="https://www.ovhcloud.com" target="_blank" rel="noopener">www.ovhcloud.com</a></td></tr>
+                  <tr><td><strong>Téléphone</strong></td><td>+33 9 72 10 10 07</td></tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section id="propriete">
+              <h2>4. Propriété intellectuelle</h2>
+              <p>L'ensemble des éléments composant le site SOPK Équilibre — textes, articles, illustrations, photographies, logos, icônes, vidéos, bases de données, structure et mise en page — est la propriété exclusive de la société SOPK Équilibre SAS ou de ses contributeurs, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+              <p>Toute reproduction, représentation, modification, publication, transmission ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, et sur quelque support que ce soit, sans autorisation préalable et écrite de SOPK Équilibre SAS, est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la Propriété Intellectuelle.</p>
+              <h3>Exceptions autorisées</h3>
+              <ul>
+                <li>Les <strong>citations courtes</strong> (extraits de moins de 300 mots) sont autorisées dans un cadre éditorial ou pédagogique, à condition de mentionner clairement la source et d'inclure un lien hypertexte vers l'article original.</li>
+                <li>Le <strong>partage sur les réseaux sociaux</strong> via les boutons natifs est autorisé et encouragé.</li>
+                <li>Toute demande de reproduction plus étendue doit être adressée à <a href="mailto:redaction@sopkequilibre.fr">redaction@sopkequilibre.fr</a>.</li>
+              </ul>
+            </section>
+
+            <section id="responsabilite">
+              <h2>5. Limitation de responsabilité</h2>
+              <p>SOPK Équilibre SAS met tout en œuvre pour assurer l'exactitude et la mise à jour des informations publiées sur ce site. Toutefois, elle ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.</p>
+              <p>En conséquence, SOPK Équilibre SAS décline toute responsabilité pour :</p>
+              <ul>
+                <li>toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site ;</li>
+                <li>tout dommage résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations ;</li>
+                <li>tout dommage, direct ou indirect, quelles qu'en soient les causes, origines ou conséquences, provoqué à raison de l'accès au site ou de l'impossibilité d'y accéder ;</li>
+                <li>l'utilisation du site et/ou du crédit accordé à quelque information provenant directement ou indirectement du site.</li>
+              </ul>
+              <p>La société se réserve le droit de modifier à tout moment et sans préavis le contenu du site.</p>
+            </section>
+
+            <section id="medical">
+              <h2>6. Avertissement médical</h2>
+              <p>Les informations publiées sur SOPK Équilibre sont destinées à un usage <strong>purement informatif et éducatif</strong>. Elles ne constituent en aucun cas un avis médical, un diagnostic, une prescription ou une recommandation thérapeutique personnalisée.</p>
+              <p>Les contenus de ce site, même relus par des professionnels de santé membres de notre comité éditorial, <strong>ne remplacent pas une consultation médicale</strong>. Toute décision relative à votre santé doit être prise en concertation avec un médecin ou un professionnel de santé qualifié.</p>
+              <p>SOPK Équilibre SAS décline toute responsabilité pour les conséquences directes ou indirectes de l'utilisation des informations contenues sur ce site à des fins d'auto-diagnostic ou d'auto-traitement.</p>
+              <p>En cas de symptômes ou de doutes sur votre état de santé, consultez immédiatement un professionnel de santé.</p>
+            </section>
+
+            <section id="donnees">
+              <h2>7. Données personnelles et RGPD</h2>
+              <p>SOPK Équilibre SAS traite des données personnelles dans le cadre de la gestion de sa newsletter, des formulaires de contact et des cookies analytiques. Ces traitements sont effectués dans le respect du <strong>Règlement Général sur la Protection des Données (RGPD — UE 2016/679)</strong> et de la loi n° 78-17 du 6 janvier 1978 modifiée (loi Informatique et Libertés).</p>
+              <h3>Vos droits</h3>
+              <p>Conformément à la réglementation, vous disposez des droits suivants sur vos données personnelles :</p>
+              <ul>
+                <li><strong>Droit d'accès</strong> — obtenir une copie des données vous concernant ;</li>
+                <li><strong>Droit de rectification</strong> — corriger des données inexactes ;</li>
+                <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données ;</li>
+                <li><strong>Droit d'opposition</strong> — vous opposer à certains traitements ;</li>
+                <li><strong>Droit à la portabilité</strong> — récupérer vos données dans un format structuré ;</li>
+                <li><strong>Droit de limitation</strong> — restreindre le traitement de vos données.</li>
+              </ul>
+              <p>Pour exercer ces droits, contactez notre délégué à la protection des données à l'adresse : <a href="mailto:dpo@sopkequilibre.fr">dpo@sopkequilibre.fr</a>. Vous disposez également du droit d'introduire une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
+              <p>Pour plus d'informations, consultez notre <a href="politique-cookies.html">Politique de cookies et de confidentialité</a>.</p>
+            </section>
+
+            <section id="liens">
+              <h2>8. Liens hypertextes</h2>
+              <p>Le site SOPK Équilibre peut contenir des liens vers des sites tiers. Ces liens sont fournis à titre indicatif. SOPK Équilibre SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur disponibilité ou leur politique de confidentialité.</p>
+              <p>La création de liens hypertextes vers le site SOPK Équilibre est autorisée sans accord préalable, à condition que le lien ne porte pas atteinte à l'image de la société, et qu'il n'implique pas une quelconque approbation de SOPK Équilibre SAS vis-à-vis du site tiers.</p>
+            </section>
+
+            <section id="droit">
+              <h2>9. Droit applicable et juridiction compétente</h2>
+              <p>Les présentes mentions légales sont régies par le <strong>droit français</strong>. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, et à défaut de résolution amiable, les tribunaux français seront seuls compétents.</p>
+              <p>Pour tout différend relatif à l'utilisation du site, le tribunal compétent sera le Tribunal de Commerce de Paris.</p>
+            </section>
+
+            <div class="mt-12 rounded-[1.25rem] border border-[var(--border)] bg-[var(--sand)] p-5 text-sm leading-7 text-[var(--muted)]">
+              <p>Ces mentions légales ont été rédigées conformément aux obligations imposées par la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN) et la loi n° 78-17 du 6 janvier 1978 modifiée relative à l'informatique, aux fichiers et aux libertés.</p>
+              <p class="mt-2">Consultez également nos <a href="cgu.html" class="text-[var(--gold)]">Conditions Générales d'Utilisation</a> et notre <a href="politique-cookies.html" class="text-[var(--gold)]">Politique de cookies</a>.</p>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[var(--dark)] px-5 py-14 text-white sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
+          <div>
+            <a href="index.html" class="font-display text-3xl font-semibold italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+            <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé SOPK : alimentation, fertilité, bien-être hormonal et compléments.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Rubriques</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-keto.html">Keto</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-grossesse.html">Grossesse</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-bienetre.html">Bien-être</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="article-sopk-complements.html">Compléments</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Informations</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-[var(--gold)]" href="a-propos.html">À propos</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="a-propos.html#contact">Contact</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="a-propos.html#faq">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-mono text-xs uppercase tracking-[0.2em] text-[var(--gold)]">Légal</p>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="font-semibold text-white" href="mentions-legales.html">Mentions légales</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="cgu.html">CGU</a></li>
+                <li><a class="hover:text-[var(--gold)]" href="politique-cookies.html">Cookies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 SOPK Équilibre. Tous droits réservés.</div>
+      </div>
+    </footer>
+
+    <button class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-[var(--gold)] text-white shadow-xl" type="button" aria-label="Retour en haut" data-back-to-top>
+      <i data-lucide="arrow-up" class="h-5 w-5"></i>
+    </button>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+      const header=document.querySelector(".site-header"),btt=document.querySelector("[data-back-to-top]"),panel=document.querySelector("[data-mobile-panel]"),ob=document.querySelector("[data-menu-open]"),cb=document.querySelector("[data-menu-close]");
+      function onScroll(){header.classList.toggle("is-scrolled",scrollY>24);btt.classList.toggle("is-visible",scrollY>400)}
+      function setMenu(o){panel.classList.toggle("is-open",o);panel.setAttribute("aria-hidden",String(!o));ob.setAttribute("aria-expanded",String(o));document.body.style.overflow=o?"hidden":""}
+      ob.addEventListener("click",()=>setMenu(true));cb.addEventListener("click",()=>setMenu(false));
+      document.querySelectorAll("[data-mobile-link]").forEach(l=>l.addEventListener("click",()=>setMenu(false)));
+      btt.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+      window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+    </script>
+  </body>
+</html>
