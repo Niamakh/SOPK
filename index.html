@@ -338,11 +338,12 @@
           SOPK<span class="text-gold"> Équilibre</span>
         </a>
 
-        <nav class="hidden items-center gap-8 text-sm font-medium tracking-[0.02em] text-ink lg:flex" aria-label="Navigation principale">
-          <a class="nav-link" aria-current="page" href="#sopk">SOPK</a>
-          <a class="nav-link" href="article-sopk-keto.html">SOPK & Keto</a>
+        <nav class="hidden items-center gap-6 text-sm font-medium tracking-[0.02em] text-ink lg:flex" aria-label="Navigation principale">
+          <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="article-sopk-symptomes.html">Symptômes</a>
+          <a class="nav-link" href="article-sopk-keto.html">Keto</a>
           <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
-          <a class="nav-link" href="article-sopk-bienetre.html">Bien-être</a>
           <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
           <a class="nav-link" href="a-propos.html">À propos</a>
         </nav>
@@ -377,12 +378,15 @@
           <i data-lucide="x" class="h-5 w-5"></i>
         </button>
       </div>
-      <nav class="mt-16 grid gap-6 font-serif text-5xl leading-none" aria-label="Navigation mobile">
+      <nav class="mt-12 grid gap-4 font-serif text-4xl leading-none" aria-label="Navigation mobile">
         <a href="#sopk" data-mobile-link>SOPK</a>
-        <a href="#keto" data-mobile-link>SOPK & Keto</a>
-        <a href="#grossesse" data-mobile-link>Grossesse</a>
+        <a href="article-sopk-symptomes.html" data-mobile-link>Symptômes</a>
+        <a href="article-sopk-keto.html" data-mobile-link>Keto</a>
+        <a href="article-sopk-grossesse.html" data-mobile-link>Grossesse</a>
         <a href="article-sopk-bienetre.html" data-mobile-link>Bien-être</a>
         <a href="article-sopk-complements.html" data-mobile-link>Compléments</a>
+        <a href="article-sopk-sexualite.html" data-mobile-link>Sexualité</a>
+        <a href="article-sopk-menopause.html" data-mobile-link>Ménopause</a>
         <a href="a-propos.html" data-mobile-link>À propos</a>
       </nav>
       <a class="mt-12 inline-flex rounded-full bg-gold px-6 py-4 text-sm font-bold text-white" href="#newsletter" data-mobile-link>Recevoir la newsletter</a>
@@ -408,23 +412,37 @@
           itemscope
           itemtype="https://schema.org/Article"
         >
-          <a href="#sopk" class="category-badge mb-6 w-fit rounded-full px-4 py-2 font-mono text-[0.68rem] font-bold uppercase tracking-[0.24em] text-white" style="--badge-color: var(--color-accent-health)">Guide SOPK</a>
+          <!-- Topics pills -->
+          <div class="mb-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">🧬 Diagnostic</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">🥑 Nutrition</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">🤰 Grossesse</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">🧘 Bien-être</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">💊 Compléments</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">💑 Sexualité</span>
+            <span class="rounded-full bg-white/15 backdrop-blur px-3 py-1 font-mono text-[0.62rem] uppercase tracking-[0.16em] text-white/90">🌸 Ménopause</span>
+          </div>
           <h1 id="hero-title" class="max-w-4xl font-display text-5xl font-semibold leading-[0.95] tracking-[-0.04em] md:text-7xl" itemprop="headline">
-            SOPK : le guide complet pour comprendre vos symptômes et retrouver un équilibre hormonal
+            Votre référence complète sur le SOPK
           </h1>
           <div class="mt-6 flex flex-wrap gap-x-3 gap-y-2 font-mono text-xs uppercase tracking-[0.12em] text-white/78">
-            <span itemprop="author">Par Dr. Camille Moreau</span>
+            <span>7 guides médicaux complets</span>
             <span aria-hidden="true">·</span>
-            <time datetime="2026-05-12" itemprop="datePublished">12 mai 2026</time>
+            <span>6 experts spécialisés</span>
             <span aria-hidden="true">·</span>
-            <span>16 min de lecture</span>
+            <span>Sources scientifiques citées</span>
           </div>
           <p class="mt-6 max-w-2xl text-lg leading-8 text-white/82">
-            Cycles irréguliers, résistance à l'insuline, acné hormonale, fatigue : un dossier clair pour mieux vivre avec le syndrome des ovaires polykystiques.
+            Du diagnostic aux questions intimes, de la grossesse à la ménopause — tous les guides dont vous avez besoin pour comprendre et mieux vivre avec le syndrome des ovaires polykystiques.
           </p>
-          <a class="shimmer mt-9 inline-flex w-fit items-center gap-3 rounded-full bg-gold px-7 py-4 text-sm font-bold text-white shadow-elevated transition hover:scale-[1.03]" href="article-sopk-keto.html">
-            Lire l'article <i data-lucide="arrow-right" class="h-4 w-4"></i>
-          </a>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a class="shimmer inline-flex w-fit items-center gap-3 rounded-full bg-gold px-7 py-4 text-sm font-bold text-white shadow-elevated transition hover:scale-[1.03]" href="blog.html">
+              Voir tous les articles <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
+            <a class="inline-flex w-fit items-center gap-3 rounded-full border border-white/30 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10" href="article-sopk-symptomes.html">
+              Commencer par le diagnostic
+            </a>
+          </div>
         </article>
       </section>
 
@@ -495,52 +513,97 @@
         </div>
       </section>
 
-      <!-- Section: Catégories Visuelles -->
-      <section class="reveal bg-sand py-20 lg:py-28" aria-labelledby="categories-title">
+      <!-- Section: Thématiques -->
+      <section class="reveal bg-sand py-20 lg:py-28" aria-labelledby="categories-title" id="sopk">
         <div class="mx-auto max-w-7xl px-5 sm:px-8">
-          <div class="mb-10 flex items-center justify-between">
-            <h2 id="categories-title" class="font-serif text-5xl font-semibold text-ink">Explorer par univers</h2>
-            <p class="hidden max-w-sm text-sm leading-7 text-body md:block">Des dossiers ciblés pour répondre aux recherches les plus fréquentes autour du syndrome des ovaires polykystiques.</p>
+          <div class="mb-10 flex items-start justify-between gap-6 flex-wrap">
+            <div>
+              <h2 id="categories-title" class="font-serif text-5xl font-semibold text-ink">7 thématiques, une approche globale</h2>
+              <p class="mt-3 max-w-xl text-base leading-7 text-body">Du diagnostic aux questions intimes, en passant par la grossesse et la ménopause — SOPK Équilibre couvre toutes les dimensions de la vie avec un SOPK.</p>
+            </div>
+            <a href="blog.html" class="flex-shrink-0 inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-ink hover:text-white hover:border-ink">
+              Voir tous les articles <i data-lucide="arrow-right" class="h-4 w-4"></i>
+            </a>
           </div>
-          <div class="-mx-5 flex snap-x gap-5 overflow-x-auto px-5 pb-4 sm:mx-0 sm:grid sm:grid-cols-5 sm:overflow-visible sm:px-0">
-            <a id="sopk" class="reveal group relative min-w-[14rem] snap-start overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card sm:min-w-0" href="#" style="--delay: 0ms">
-              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/sopk-carnet-bilan.svg" loading="lazy" width="360" height="460" alt="" />
-              <div class="absolute inset-0 bg-sage/75 transition group-hover:bg-sage/58"></div>
-              <div class="relative flex min-h-[11rem] flex-col justify-between">
-                <span class="text-4xl" aria-hidden="true">🧬</span>
-                <span><strong class="block text-2xl text-white">SOPK</strong><span class="font-mono text-xs uppercase tracking-[0.16em] text-white/80">124 guides</span></span>
+          <!-- Grid 4+3 -->
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <a id="keto" href="article-sopk-symptomes.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:13rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/hero-sopk.svg" loading="lazy" width="360" height="280" alt="" />
+              <div class="absolute inset-0 bg-[#4a7a55]/78 transition group-hover:bg-[#4a7a55]/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">🧬</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Diagnostic & Symptômes</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Critères Rotterdam 2023</span>
+                </div>
               </div>
             </a>
-            <a id="keto" class="reveal group relative min-w-[14rem] snap-start overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card sm:min-w-0" href="article-sopk-keto.html" style="--delay: 100ms">
-              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/keto-sopk.svg" loading="lazy" width="360" height="460" alt="" />
-              <div class="absolute inset-0 bg-rose/75 transition group-hover:bg-rose/58"></div>
-              <div class="relative flex min-h-[11rem] flex-col justify-between">
-                <span class="text-4xl" aria-hidden="true">🥑</span>
-                <span><strong class="block text-2xl text-white">SOPK & Keto</strong><span class="font-mono text-xs uppercase tracking-[0.16em] text-white/80">68 guides</span></span>
+            <a id="grossesse" href="article-sopk-keto.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:13rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/keto-sopk.svg" loading="lazy" width="360" height="280" alt="" />
+              <div class="absolute inset-0 bg-rose/78 transition group-hover:bg-rose/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">🥑</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Nutrition & Keto</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Régime cétogène SOPK</span>
+                </div>
               </div>
             </a>
-            <a id="grossesse" class="reveal group relative min-w-[14rem] snap-start overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card sm:min-w-0" href="article-sopk-grossesse.html" style="--delay: 200ms">
-              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/grossesse-sopk.svg" loading="lazy" width="360" height="460" alt="" />
-              <div class="absolute inset-0 bg-mist/75 transition group-hover:bg-mist/58"></div>
-              <div class="relative flex min-h-[11rem] flex-col justify-between">
-                <span class="text-4xl" aria-hidden="true">🤰</span>
-                <span><strong class="block text-2xl text-white">SOPK & Grossesse</strong><span class="font-mono text-xs uppercase tracking-[0.16em] text-white/80">52 guides</span></span>
+            <a href="article-sopk-grossesse.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:13rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/grossesse-sopk.svg" loading="lazy" width="360" height="280" alt="" />
+              <div class="absolute inset-0 bg-mist/78 transition group-hover:bg-mist/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">🤰</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Fertilité & Grossesse</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Ovulation, FIV, suivi</span>
+                </div>
               </div>
             </a>
-            <a id="bien-etre" class="reveal group relative min-w-[14rem] snap-start overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card sm:min-w-0" href="article-sopk-bienetre.html" style="--delay: 300ms">
-              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/sopk-skin.webp" loading="lazy" width="360" height="460" alt="" />
-              <div class="absolute inset-0 bg-[#A97951]/75 transition group-hover:bg-[#A97951]/58"></div>
-              <div class="relative flex min-h-[11rem] flex-col justify-between">
-                <span class="text-4xl" aria-hidden="true">🧘</span>
-                <span><strong class="block text-2xl text-white">SOPK & Bien-être</strong><span class="font-mono text-xs uppercase tracking-[0.16em] text-white/80">74 guides</span></span>
+            <a id="bien-etre" href="article-sopk-bienetre.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:13rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/bien-etre-sopk.svg" loading="lazy" width="360" height="280" alt="" />
+              <div class="absolute inset-0 bg-[#A97951]/78 transition group-hover:bg-[#A97951]/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">🧘</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Bien-être & Hormones</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Acné, sport, stress</span>
+                </div>
               </div>
             </a>
-            <a id="complements" class="reveal group relative min-w-[14rem] snap-start overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card sm:min-w-0" href="article-sopk-complements.html" style="--delay: 400ms">
-              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/complements-sopk.svg" loading="lazy" width="360" height="460" alt="" />
-              <div class="absolute inset-0 bg-gold/75 transition group-hover:bg-gold/58"></div>
-              <div class="relative flex min-h-[11rem] flex-col justify-between">
-                <span class="text-4xl" aria-hidden="true">💊</span>
-                <span><strong class="block text-2xl text-white">Compléments</strong><span class="font-mono text-xs uppercase tracking-[0.16em] text-white/80">45 guides</span></span>
+          </div>
+          <div class="mt-4 grid gap-4 sm:grid-cols-3">
+            <a id="complements" href="article-sopk-complements.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:11rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/complements-sopk.svg" loading="lazy" width="360" height="240" alt="" />
+              <div class="absolute inset-0 bg-gold/78 transition group-hover:bg-gold/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">💊</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Compléments alimentaires</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Inositol, berbérine, zinc</span>
+                </div>
+              </div>
+            </a>
+            <a href="article-sopk-sexualite.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:11rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/sopk-skin.svg" loading="lazy" width="360" height="240" alt="" />
+              <div class="absolute inset-0 bg-[#b56870]/78 transition group-hover:bg-[#b56870]/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">💑</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Vie intime & Couple</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Libido, dyspareunie</span>
+                </div>
+              </div>
+            </a>
+            <a href="article-sopk-menopause.html" class="reveal group relative overflow-hidden rounded-[1.6rem] p-6 text-white shadow-card" style="min-height:11rem">
+              <img class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110" src="images/sopk-cycle.svg" loading="lazy" width="360" height="240" alt="" />
+              <div class="absolute inset-0 bg-[#4a7a55]/78 transition group-hover:bg-[#4a7a55]/62"></div>
+              <div class="relative flex h-full flex-col justify-between">
+                <span class="text-3xl" aria-hidden="true">🌸</span>
+                <div>
+                  <strong class="block text-xl font-display leading-tight">Ménopause & Après 50 ans</strong>
+                  <span class="font-mono text-xs uppercase tracking-[0.14em] text-white/75">Risques amplifiés, THS</span>
+                </div>
               </div>
             </a>
           </div>
@@ -569,10 +632,25 @@
             <h3 class="font-serif text-3xl font-semibold leading-tight text-ink">SOPK et grossesse : préparer son rendez-vous préconception en 10 questions</h3>
             <span class="flex items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.16em] text-mist">Grossesse <span>6 min <span class="inline-block transition group-hover:translate-x-1">→</span></span></span>
           </a>
-          <a href="#" class="group grid gap-4 py-7 transition hover:translate-x-2 md:grid-cols-[8rem_1fr_12rem]">
+          <a href="article-sopk-complements.html" class="group grid gap-4 py-7 transition hover:translate-x-2 md:grid-cols-[8rem_1fr_12rem]">
             <time class="font-mono text-xs uppercase leading-6 tracking-[0.16em] text-muted" datetime="2026-05-09">09 mai<br />2026</time>
             <h3 class="font-serif text-3xl font-semibold leading-tight text-ink">Myo-inositol et SOPK : bénéfices étudiés, durée d'essai et précautions</h3>
             <span class="flex items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.16em] text-gold">Compléments <span>9 min <span class="inline-block transition group-hover:translate-x-1">→</span></span></span>
+          </a>
+          <a href="article-sopk-symptomes.html" class="group grid gap-4 py-7 transition hover:translate-x-2 md:grid-cols-[8rem_1fr_12rem]">
+            <time class="font-mono text-xs uppercase leading-6 tracking-[0.16em] text-muted" datetime="2026-05-19">19 mai<br />2026</time>
+            <h3 class="font-serif text-3xl font-semibold leading-tight text-ink">Critères de Rotterdam 2023 : les 4 phénotypes SOPK expliqués</h3>
+            <span class="flex items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.16em] text-sage">Diagnostic <span>15 min <span class="inline-block transition group-hover:translate-x-1">→</span></span></span>
+          </a>
+          <a href="article-sopk-sexualite.html" class="group grid gap-4 py-7 transition hover:translate-x-2 md:grid-cols-[8rem_1fr_12rem]">
+            <time class="font-mono text-xs uppercase leading-6 tracking-[0.16em] text-muted" datetime="2026-05-19">19 mai<br />2026</time>
+            <h3 class="font-serif text-3xl font-semibold leading-tight text-ink">SOPK et libido : le paradoxe testostérone élevée — désir bas, enfin expliqué</h3>
+            <span class="flex items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.16em] text-rose">Sexualité <span>14 min <span class="inline-block transition group-hover:translate-x-1">→</span></span></span>
+          </a>
+          <a href="article-sopk-menopause.html" class="group grid gap-4 py-7 transition hover:translate-x-2 md:grid-cols-[8rem_1fr_12rem]">
+            <time class="font-mono text-xs uppercase leading-6 tracking-[0.16em] text-muted" datetime="2026-05-19">19 mai<br />2026</time>
+            <h3 class="font-serif text-3xl font-semibold leading-tight text-ink">SOPK après la ménopause : risques cardiovasculaires ×4 et prise en charge</h3>
+            <span class="flex items-center justify-between gap-4 font-mono text-xs uppercase tracking-[0.16em] text-gold">Ménopause <span>16 min <span class="inline-block transition group-hover:translate-x-1">→</span></span></span>
           </a>
         </div>
         <a href="#" class="mt-10 inline-flex items-center gap-3 rounded-full border border-gold px-6 py-4 text-sm font-bold text-ink transition hover:bg-gold hover:text-white">Voir tous les articles <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
@@ -675,22 +753,25 @@
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div>
-              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Catégories</h2>
+              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Rubriques</h2>
               <ul class="mt-5 grid gap-3 text-white/70">
-                <li><a class="hover:text-gold" href="#sopk">SOPK</a></li>
-                <li><a class="hover:text-gold" href="#keto">SOPK & Keto</a></li>
-                <li><a class="hover:text-gold" href="#grossesse">SOPK & Grossesse</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-symptomes.html">Symptômes</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-keto.html">Keto</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-grossesse.html">Grossesse</a></li>
                 <li><a class="hover:text-gold" href="article-sopk-bienetre.html">Bien-être</a></li>
                 <li><a class="hover:text-gold" href="article-sopk-complements.html">Compléments</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-sexualite.html">Sexualité</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-menopause.html">Ménopause</a></li>
               </ul>
             </div>
             <div>
               <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Informations</h2>
               <ul class="mt-5 grid gap-3 text-white/70">
+                <li><a class="hover:text-gold" href="blog.html">Blog</a></li>
                 <li><a class="hover:text-gold" href="a-propos.html">À propos</a></li>
                 <li><a class="hover:text-gold" href="a-propos.html#contact">Contact</a></li>
                 <li><a class="hover:text-gold" href="a-propos.html#faq">FAQ</a></li>
-                <li><a class="hover:text-gold" href="index.html#newsletter">Newsletter</a></li>
+                <li><a class="hover:text-gold" href="#newsletter">Newsletter</a></li>
               </ul>
             </div>
             <div>
