@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOPK et Régime Cétogène : ce que dit vraiment la science en 2026 | SOPK Équilibre</title>
+    <meta name="description" content="Insulinorésistance, hormones, ovulation : le régime cétogène agit-il vraiment sur le SOPK ? Synthèse de 15 études cliniques et 5 méta-analyses pour un guide fondé sur les preuves." />
+    <meta name="author" content="Dr. Camille Moreau" />
+    <link rel="canonical" href="article-sopk-keto.html" />
+    <meta property="og:title" content="SOPK et Régime Cétogène : ce que dit vraiment la science en 2026" />
+    <meta property="og:description" content="Perte de poids, testostérone, ovulation : synthèse de 15 essais cliniques et 5 méta-analyses sur le keto dans le SOPK." />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="images/keto-sopk.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/cormorant/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/outfit/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/jetbrains-mono/index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Playfair Display Variable"', 'serif'],
+              serif: ['"Cormorant Variable"', 'serif'],
+              sans: ['"Outfit Variable"', 'sans-serif'],
+              mono: ['"JetBrains Mono Variable"', 'monospace'],
+            },
+            colors: {
+              cream: 'rgb(var(--color-bg-primary-rgb) / <alpha-value>)',
+              sand: 'rgb(var(--color-bg-secondary-rgb) / <alpha-value>)',
+              ink: 'rgb(var(--color-text-primary-rgb) / <alpha-value>)',
+              body: 'rgb(var(--color-text-body-rgb) / <alpha-value>)',
+              muted: 'rgb(var(--color-text-muted-rgb) / <alpha-value>)',
+              gold: 'rgb(var(--color-accent-primary-rgb) / <alpha-value>)',
+              caramel: 'rgb(var(--color-accent-secondary-rgb) / <alpha-value>)',
+              sage: 'rgb(var(--color-accent-health-rgb) / <alpha-value>)',
+              rose: 'rgb(var(--color-accent-beauty-rgb) / <alpha-value>)',
+              mist: 'rgb(var(--color-accent-wellness-rgb) / <alpha-value>)',
+            },
+            boxShadow: {
+              card: 'var(--shadow-card)',
+              hover: 'var(--shadow-card-hover)',
+              elevated: 'var(--shadow-elevated)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --color-bg-primary: #fdfaf6;
+        --color-bg-primary-rgb: 253 250 246;
+        --color-bg-secondary: #f5ede4;
+        --color-bg-secondary-rgb: 245 237 228;
+        --color-bg-dark: #1a1614;
+        --color-text-primary: #2c2420;
+        --color-text-primary-rgb: 44 36 32;
+        --color-text-body: #5c524a;
+        --color-text-body-rgb: 92 82 74;
+        --color-text-muted: #9c8e82;
+        --color-text-muted-rgb: 156 142 130;
+        --color-text-inverse: #fdfaf6;
+        --color-accent-primary: #b8860b;
+        --color-accent-primary-rgb: 184 134 11;
+        --color-accent-secondary: #d4a574;
+        --color-accent-secondary-rgb: 212 165 116;
+        --color-accent-health: #6b8f71;
+        --color-accent-health-rgb: 107 143 113;
+        --color-accent-beauty: #c4868c;
+        --color-accent-beauty-rgb: 196 134 140;
+        --color-accent-wellness: #8fa3b0;
+        --color-accent-wellness-rgb: 143 163 176;
+        --color-border: #e8dfd4;
+        --shadow-card: 0 2px 20px rgba(44, 36, 32, 0.06);
+        --shadow-card-hover: 0 8px 40px rgba(44, 36, 32, 0.12);
+        --shadow-elevated: 0 20px 60px rgba(44, 36, 32, 0.15);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        background: var(--color-bg-primary);
+        color: var(--color-text-body);
+        font-family: "Outfit Variable", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Progress bar */
+      #progress-bar {
+        position: fixed; top: 0; left: 0; height: 3px; width: 0;
+        background: var(--color-accent-primary); z-index: 200;
+        transition: width 80ms linear;
+      }
+
+      /* Skip link */
+      .skip-link {
+        position: fixed; top: 1rem; left: 1rem; z-index: 100;
+        transform: translateY(-140%); transition: transform 180ms ease;
+      }
+      .skip-link:focus { transform: translateY(0); }
+
+      /* Header */
+      .site-header {
+        transition: background 260ms ease, box-shadow 260ms ease;
+      }
+      .site-header.is-scrolled {
+        background: rgba(253, 250, 246, 0.9);
+        box-shadow: 0 12px 30px rgba(44, 36, 32, 0.08);
+      }
+      .nav-link { position: relative; }
+      .nav-link::after {
+        content: ""; position: absolute; left: 0; bottom: -0.45rem;
+        width: 100%; height: 1px; background: var(--color-accent-primary);
+        transform: scaleX(0); transform-origin: right; transition: transform 240ms ease;
+      }
+      .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+      /* Mobile menu */
+      .mobile-panel {
+        transform: translateX(100%);
+        transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .mobile-panel.is-open { transform: translateX(0); }
+
+      /* TOC sticky */
+      .toc-link {
+        position: relative;
+        transition: color 180ms ease, padding-left 180ms ease;
+      }
+      .toc-link.active {
+        color: var(--color-accent-primary);
+        padding-left: 0.75rem;
+      }
+      .toc-link.active::before {
+        content: ""; position: absolute; left: 0; top: 50%;
+        transform: translateY(-50%); width: 3px; height: 1rem;
+        background: var(--color-accent-primary); border-radius: 2px;
+      }
+
+      /* Article prose */
+      .prose h2 {
+        font-family: "Cormorant Variable", serif;
+        font-size: 2.25rem; font-weight: 700;
+        color: var(--color-text-primary);
+        margin-top: 3.5rem; margin-bottom: 1.25rem;
+        line-height: 1.2; letter-spacing: -0.02em;
+      }
+      .prose h3 {
+        font-family: "Cormorant Variable", serif;
+        font-size: 1.6rem; font-weight: 600;
+        color: var(--color-text-primary);
+        margin-top: 2.5rem; margin-bottom: 1rem;
+        line-height: 1.3;
+      }
+      .prose p {
+        line-height: 1.9; margin-bottom: 1.4rem;
+        font-size: 1.05rem;
+      }
+      .prose ul { margin-bottom: 1.4rem; padding-left: 1.5rem; }
+      .prose ul li {
+        line-height: 1.8; margin-bottom: 0.55rem;
+        font-size: 1.05rem; position: relative;
+      }
+      .prose ul li::marker { color: var(--color-accent-primary); }
+      .prose strong { color: var(--color-text-primary); font-weight: 700; }
+      .prose a {
+        color: var(--color-accent-primary); text-decoration: underline;
+        text-decoration-color: rgba(184, 134, 11, 0.4);
+        text-underline-offset: 3px; transition: text-decoration-color 180ms;
+      }
+      .prose a:hover { text-decoration-color: var(--color-accent-primary); }
+
+      /* Callout boxes */
+      .callout {
+        border-left: 3px solid var(--color-accent-primary);
+        background: rgba(184, 134, 11, 0.06);
+        padding: 1.25rem 1.5rem; border-radius: 0 0.75rem 0.75rem 0;
+        margin: 2rem 0;
+      }
+      .callout-sage {
+        border-color: var(--color-accent-health);
+        background: rgba(107, 143, 113, 0.07);
+      }
+      .callout-rose {
+        border-color: var(--color-accent-beauty);
+        background: rgba(196, 134, 140, 0.07);
+      }
+      .callout-mist {
+        border-color: var(--color-accent-wellness);
+        background: rgba(143, 163, 176, 0.08);
+      }
+
+      /* Data table */
+      .data-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+      .data-table th {
+        background: var(--color-bg-secondary);
+        color: var(--color-text-primary); font-weight: 700;
+        padding: 0.75rem 1rem; text-align: left;
+        font-family: "JetBrains Mono Variable", monospace;
+        font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase;
+      }
+      .data-table td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--color-border); }
+      .data-table tr:last-child td { border-bottom: none; }
+      .data-table tr:hover td { background: rgba(245, 237, 228, 0.6); }
+
+      /* Stat cards */
+      .stat-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); }
+      @media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(4, 1fr); } }
+      .stat-card {
+        background: white; border-radius: 1.25rem;
+        padding: 1.25rem; text-align: center;
+        box-shadow: var(--shadow-card);
+        border: 1px solid var(--color-border);
+      }
+      .stat-number {
+        font-family: "Playfair Display Variable", serif;
+        font-size: 2.4rem; font-weight: 700;
+        color: var(--color-accent-primary); line-height: 1;
+      }
+
+      /* Pull quote */
+      .pull-quote {
+        font-family: "Cormorant Variable", serif;
+        font-size: 1.65rem; font-style: italic; font-weight: 600;
+        color: var(--color-text-primary); line-height: 1.4;
+        border-top: 2px solid var(--color-accent-primary);
+        border-bottom: 2px solid var(--color-accent-primary);
+        padding: 1.5rem 0; margin: 2.5rem 0; text-align: center;
+      }
+
+      /* Reveal animation */
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 600ms ease, transform 600ms ease; }
+      .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+      /* Back to top */
+      .back-to-top {
+        opacity: 0; pointer-events: none; transform: translateY(12px);
+        transition: opacity 220ms ease, transform 220ms ease;
+      }
+      .back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+      /* Shimmer */
+      .shimmer { position: relative; overflow: hidden; }
+      .shimmer::after {
+        content: ""; position: absolute; inset: 0; transform: translateX(-120%);
+        background: linear-gradient(110deg, transparent, rgba(255,255,255,.3), transparent);
+        transition: transform 600ms ease;
+      }
+      .shimmer:hover::after { transform: translateX(120%); }
+
+      a:focus-visible, button:focus-visible {
+        outline: 2px solid var(--color-accent-primary); outline-offset: 4px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "SOPK et Régime Cétogène : ce que dit vraiment la science en 2026",
+      "description": "Synthèse fondée sur 15 essais cliniques et 5 méta-analyses sur l'efficacité du régime cétogène dans le SOPK : insulinorésistance, hormones, ovulation, risques et recommandations pratiques.",
+      "author": { "@type": "Person", "name": "Dr. Camille Moreau", "jobTitle": "Gynécologue" },
+      "publisher": { "@type": "Organization", "name": "SOPK Équilibre" },
+      "datePublished": "2026-05-15",
+      "dateModified": "2026-05-15",
+      "image": "images/keto-sopk.svg",
+      "mainEntityOfPage": "article-sopk-keto.html",
+      "keywords": ["SOPK", "régime cétogène", "keto SOPK", "insulinorésistance", "SOPK hormones", "SOPK ovulation"],
+      "articleSection": "SOPK & Keto",
+      "timeRequired": "PT16M"
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Progress bar -->
+    <div id="progress-bar" role="progressbar" aria-label="Progression de lecture"></div>
+
+    <a class="skip-link rounded-full bg-gold px-5 py-3 text-sm font-semibold text-white" href="#contenu">Aller au contenu</a>
+
+    <!-- ░░ HEADER ░░ -->
+    <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[var(--color-border)] bg-cream/70 backdrop-blur-xl">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-ink" aria-label="SOPK Équilibre — accueil">
+          SOPK<span class="text-gold"> Équilibre</span>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium tracking-[0.02em] text-ink lg:flex" aria-label="Navigation principale">
+          <a class="nav-link" href="index.html#sopk">SOPK</a>
+          <a class="nav-link" href="index.html#keto" aria-current="page">SOPK & Keto</a>
+          <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
+          <a class="nav-link" href="article-sopk-bienetre.html">Bien-être</a>
+          <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
+          <a class="nav-link" href="a-propos.html">À propos</a>
+        </nav>
+        <div class="hidden items-center gap-3 lg:flex">
+          <a class="rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-gold" href="index.html#newsletter">Newsletter</a>
+        </div>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-[var(--color-border)] text-ink lg:hidden" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-open>
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-panel fixed inset-0 z-[60] bg-ink px-6 py-7 text-white lg:hidden" data-mobile-panel aria-hidden="true">
+      <div class="flex items-center justify-between">
+        <span class="font-display text-3xl italic">SOPK<span class="text-gold"> Équilibre</span></span>
+        <button class="grid h-11 w-11 place-items-center rounded-full border border-white/15" type="button" aria-label="Fermer le menu" data-menu-close>
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <nav class="mt-16 grid gap-5 font-serif text-4xl leading-none" aria-label="Navigation mobile">
+        <a href="index.html#sopk" data-mobile-link>SOPK</a>
+        <a href="index.html#keto" data-mobile-link>SOPK & Keto</a>
+        <a href="index.html#grossesse" data-mobile-link>Grossesse</a>
+        <a href="article-sopk-bienetre.html" data-mobile-link>Bien-être</a>
+        <a href="article-sopk-complements.html" data-mobile-link>Compléments</a>
+      </nav>
+      <a class="mt-10 inline-flex rounded-full bg-gold px-6 py-4 text-sm font-bold text-white" href="index.html#newsletter" data-mobile-link>Recevoir la newsletter</a>
+    </div>
+
+    <!-- ░░ MAIN ░░ -->
+    <main id="contenu" class="pt-20">
+
+      <!-- Hero article -->
+      <div class="bg-sand">
+        <div class="mx-auto max-w-4xl px-5 py-16 sm:px-8 lg:py-24">
+          <!-- Breadcrumb -->
+          <nav class="mb-8 flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-muted" aria-label="Fil d'Ariane">
+            <a href="index.html" class="hover:text-gold">Accueil</a>
+            <span aria-hidden="true">/</span>
+            <a href="index.html#keto" class="hover:text-gold">SOPK & Keto</a>
+            <span aria-hidden="true">/</span>
+            <span class="text-ink">Régime cétogène</span>
+          </nav>
+
+          <!-- Badge catégorie -->
+          <span class="mb-6 inline-block rounded-full bg-rose/18 px-4 py-1.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.22em] text-rose">SOPK & Keto</span>
+
+          <!-- Titre H1 -->
+          <h1 class="font-display text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-ink sm:text-5xl lg:text-6xl">
+            SOPK et Régime Cétogène&nbsp;: ce que dit vraiment la science en 2026
+          </h1>
+
+          <!-- Résumé introduction -->
+          <p class="mt-7 text-xl leading-9 text-body">
+            Insulinorésistance, androgènes élevés, cycles irréguliers&nbsp;: l'alimentation cétogène est aujourd'hui l'une des approches nutritionnelles les plus étudiées dans le SOPK. Voici la synthèse honnête de 15 essais cliniques et 5 méta-analyses&nbsp;— bénéfices mesurés, risques réels et recommandations concrètes.
+          </p>
+
+          <!-- Métadonnées -->
+          <div class="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-[var(--color-border)] pt-6 font-mono text-xs uppercase tracking-[0.14em] text-muted">
+            <span>Par <strong class="text-ink">Dr. Camille Moreau</strong>, gynécologue</span>
+            <span aria-hidden="true">·</span>
+            <time datetime="2026-05-15">15 mai 2026</time>
+            <span aria-hidden="true">·</span>
+            <span>16 min de lecture</span>
+            <span aria-hidden="true">·</span>
+            <span>Relu par le comité médical</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image héro -->
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="-mt-8 overflow-hidden rounded-[2rem] shadow-elevated">
+          <img class="h-[32rem] w-full object-cover" src="images/keto-article.webp" width="1200" height="700" alt="Assiette keto douce — avocat, saumon, oeufs et légumes verts — adaptée au SOPK" fetchpriority="high" />
+        </div>
+      </div>
+
+      <!-- ░░ LAYOUT : ARTICLE + TOC ░░ -->
+      <div class="mx-auto mt-16 max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
+        <div class="grid gap-14 lg:grid-cols-[1fr_280px]">
+
+          <!-- Colonne article -->
+          <article class="prose min-w-0" itemscope itemtype="https://schema.org/Article">
+
+            <!-- ── EN BREF ── -->
+            <div class="reveal not-prose mb-12 overflow-hidden rounded-[1.5rem] border border-[var(--color-border)] bg-white shadow-card">
+              <div class="border-b border-[var(--color-border)] bg-sand px-6 py-4">
+                <p class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">En bref — points clés</p>
+              </div>
+              <ul class="grid gap-4 px-6 py-5 text-[0.95rem] leading-7 text-body">
+                <li class="flex gap-3"><span class="mt-1 shrink-0 text-sage">✓</span> Chez les femmes SOPK en surpoids (IMC ≥&nbsp;27), le cétogène produit en 8–24 semaines&nbsp;: <strong>–9 kg en moyenne, –13 % de l'IMC, –54 % de l'insulinémie à jeun</strong>.</li>
+                <li class="flex gap-3"><span class="mt-1 shrink-0 text-sage">✓</span> <strong>Testostérone libre baisse de –22 à –30 %</strong>, SHBG augmente, rapport LH/FSH diminue — restauration de l'ovulation chez plus de 50 % des femmes.</li>
+                <li class="flex gap-3"><span class="mt-1 shrink-0 text-sage">✓</span> <strong>4 méta-analyses récentes</strong> (2023–2026) convergent sur des effets statistiquement significatifs, mais les échantillons sont petits et le suivi rarement supérieur à 6 mois.</li>
+                <li class="flex gap-3"><span class="mt-1 shrink-0 text-rose">⚠</span> Les guidelines internationales 2023 <strong>ne recommandent pas le keto en première intention</strong>&nbsp;: les preuves sont prometteuses mais pas encore matures.</li>
+                <li class="flex gap-3"><span class="mt-1 shrink-0 text-rose">⚠</span> Contre-indiqué pendant la <strong>grossesse et l'allaitement</strong>, déconseillé en cas de phénotype lean PCOS ou de trouble du comportement alimentaire.</li>
+              </ul>
+            </div>
+
+            <!-- ── SECTION 1 ── -->
+            <section id="sopk-insuline" class="reveal">
+              <h2>Pourquoi l'insuline est au cœur du SOPK</h2>
+              <p>
+                Le syndrome des ovaires polykystiques touche 8 à 13 % des femmes en âge de reproduction selon les critères Rotterdam 2023. Derrière ses manifestations variées — cycles irréguliers, acné hormonale, hirsutisme, difficulté à concevoir — se cache un mécanisme commun&nbsp;: <strong>l'insulinorésistance</strong>.
+              </p>
+              <p>
+                Elle est présente chez <strong>75 % des femmes minces atteintes de SOPK</strong> et jusqu'à <strong>95 % des femmes en surpoids</strong>. Concrètement, les cellules musculaires et hépatiques répondent moins bien à l'insuline, ce qui oblige le pancréas à en sécréter davantage pour maintenir la glycémie. Cette hyperinsulinémie chronique n'est pas neutre&nbsp;: elle agit directement sur les ovaires.
+              </p>
+
+              <div class="callout callout-sage">
+                <p class="font-semibold text-ink">Le cercle vicieux insuline–androgènes</p>
+                <p class="mt-2 text-sm leading-7">L'insuline en excès stimule les cellules thécales ovariennes à produire plus d'androgènes (testostérone, androstènedione) via les enzymes <strong>CYP17 et StAR</strong>, en synergie avec la LH. Simultanément, elle supprime la production hépatique de <strong>SHBG</strong> (Sex Hormone-Binding Globulin), ce qui augmente la fraction libre et active de la testostérone. Plus d'androgènes libres signifie plus d'acné, plus d'hirsutisme, et une perturbation de la folliculogenèse menant à l'anovulation.</p>
+              </div>
+
+              <p>
+                Cette chaîne de causalité a été confirmée au niveau génétique&nbsp;: invalider le récepteur à l'insuline uniquement dans les cellules thécales ovariennes chez la souris corrige l'hyperandrogénie et restaure la fertilité <em>(Wu et al., Diabetes 2014)</em>. Baisser l'insulinémie est donc mécanistiquement <strong>le levier le plus puissant</strong> dans le SOPK — ce qui explique l'efficacité de la metformine, des inositols… et du régime cétogène.
+              </p>
+            </section>
+
+            <!-- ── SECTION 2 ── -->
+            <section id="keto-mecanismes" class="reveal">
+              <h2>Comment le régime cétogène agit sur les hormones du SOPK</h2>
+              <p>
+                Le régime cétogène (<em>ketogenic diet</em>, KD) consiste à réduire les glucides à moins de 50 g par jour — soit environ 5–10 % des calories. En l'absence de glucose suffisant, le foie produit des corps cétoniques (dont le <strong>β-hydroxybutyrate, β-OHB</strong>) à partir des acides gras. L'organisme bascule en mode « cétose nutritionnelle » (β-OHB &gt; 0,5 mmol/L).
+              </p>
+              <p>Sur le SOPK, cette transition métabolique agit par plusieurs mécanismes simultanés&nbsp;:</p>
+
+              <h3>1. Suppression directe de l'insulinémie</h3>
+              <p>
+                Sans apport de glucides, l'insuline reste basse tout au long de la journée. En 8 à 12 semaines, les essais cliniques mesurent des baisses de HOMA-IR (indice d'insulinorésistance) de <strong>20 à 50 %</strong>. C'est le point d'entrée de tous les bénéfices suivants.
+              </p>
+
+              <h3>2. Baisse de la production d'androgènes ovariens</h3>
+              <p>
+                Moins d'insuline → moins de stimulation de CYP17 dans les cellules thécales → <strong>baisse de la testostérone totale et libre</strong>. Les études montrent une réduction de la testostérone libre de –22 à –30 % selon le protocole cétogène utilisé.
+              </p>
+
+              <h3>3. Hausse de la SHBG</h3>
+              <p>
+                L'insuline inhibe la transcription du gène SHBG dans le foie (via SREBP-1c). En cétose, cette inhibition est levée&nbsp;: la <strong>SHBG augmente</strong>, séquestre la testostérone libre et réduit son activité biologique — l'acné et l'hirsutisme diminuent.
+              </p>
+
+              <h3>4. Normalisation de l'axe LH/FSH</h3>
+              <p>
+                La baisse de l'insuline et de la leptine modère la pulsatilité de la GnRH. Le <strong>rapport LH/FSH</strong> — caractéristiquement élevé dans le SOPK — diminue, permettant une meilleure folliculogenèse et, pour certaines femmes, le retour de l'ovulation.
+              </p>
+
+              <h3>5. Effet anti-inflammatoire du β-hydroxybutyrate</h3>
+              <p>
+                Le β-OHB n'est pas qu'un carburant&nbsp;: il inhibe l'<strong>inflammasome NLRP3</strong>, réduisant la sécrétion d'IL-1β et d'IL-18 <em>(Youm/Dixit, Nature Medicine 2015)</em>. Or, les femmes SOPK présentent une inflammation chronique de bas grade documentée (CRP, IL-6 élevés même après ajustement pour l'IMC). L'effet anti-inflammatoire de la cétose pourrait donc contribuer à réduire l'activité ovarienne androgénique induite par les cytokines.
+              </p>
+
+              <h3>6. Réduction de la stéatose hépatique</h3>
+              <p>
+                La stéatose hépatique non alcoolique (NAFLD/MASLD) est très fréquente dans le SOPK et aggrave l'insulinorésistance hépatique. Le régime cétogène réduit efficacement la teneur en triglycérides du foie, restaurant la production de SHBG et d'IGFBP-1.
+              </p>
+            </section>
+
+            <!-- Pull quote -->
+            <blockquote class="pull-quote reveal">
+              « En 8 semaines de VLCKD, 84,6 % des femmes SOPK avaient retrouvé une ovulation — contre 35,7 % avec un régime méditerranéen hypocalorique. »
+              <cite class="mt-3 block font-sans text-sm font-normal not-italic text-muted">Pandurevic et al., <em>Endocrine Connections</em> 2023 — seul RCT direct keto vs méditerranéen dans le SOPK</cite>
+            </blockquote>
+
+            <!-- ── SECTION 3 : PREUVES ── -->
+            <section id="preuves-scientifiques" class="reveal">
+              <h2>Les preuves scientifiques — 15 études, 5 méta-analyses</h2>
+
+              <!-- Stat grid -->
+              <div class="stat-grid not-prose my-8">
+                <div class="stat-card">
+                  <div class="stat-number">–9 kg</div>
+                  <p class="mt-2 text-sm leading-6 text-body">Perte de poids moyenne sur 8–24 semaines (méta-analyse Xing 2024, 11 RCT)</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">–54 %</div>
+                  <p class="mt-2 text-sm leading-6 text-body">Baisse de l'insulinémie à jeun (Mavropoulos 2005, pilote fondateur, 24 sem)</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">84 %</div>
+                  <p class="mt-2 text-sm leading-6 text-body">Ovulation restaurée en 8 sem de VLCKD (Pandurevic 2023, RCT)</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number">56 %</div>
+                  <p class="mt-2 text-sm leading-6 text-body">Taux de grossesse chez les femmes SOPK infertiles (Cleveland Clinic 2024)</p>
+                </div>
+              </div>
+
+              <h3>Les essais cliniques les plus importants</h3>
+              <p>
+                Depuis l'étude pilote de Mavropoulos en 2005 (11 femmes, 24 semaines, &lt; 20 g de glucides/jour) jusqu'aux RCT publiés en 2024, le signal clinique est cohérent. Voici les études qui font référence&nbsp;:
+              </p>
+
+              <!-- Table études -->
+              <div class="not-prose my-8 overflow-x-auto rounded-[1.25rem] border border-[var(--color-border)] bg-white shadow-card">
+                <table class="data-table">
+                  <caption class="sr-only">Récapitulatif des essais cliniques sur le régime cétogène dans le SOPK</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Étude / Année</th>
+                      <th scope="col">Design</th>
+                      <th scope="col">Durée</th>
+                      <th scope="col">Résultats clés</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Mavropoulos 2005</strong></td>
+                      <td>Pilote &lt;20 g CHO/j (n=11)</td>
+                      <td>24 sem</td>
+                      <td>Poids –12 %, insuline –54 %, testostérone libre –22 %, LH/FSH –36 %, 2 grossesses spontanées</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Paoli 2020</strong></td>
+                      <td>Pilote KEMEPHY (KD méditerranéen, n=14)</td>
+                      <td>12 sem</td>
+                      <td>–9,4 kg, HOMA-IR ↓, LDL ↓, HDL ↑, LH ↓, testostérone ↓, SHBG ↑</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Magagnini 2022</strong></td>
+                      <td>VLCKD rétrospectif (n=25)</td>
+                      <td>12 sem</td>
+                      <td>HOMA-IR &lt;2,5 ; progestérone J21 ↑ ; SHBG ↑ — <strong>indépendamment de la perte de poids</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Cincione 2023</strong></td>
+                      <td>KD vs méditerranéen (n=80)</td>
+                      <td>9 sem</td>
+                      <td>KD supérieur sur LH/FSH, testostérone libre et totale, FSH, SHBG</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="text-gold">Pandurevic 2023 ★</strong></td>
+                      <td>RCT VLCKD Pronokal® vs méditerranéen (n=30)</td>
+                      <td>16 sem</td>
+                      <td>IMC –13,7 % vs –5,1 % ; testostérone libre –30,3 % vs +10,6 % ; ovulation 84,6 % vs 35,7 % (p=0,0003)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Cleveland Clinic 2024</strong></td>
+                      <td>Cohorte KD, femmes désirant grossesse</td>
+                      <td>jusqu'à 1 an</td>
+                      <td>Cycles régularisés à 3 mois ; <strong>taux de grossesse 55,6 %</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sharifi 2024</strong></td>
+                      <td>RCT KD vs régime portfolio (n=46)</td>
+                      <td>8 sem</td>
+                      <td>KD supérieur sur poids, HOMA-IR, LH, DHEA-S ; portfolio supérieur sur LDL/TG/HDL</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Cinotti 2024</strong></td>
+                      <td>KD 45 j + réintroduction 45 j (n=18)</td>
+                      <td>6 mois</td>
+                      <td>Cycle 45 → 32 jours ; volume ovarien ↓ ; amélioration des gonadotrophines indépendante de la perte pondérale</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="p-4 font-mono text-xs text-muted">★ Seul RCT comparant directement KD vs méditerranéen dans le SOPK. CHO = glucides ; HOMA-IR = insulinorésistance ; SHBG = sex hormone-binding globulin.</p>
+              </div>
+
+              <h3>Ce que confirment les méta-analyses</h3>
+              <p>
+                Cinq méta-analyses publiées entre 2023 et 2026 convergent sur les mêmes conclusions&nbsp;:
+              </p>
+              <ul>
+                <li><strong>Khalid et al. 2023</strong> (<em>J Endocr Soc</em>, 7 études, 170 femmes) — LH/FSH d=–0,85, testostérone libre d=–0,22, SHBG d=+9,09 (tous p&lt;0,001).</li>
+                <li><strong>Xing et al. 2024</strong> (<em>Food &amp; Nutrition Research</em>, 11 RCT) — poids WMD –9,13 kg, IMC –2,93, tour de taille –7,62 cm, masse grasse –5,32 kg.</li>
+                <li><strong>Camajani/Calogero et al. 2025</strong> (<em>Reprod Biol Endocrinol</em>, 10 études) — testostérone libre –0,31 ng/dL, SHBG +15,22 nmol/L, HOMA-IR –2,46, tous p&lt;0,01.</li>
+                <li><strong>Arsenaki et al. 2026</strong> (<em>Clinical Nutrition</em>, 15 études) — bénéfices sur poids, sensibilité à l'insuline et hormones reproductives chez les femmes SOPK avec IMC &gt;25 ; appel explicite à des RCT de longue durée.</li>
+              </ul>
+
+              <div class="callout callout-mist">
+                <p class="font-semibold text-ink">Un point décisif souvent sous-estimé</p>
+                <p class="mt-2 text-sm leading-7">Plusieurs études (Magagnini 2022, Cinotti 2024) ont démontré que l'amélioration des <strong>gonadotrophines (FSH, LH), de la progestérone et du volume ovarien</strong> se produit indépendamment de la quantité de poids perdu. Cela suggère un effet propre de la cétose — au-delà du simple amaigrissement — sur l'axe hypothalamo-hypophyso-ovarien.</p>
+              </div>
+            </section>
+
+            <!-- ── SECTION 4 : POUR QUI ── -->
+            <section id="pour-qui" class="reveal">
+              <h2>Pour qui le keto est-il adapté dans le SOPK&nbsp;?</h2>
+
+              <h3>Profil candidat idéal</h3>
+              <p>L'ensemble des données pointe vers un profil précis pour lequel le rapport bénéfice/risque est le plus favorable&nbsp;:</p>
+
+              <div class="not-prose my-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-[1.25rem] border border-sage/30 bg-sage/8 p-5">
+                  <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-sage">Profil recommandé ✓</p>
+                  <ul class="mt-4 grid gap-2 text-sm leading-6 text-body">
+                    <li>IMC ≥ 27 (idéalement ≥ 30)</li>
+                    <li>Phénotype SOPK A ou B (hyperandrogénie + anovulation)</li>
+                    <li>HOMA-IR ≥ 2,5 documenté</li>
+                    <li>Stéatose hépatique non alcoolique associée</li>
+                    <li>Thyroïde équilibrée (TSH normale)</li>
+                    <li>Pas de projet de grossesse immédiat</li>
+                    <li>Absence d'antécédent de TCA</li>
+                  </ul>
+                </div>
+                <div class="rounded-[1.25rem] border border-rose/30 bg-rose/8 p-5">
+                  <p class="font-mono text-xs font-bold uppercase tracking-[0.2em] text-rose">Déconseillé ou contre-indiqué ✗</p>
+                  <ul class="mt-4 grid gap-2 text-sm leading-6 text-body">
+                    <li>Grossesse ou allaitement (contre-indication absolue)</li>
+                    <li>Phénotype lean PCOS (IMC &lt; 25)</li>
+                    <li>Hypothyroïdie de Hashimoto non équilibrée</li>
+                    <li>Trouble du comportement alimentaire actif</li>
+                    <li>Désir de grossesse dans les 3 mois</li>
+                    <li>Insuffisance rénale ou hépatique</li>
+                    <li>Lithiase biliaire</li>
+                  </ul>
+                </div>
+              </div>
+
+              <h3>Quelle durée viser&nbsp;?</h3>
+              <p>
+                La majorité des protocoles cliniques utilisent <strong>8 à 16 semaines de cétose stricte</strong> (β-OHB 0,5–3,0 mmol/L), suivies d'une réintroduction progressive des glucides (+10 g par semaine) vers un <strong>régime méditerranéen pauvre en glucides</strong>. Ce modèle «&nbsp;induction cétogène + maintenance méditerranéenne&nbsp;» semble le plus équilibré sur le plan de l'efficacité, de la durabilité et de la sécurité.
+              </p>
+            </section>
+
+            <!-- ── SECTION 5 : GUIDE PRATIQUE ── -->
+            <section id="guide-pratique" class="reveal">
+              <h2>Guide pratique — macros, aliments et suppléments</h2>
+
+              <h3>Macronutriments en phase cétogène SOPK</h3>
+
+              <div class="not-prose my-6 overflow-hidden rounded-[1.25rem] border border-[var(--color-border)] bg-white shadow-card">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Macronutriment</th>
+                      <th scope="col">Quantité</th>
+                      <th scope="col">% des calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Glucides nets</strong></td>
+                      <td>20–50 g/j</td>
+                      <td>5–10 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Protéines</strong></td>
+                      <td>1,2–1,6 g/kg de poids idéal/j</td>
+                      <td>20–25 %</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Lipides</strong></td>
+                      <td>Selon satiété</td>
+                      <td>60–75 %</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="p-4 font-mono text-xs text-muted">Privilégier les acides gras mono et poly-insaturés (huile d'olive, avocat, poissons gras). Limiter les acides gras saturés à &lt; 10 % et éviter totalement les acides gras trans.</p>
+              </div>
+
+              <h3>Aliments à privilégier</h3>
+              <ul>
+                <li><strong>Poissons gras</strong> (saumon, sardines, maquereau, anchois) — riches en oméga-3 anti-inflammatoires</li>
+                <li><strong>Œufs entiers</strong> — protéines complètes, cholestérol précurseur hormonal</li>
+                <li><strong>Légumes verts à feuilles</strong> (épinards, roquette, mâche) et <strong>crucifères</strong> (brocoli, chou-fleur, chou de Bruxelles) — fibres, magnésium, DIM</li>
+                <li><strong>Avocat et olives</strong> — acides gras mono-insaturés, potassium</li>
+                <li><strong>Oléagineux et graines</strong> (noix, amandes, graines de chia, de lin) — oméga-3, magnésium, fibres</li>
+                <li><strong>Huile d'olive extra-vierge</strong> — polyphénols anti-inflammatoires</li>
+                <li><strong>Petits fruits rouges</strong> (myrtilles, framboises) en petite quantité — antioxydants, IG bas</li>
+                <li><strong>Viandes maigres et volaille</strong> — protéines sans excès de graisses saturées</li>
+              </ul>
+
+              <h3>Aliments à éviter strictement</h3>
+              <ul>
+                <li>Sucres ajoutés et produits ultra-transformés</li>
+                <li>Féculents raffinés (pain blanc, pâtes, riz blanc)</li>
+                <li>Jus de fruits (index glycémique élevé même «&nbsp;naturels&nbsp;»)</li>
+                <li>Alcool en phase d'induction (perturbe la cétose et élève le cortisol)</li>
+                <li>Huiles végétales raffinées (tournesol, maïs, soja) — pro-inflammatoires</li>
+              </ul>
+
+              <h3>Suppléments avec preuves solides dans le SOPK</h3>
+
+              <div class="not-prose my-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-[1.25rem] border border-[var(--color-border)] bg-white p-5 shadow-card">
+                  <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-gold">Preuves solides</p>
+                  <ul class="mt-4 grid gap-3 text-sm leading-6 text-body">
+                    <li><strong>Myo-inositol 2 g + D-chiro-inositol 50 mg × 2/j</strong> (ratio 40:1) — amélioration HOMA-IR, SHBG, ovulation (guidelines 2023)</li>
+                    <li><strong>Vitamine D3 2 000–4 000 UI/j</strong> si déficit — très fréquent en SOPK, améliore cycles et insulinosensibilité</li>
+                    <li><strong>Oméga-3 EPA+DHA 1 500–3 000 mg/j</strong> — baisse TG, CRP, LDL</li>
+                    <li><strong>Magnésium glycinate 300–400 mg/j</strong> — prévient crampes et fatigue en phase d'induction cétogène</li>
+                  </ul>
+                </div>
+                <div class="rounded-[1.25rem] border border-[var(--color-border)] bg-white p-5 shadow-card">
+                  <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted">Preuves intermédiaires</p>
+                  <ul class="mt-4 grid gap-3 text-sm leading-6 text-body">
+                    <li><strong>N-acétylcystéine (NAC) 600 mg × 2/j</strong> — sensibilité à l'insuline, ovulation</li>
+                    <li><strong>Berbérine 500 mg × 3/j</strong> — équivalence metformine sur HOMA-IR, synergie potentielle avec keto</li>
+                    <li><strong>Chrome picolinate 200–1 000 µg/j</strong> — tolérance glucidique</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- ── SECTION 6 : RISQUES ── -->
+            <section id="risques-precautions" class="reveal">
+              <h2>Risques et précautions — ce qu'il faut surveiller</h2>
+
+              <div class="callout callout-rose">
+                <p class="font-semibold text-ink">Thyroïde — le point de vigilance principal</p>
+                <p class="mt-2 text-sm leading-7">
+                  La restriction glucidique et la cétose réduisent la conversion de T4 en T3 active par les déiodinases. La T3 libre peut baisser, la rT3 (forme inactive) augmenter. Chez une femme euthyroïdienne, l'effet est généralement modeste et réversible. En revanche, chez une femme avec <strong>hypothyroïdie de Hashimoto</strong>, cette baisse supplémentaire de T3 peut aggraver la fatigue, l'intolérance au froid et les troubles du cycle. <strong>La TSH et la T3 libre doivent être vérifiées avant et à 8 semaines.</strong>
+                </p>
+              </div>
+
+              <h3>Les autres points à surveiller</h3>
+              <ul>
+                <li><strong>Profil lipidique</strong>&nbsp;: la majorité des femmes SOPK voient leurs triglycérides et leur LDL baisser. Mais un sous-groupe «&nbsp;hyper-répondeur&nbsp;» présente une hausse paradoxale du LDL — bilan lipidique indispensable à 8 et 16 semaines.</li>
+                <li><strong>Cycle menstruel</strong>&nbsp;: si l'aménorrhée persiste après 6 semaines de cétose, vérifier T3, cortisol et leptine, puis augmenter les glucides à 75–100 g/j pour exclure une aménorrhée hypothalamique fonctionnelle.</li>
+                <li><strong>Keto flu</strong> (semaines 1–2)&nbsp;: fatigue, céphalées, crampes — atténués par hydratation, sel et magnésium.</li>
+                <li><strong>Fonction rénale et hépatique</strong>&nbsp;: surveillance créatinine, ALT/AST, particulièrement sous VLCKD à apport protéique élevé.</li>
+                <li><strong>Acide urique</strong>&nbsp;: hausse transitoire possible — contrôle à 8 semaines.</li>
+              </ul>
+
+              <h3>Suivi médical recommandé</h3>
+
+              <div class="not-prose my-6 overflow-x-auto rounded-[1.25rem] border border-[var(--color-border)] bg-white shadow-card">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Moment</th>
+                      <th scope="col">Bilans à réaliser</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Baseline (avant)</strong></td>
+                      <td>Poids, TA, IMC, tour de taille · glycémie/insuline à jeun (HOMA-IR) · bilan lipidique · TSH/T3/T4 · ALT/AST/GGT · créatinine · ionogramme · acide urique · vitamine D 25-OH · bilan hormonal SOPK complet (LH, FSH, testostérone, SHBG, AMH, DHEA-S) · échographie pelvienne</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Semaine 4</strong></td>
+                      <td>Poids, β-OHB capillaire, glycémie à jeun, tolérance, symptômes thyroïdiens</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Semaine 8</strong></td>
+                      <td>Bilan complet (reprendre baseline) + TSH/T3 libre + hormones SOPK</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Semaine 12–16</strong></td>
+                      <td>Bilan complet + décision de transition vers régime méditerranéen pauvre en glucides</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- ── SECTION 7 : LIMITES ── -->
+            <section id="limites-caveats" class="reveal">
+              <h2>Ce que la science ne dit pas encore — les limites à connaître</h2>
+              <p>
+                Soyons rigoureux&nbsp;: les bénéfices documentés sont réels et cohérents, mais les limites des études doivent être connues avant de tirer des conclusions définitives.
+              </p>
+              <ul>
+                <li><strong>Petits échantillons</strong>&nbsp;: les n cumulés des méta-analyses vont de 170 à 500 patientes. Des RCT avec 200+ participantes, en double aveugle, sont nécessaires.</li>
+                <li><strong>Durée courte</strong>&nbsp;: aucune étude ne dépasse 6 mois de suivi. L'efficacité à 2–5 ans, le risque cardiovasculaire (LDL, ApoB) et l'impact osseux restent inconnus.</li>
+                <li><strong>Effet perte de poids vs effet cétose</strong>&nbsp;: si certaines études suggèrent un effet hormonal indépendant de l'amaigrissement, la majorité des bénéfices reste attribuable à la perte de masse grasse viscérale.</li>
+                <li><strong>Conflits d'intérêts</strong>&nbsp;: plusieurs études utilisent la méthode commerciale Pronokal®, parfois cofinancée par le fabricant. Leur extrapolation à un cétogène alimentaire standard nécessite prudence.</li>
+                <li><strong>Guidelines 2023 (Teede et al.)</strong>&nbsp;: les recommandations internationales Monash/ESHRE ne recommandent pas spécifiquement le keto en première intention. Il reste une option <em>émergente</em>, soutenue par des preuves convergentes mais pas encore consensuelle.</li>
+              </ul>
+            </section>
+
+            <!-- ── CONCLUSION ── -->
+            <section id="conclusion" class="reveal">
+              <h2>En conclusion — ce que vous pouvez retenir</h2>
+              <p>
+                Pour une femme atteinte de SOPK avec surpoids, insulinorésistance documentée et phénotype hyperandrogénique, un <strong>protocole cétogène encadré de 8 à 16 semaines</strong> constitue aujourd'hui l'intervention diététique avec le meilleur rapport bénéfice/preuves&nbsp;: perte pondérale rapide, baisse significative de l'insulinémie, normalisation partielle des androgènes et retour de l'ovulation pour plus de la moitié des patientes.
+              </p>
+              <p>
+                Ce n'est pas une solution miracle ni un régime à vie. C'est un outil d'induction métabolique, à combiner avec un suivi médical rigoureux, des suppléments validés (inositols, vitamine D, oméga-3, magnésium) et une transition programmée vers un <strong>régime méditerranéen pauvre en glucides</strong> — la diète la plus durable et la mieux soutenue par les données à long terme.
+              </p>
+              <div class="callout">
+                <p class="font-semibold text-ink">L'essentiel en une phrase</p>
+                <p class="mt-2 text-sm leading-7">Le keto dans le SOPK, c'est réduire l'insuline pour casser le cercle vicieux androgènes–anovulation — mais sous supervision médicale, avec une fenêtre temporelle définie et une sortie planifiée.</p>
+              </div>
+            </section>
+
+            <!-- Sources -->
+            <section id="sources" class="reveal not-prose">
+              <div class="mt-12 rounded-[1.25rem] border border-[var(--color-border)] bg-sand p-6">
+                <h2 class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Sources et références</h2>
+                <ul class="mt-4 grid gap-2 text-xs leading-6 text-muted">
+                  <li>Mavropoulos JC et al. <em>Nutr Metab</em> 2005 — Pilote KD SOPK fondateur</li>
+                  <li>Wu S, Divall S et al. <em>Diabetes</em> 2014;63:1270 — Insulin receptor theca-specific KO</li>
+                  <li>Paoli A et al. <em>J Transl Med</em> 2020 — KEMEPHY protocol PCOS</li>
+                  <li>Magagnini MC et al. <em>Nutrients</em> 2022 — VLCKD indépendant de la perte pondérale</li>
+                  <li>Cincione RI et al. <em>J Food Properties</em> 2023 — KD vs Mediterranean diet PCOS</li>
+                  <li>Khalid K et al. <em>J Endocr Soc</em> 2023;7(10):bvad112 — Méta-analyse hormonale</li>
+                  <li>Pandurevic S et al. <em>Endocrine Connections</em> 2023 — RCT VLCKD vs LCD (NCT04801173)</li>
+                  <li>Xing N et al. <em>Food Nutr Res</em> 2024;68:9835 — Méta-analyse 11 RCT</li>
+                  <li>Sharifi N et al. <em>Nutr J</em> 2024 — KD vs portfolio diet RCT</li>
+                  <li>Cinotti E et al. <em>Metabolites</em> 2024 — KD 45 j + réintroduction</li>
+                  <li>Cleveland Clinic / Abed Alwahab. <em>J Endocr Soc</em> 2024 — Cohort fertilité</li>
+                  <li>Camajani E, Calogero AE et al. <em>Reprod Biol Endocrinol</em> 2025;23:55</li>
+                  <li>Arsenaki E et al. <em>Clinical Nutrition</em> 2026;56:106535 — Méta-analyse 15 études</li>
+                  <li>Teede HJ et al. (ESHRE/Monash) <em>J Clin Endocrinol Metab</em> 2023;108:2447 — Guidelines internationales SOPK</li>
+                  <li>Youm YH, Dixit VD et al. <em>Nature Medicine</em> 2015 — BHB et NLRP3</li>
+                </ul>
+              </div>
+            </section>
+
+          </article>
+
+          <!-- ░░ SIDEBAR TOC ░░ -->
+          <aside class="hidden lg:block">
+            <div class="sticky top-28">
+              <nav aria-label="Table des matières" class="rounded-[1.5rem] border border-[var(--color-border)] bg-white p-6 shadow-card">
+                <p class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Dans cet article</p>
+                <ol class="mt-5 grid gap-3 text-sm text-body">
+                  <li><a href="#sopk-insuline" class="toc-link block leading-6 hover:text-ink">Pourquoi l'insuline est au cœur du SOPK</a></li>
+                  <li><a href="#keto-mecanismes" class="toc-link block leading-6 hover:text-ink">Comment le keto agit sur les hormones</a></li>
+                  <li><a href="#preuves-scientifiques" class="toc-link block leading-6 hover:text-ink">Les preuves — 15 études, 5 méta-analyses</a></li>
+                  <li><a href="#pour-qui" class="toc-link block leading-6 hover:text-ink">Pour qui le keto est-il adapté&nbsp;?</a></li>
+                  <li><a href="#guide-pratique" class="toc-link block leading-6 hover:text-ink">Guide pratique — macros &amp; suppléments</a></li>
+                  <li><a href="#risques-precautions" class="toc-link block leading-6 hover:text-ink">Risques et précautions</a></li>
+                  <li><a href="#limites-caveats" class="toc-link block leading-6 hover:text-ink">Ce que la science ne dit pas encore</a></li>
+                  <li><a href="#conclusion" class="toc-link block leading-6 hover:text-ink">En conclusion</a></li>
+                </ol>
+              </nav>
+
+              <!-- Social share -->
+              <div class="mt-5 rounded-[1.5rem] border border-[var(--color-border)] bg-white p-5 shadow-card">
+                <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted">Partager</p>
+                <div class="mt-3 flex gap-3">
+                  <a href="#" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] text-ink transition hover:border-gold hover:text-gold" aria-label="Partager sur Facebook"><i data-lucide="facebook" class="h-4 w-4"></i></a>
+                  <a href="#" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] text-ink transition hover:border-gold hover:text-gold" aria-label="Partager sur Pinterest"><i data-lucide="share-2" class="h-4 w-4"></i></a>
+                  <a href="#" class="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-border)] text-ink transition hover:border-gold hover:text-gold" aria-label="Partager sur Twitter/X"><i data-lucide="twitter" class="h-4 w-4"></i></a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- ── AUTEUR ── -->
+        <div class="reveal mt-16 flex items-start gap-6 rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-card md:p-10">
+          <img class="h-20 w-20 shrink-0 rounded-full border-2 border-gold object-cover" src="images/expert-gyneco.svg" width="80" height="80" alt="Portrait de Dr. Camille Moreau, gynécologue" />
+          <div>
+            <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-gold">Auteure de cet article</p>
+            <h2 class="mt-2 text-2xl font-bold text-ink">Dr. Camille Moreau</h2>
+            <p class="font-mono text-xs uppercase tracking-[0.14em] text-muted">Gynécologie · Médecine reproductive</p>
+            <p class="mt-4 leading-7 text-body">Gynécologue spécialisée dans la prise en charge des troubles hormonaux féminins, le Dr. Moreau suit les sujets cycles, ovulation et parcours de diagnostic. Elle coordonne le comité éditorial médical de SOPK Équilibre.</p>
+          </div>
+        </div>
+
+        <!-- ── ARTICLES LIÉS ── -->
+        <div class="reveal mt-16">
+          <h2 class="font-serif text-4xl font-semibold text-ink">Articles liés</h2>
+          <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <a href="index.html#sopk" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
+              <div class="overflow-hidden">
+                <img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/sopk-carnet-bilan.svg" width="600" height="300" loading="lazy" alt="Carnet de suivi du cycle SOPK" />
+              </div>
+              <div class="p-5">
+                <span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-rose">SOPK</span>
+                <h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">SOPK : guide complet des symptômes et du diagnostic</h3>
+                <p class="mt-2 text-sm leading-6 text-body">Cycles irréguliers, hyperandrogénie, critères Rotterdam — tout comprendre avant le bilan médical.</p>
+              </div>
+            </a>
+            <a href="article-sopk-complements.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
+              <div class="overflow-hidden">
+                <img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/complements-sopk.svg" width="600" height="300" loading="lazy" alt="Compléments alimentaires SOPK" />
+              </div>
+              <div class="p-5">
+                <span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-gold">Compléments</span>
+                <h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Myo-inositol, vitamine D, berbérine : lesquels pour le SOPK&nbsp;?</h3>
+                <p class="mt-2 text-sm leading-6 text-body">Comparaison des preuves cliniques, dosages validés et associations utiles avec le régime cétogène.</p>
+              </div>
+            </a>
+            <a href="article-sopk-grossesse.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
+              <div class="overflow-hidden">
+                <img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/grossesse-sopk.svg" width="600" height="300" loading="lazy" alt="SOPK et grossesse" />
+              </div>
+              <div class="p-5">
+                <span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-mist">Grossesse</span>
+                <h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Tomber enceinte avec un SOPK : ovulation, suivi et nutrition</h3>
+                <p class="mt-2 text-sm leading-6 text-body">Fertilité et SOPK : ce que la science dit sur le suivi préconceptionnel et l'alimentation à adopter.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── NEWSLETTER CTA ── -->
+      <section class="px-5 py-10 sm:px-8" aria-labelledby="nl-title">
+        <div class="mx-auto max-w-4xl overflow-hidden rounded-[2.4rem] bg-[var(--color-bg-dark)] px-6 py-16 text-center text-[var(--color-text-inverse)] shadow-elevated sm:px-10 lg:py-20">
+          <p class="font-mono text-xs uppercase tracking-[0.22em] text-caramel">Newsletter SOPK Équilibre</p>
+          <h2 id="nl-title" class="mx-auto mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight md:text-5xl">
+            Recevez nos prochains guides SOPK directement dans votre boîte mail
+          </h2>
+          <p class="mx-auto mt-5 max-w-xl text-lg leading-8 text-white/75">
+            SOPK &amp; grossesse, compléments, bien-être hormonal — chaque semaine, un contenu fondé sur les preuves, relu par nos experts.
+          </p>
+          <form class="mx-auto mt-8 flex max-w-xl flex-col gap-3 p-1 sm:flex-row" action="#" method="post">
+            <label class="sr-only" for="nl-email">Votre email</label>
+            <input id="nl-email" class="min-h-14 flex-1 rounded-full border border-white/10 bg-white px-6 text-ink placeholder:text-muted focus:border-gold focus:outline-none" type="email" name="email" placeholder="votre@email.com" required />
+            <button class="shimmer min-h-14 rounded-full bg-gold px-7 font-bold text-white transition hover:scale-[1.02]" type="submit">S'inscrire ✦</button>
+          </form>
+          <p class="mt-5 flex items-center justify-center gap-2 text-sm text-white/60"><i data-lucide="lock" class="h-4 w-4"></i> Pas de spam. Désinscription en un clic.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ░░ FOOTER ░░ -->
+    <footer class="bg-[var(--color-bg-dark)] px-5 py-14 text-[var(--color-text-inverse)] sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
+          <div>
+            <a href="index.html" class="font-display text-3xl font-semibold italic">SOPK<span class="text-gold"> Équilibre</span></a>
+            <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé SOPK&nbsp;: alimentation, fertilité, bien-être hormonal et compléments.</p>
+            <p class="mt-3 max-w-sm text-xs leading-6 text-white/40">Nos contenus sont informatifs et ne remplacent pas un avis médical personnalisé.</p>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div>
+              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Rubriques</h2>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-gold" href="index.html#sopk">SOPK</a></li>
+                <li><a class="hover:text-gold" href="index.html#keto">SOPK &amp; Keto</a></li>
+                <li><a class="hover:text-gold" href="index.html#grossesse">Grossesse</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-bienetre.html">Bien-être</a></li>
+                <li><a class="hover:text-gold" href="article-sopk-complements.html">Compléments</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Informations</h2>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-gold" href="a-propos.html">À propos</a></li>
+                <li><a class="hover:text-gold" href="#">Contact</a></li>
+                <li><a class="hover:text-gold" href="#">Annonceurs</a></li>
+                <li><a class="hover:text-gold" href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Légal</h2>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="hover:text-gold" href="#">Mentions légales</a></li>
+                <li><a class="hover:text-gold" href="#">CGU</a></li>
+                <li><a class="hover:text-gold" href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Suivez-nous</h2>
+              <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
+                <li><a class="inline-flex items-center gap-2 hover:text-gold" href="#"><i data-lucide="instagram" class="h-4 w-4"></i> Instagram</a></li>
+                <li><a class="inline-flex items-center gap-2 hover:text-gold" href="#"><i data-lucide="share-2" class="h-4 w-4"></i> Pinterest</a></li>
+                <li><a class="inline-flex items-center gap-2 hover:text-gold" href="#"><i data-lucide="facebook" class="h-4 w-4"></i> Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 SOPK Équilibre. Tous droits réservés.</div>
+      </div>
+    </footer>
+
+    <button class="back-to-top fixed bottom-5 right-5 z-40 grid h-12 w-12 place-items-center rounded-full bg-gold text-white shadow-elevated" type="button" aria-label="Retour en haut" data-back-to-top>
+      <i data-lucide="arrow-up" class="h-5 w-5"></i>
+    </button>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+      lucide.createIcons();
+
+      const header = document.querySelector(".site-header");
+      const backToTop = document.querySelector("[data-back-to-top]");
+      const mobilePanel = document.querySelector("[data-mobile-panel]");
+      const openMenu = document.querySelector("[data-menu-open]");
+      const closeMenu = document.querySelector("[data-menu-close]");
+      const progressBar = document.getElementById("progress-bar");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // Header scroll + progress bar
+      function onScroll() {
+        const scrolled = window.scrollY > 24;
+        header.classList.toggle("is-scrolled", scrolled);
+        backToTop.classList.toggle("is-visible", window.scrollY > 600);
+
+        // Progress bar
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docHeight > 0 ? Math.min((window.scrollY / docHeight) * 100, 100) : 0;
+        progressBar.style.width = pct + "%";
+      }
+
+      // Mobile menu
+      function setMenu(open) {
+        mobilePanel.classList.toggle("is-open", open);
+        mobilePanel.setAttribute("aria-hidden", String(!open));
+        openMenu.setAttribute("aria-expanded", String(open));
+        document.body.style.overflow = open ? "hidden" : "";
+      }
+      openMenu.addEventListener("click", () => setMenu(true));
+      closeMenu.addEventListener("click", () => setMenu(false));
+      document.querySelectorAll("[data-mobile-link]").forEach(l => l.addEventListener("click", () => setMenu(false)));
+
+      // Back to top
+      backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" }));
+
+      // Reveal on scroll
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("is-visible"); revealObserver.unobserve(e.target); } });
+      }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
+      document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+
+      // TOC active link
+      const sections = document.querySelectorAll("section[id]");
+      const tocLinks = document.querySelectorAll(".toc-link");
+      const tocObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove("active"));
+            const active = document.querySelector(`.toc-link[href="#${e.target.id}"]`);
+            if (active) active.classList.add("active");
+          }
+        });
+      }, { rootMargin: "-20% 0px -70% 0px" });
+      sections.forEach(s => tocObserver.observe(s));
+
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    </script>
+  </body>
+</html>

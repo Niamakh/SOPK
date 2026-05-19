@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">Portrait �ditorial d'une gyn�cologue</title>
+  <rect width="240" height="240" rx="120" fill="#F5EDE4"/>
+  <circle cx="120" cy="86" r="42" fill="#D4A574"/>
+  <path d="M60 210c14-58 47-86 60-86s46 28 60 86" fill="#6B8F71"/>
+  <path d="M78 82c8-44 76-44 84 0-18-18-66-18-84 0Z" fill="#2C2420" opacity=".65"/>
+</svg>

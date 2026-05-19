@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">Portrait �ditorial d'une sp�cialiste bien-�tre hormonal</title>
+  <rect width="240" height="240" rx="120" fill="#F5EDE4"/>
+  <circle cx="120" cy="84" r="42" fill="#8FA3B0"/>
+  <path d="M58 210c15-56 47-84 62-84s47 28 62 84" fill="#C4868C"/>
+  <path d="M72 86c8-46 88-48 96 0-28-18-68-18-96 0Z" fill="#2C2420" opacity=".58"/>
+  <path d="M170 70c24-22 42-28 60-18-18 22-38 28-60 18Z" fill="#6B8F71"/>
+</svg>
