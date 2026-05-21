@@ -1,14 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Conditions Générales d'Utilisation — SOPK Équilibre</title>
+    <title>Conditions Générales d'Utilisation — Health Corner</title>
     <meta name="description" content="Conditions Générales d'Utilisation du site SOPK Équilibre : règles d'usage, droits et obligations des utilisateurs." />
     <meta name="robots" content="noindex, follow" />
     <link rel="canonical" href="cgu.html" />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
-    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/cormorant/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/outfit/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/jetbrains-mono/index.css" />
@@ -56,19 +57,39 @@
       .toc-link:hover{color:var(--gold)}
       a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
       @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important}}
+          button.nav-link{background:none;border:none;padding:0;margin:0;font-family:inherit;font-size:inherit;color:inherit;font-weight:500;letter-spacing:.02em;cursor:pointer}
+          /* Dropdown accessible keyboard navigation */
+      .group:focus-within .group-hover\\:visible{visibility:visible!important}.group:focus-within .group-hover\\:opacity-100{opacity:1!important}.group:focus-within .group-hover\\:pointer-events-auto{pointer-events:auto!important}
     </style>
   </head>
   <body>
     <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[var(--border)] bg-[rgba(253,250,246,.7)] backdrop-blur-xl">
       <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
-        <nav class="hidden items-center gap-7 text-sm font-medium text-[var(--ink)] lg:flex">
+        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">Health<span class="text-[var(--gold)]"> Corner</span></a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-[var(--ink)] lg:flex" aria-label="Navigation principale">
           <a class="nav-link" href="index.html">Accueil</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="article-sopk-symptomes.html">Symptômes</a>
-          <a class="nav-link" href="article-sopk-keto.html">Keto</a>
-          <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
-          <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
+          <div class="group relative">
+            <button class="nav-link flex items-center gap-1.5" type="button" aria-haspopup="true" aria-expanded="false">
+              Rubriques <i data-lucide="chevron-down" class="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 opacity-0 pointer-events-none transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto">
+              <div class="w-[500px] overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white p-4 shadow-[0_20px_60px_rgba(44,36,32,.15)]">
+                <div class="grid grid-cols-2 gap-1.5">
+                  <a href="article-sopk-symptomes.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🧬</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Diagnostic &amp; Symptômes</p><p class="text-xs text-[var(--muted)] mt-0.5">Critères Rotterdam 2023</p></div></a>
+                  <a href="article-sopk-keto.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🥑</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Nutrition &amp; Keto</p><p class="text-xs text-[var(--muted)] mt-0.5">Régime cétogène, IG bas</p></div></a>
+                  <a href="article-sopk-grossesse.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🤰</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Fertilité &amp; Grossesse</p><p class="text-xs text-[var(--muted)] mt-0.5">Ovulation, FIV, suivi</p></div></a>
+                  <a href="article-sopk-bienetre.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🧘</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Bien-être &amp; Hormones</p><p class="text-xs text-[var(--muted)] mt-0.5">Acné, sport, stress</p></div></a>
+                  <a href="article-sopk-complements.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">💊</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Compléments</p><p class="text-xs text-[var(--muted)] mt-0.5">Inositol, berbérine, zinc</p></div></a>
+                  <a href="article-sopk-sexualite.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">💑</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Vie intime &amp; Couple</p><p class="text-xs text-[var(--muted)] mt-0.5">Libido, dyspareunie</p></div></a>
+                  <a href="article-sopk-menopause.html" class="col-span-2 flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🌸</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Ménopause &amp; Après 50 ans</p><p class="text-xs text-[var(--muted)] mt-0.5">Risques amplifiés, THS adapté</p></div></a>
+                </div>
+                <div class="mt-2 border-t border-[var(--border)] pt-2">
+                  <a href="blog.html" class="flex items-center justify-center gap-2 rounded-xl bg-[var(--ink)] py-2.5 text-xs font-bold text-white transition hover:bg-[var(--gold)]">Voir tous les articles →</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a class="nav-link" href="a-propos.html">À propos</a>
         </nav>
         <button class="grid h-11 w-11 place-items-center rounded-full border border-[var(--border)] text-[var(--ink)] lg:hidden" type="button" aria-label="Ouvrir le menu" data-menu-open>
@@ -79,13 +100,14 @@
 
     <div class="mobile-panel fixed inset-0 z-[60] bg-[var(--dark)] px-6 py-7 text-white lg:hidden" data-mobile-panel aria-hidden="true">
       <div class="flex items-center justify-between">
-        <span class="font-display text-3xl italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></span>
+        <span class="font-display text-3xl italic">Health<span class="text-[var(--gold)]"> Corner</span></span>
         <button class="grid h-11 w-11 place-items-center rounded-full border border-white/15" type="button" data-menu-close><i data-lucide="x" class="h-5 w-5"></i></button>
       </div>
-      <nav class="mt-16 grid gap-5 font-serif text-4xl leading-none">
-        <a href="index.html" data-mobile-link>Accueil</a>
-        <a href="a-propos.html" data-mobile-link>À propos</a>
-        <a href="a-propos.html#contact" data-mobile-link>Contact</a>
+      <nav class="mt-8 grid gap-0" aria-label="Navigation mobile">
+        <a href="index.html" class="border-b border-white/10 py-3.5 font-serif text-3xl leading-none" data-mobile-link>Accueil</a>
+        <a href="blog.html" class="border-b border-white/10 py-3.5 font-serif text-3xl leading-none" data-mobile-link>Blog</a>
+        <a href="article-sopk-symptomes.html" class="border-b border-white/10 py-3.5 font-serif text-3xl leading-none" data-mobile-link>Diagnostic</a>
+        <a href="a-propos.html" class="py-3.5 font-serif text-3xl leading-none" data-mobile-link>À propos</a>
       </nav>
     </div>
 
@@ -141,7 +163,7 @@
 
             <section id="objet">
               <h2>1. Objet</h2>
-              <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles SOPK Équilibre SAS (ci-après « l'Éditeur ») met à la disposition des utilisateurs (ci-après « l'Utilisateur » ou « vous ») le site internet accessible à l'adresse <strong>sopkequilibre.fr</strong> (ci-après « le Site »), ainsi que les droits et obligations des parties.</p>
+              <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles Health Corner SAS (ci-après « l'Éditeur ») met à la disposition des utilisateurs (ci-après « l'Utilisateur » ou « vous ») le site internet accessible à l'adresse <strong>healthcorner.fr</strong> (ci-après « le Site »), ainsi que les droits et obligations des parties.</p>
             </section>
 
             <section id="acceptation">
@@ -207,7 +229,7 @@
               <ul>
                 <li><strong>Inscription</strong> : via le formulaire disponible sur le Site, en fournissant une adresse email valide et en cochant la case de consentement.</li>
                 <li><strong>Confirmation</strong> : un email de confirmation (double opt-in) est envoyé pour valider l'inscription.</li>
-                <li><strong>Désinscription</strong> : possible à tout moment via le lien de désinscription inclus dans chaque newsletter, ou en envoyant une demande à <a href="mailto:newsletter@sopkequilibre.fr">newsletter@sopkequilibre.fr</a>.</li>
+                <li><strong>Désinscription</strong> : possible à tout moment via le lien de désinscription inclus dans chaque newsletter, ou en envoyant une demande à <a href="mailto:newsletter@healthcorner.fr">newsletter@healthcorner.fr</a>.</li>
               </ul>
               <p>L'Éditeur s'engage à ne pas transmettre les adresses email à des tiers à des fins commerciales non déclarées.</p>
             </section>
@@ -235,7 +257,7 @@
             <section id="donnees-cgu">
               <h2>10. Données personnelles</h2>
               <p>L'Éditeur collecte et traite des données personnelles dans le cadre de l'utilisation du Site (newsletter, formulaires de contact, cookies analytiques). Ces traitements sont détaillés dans notre <a href="politique-cookies.html">Politique de cookies et de confidentialité</a>.</p>
-              <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits : <a href="mailto:dpo@sopkequilibre.fr">dpo@sopkequilibre.fr</a>.</p>
+              <p>Conformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, d'opposition et de portabilité sur vos données. Pour exercer ces droits : <a href="mailto:dpo@healthcorner.fr">dpo@healthcorner.fr</a>.</p>
             </section>
 
             <section id="modification">
@@ -251,7 +273,7 @@
             </section>
 
             <div class="mt-12 rounded-[1.25rem] border border-[var(--border)] bg-[var(--sand)] p-5 text-sm leading-7 text-[var(--muted)]">
-              <p>Pour toute question relative aux présentes CGU, contactez-nous à <a href="mailto:contact@sopkequilibre.fr" class="text-[var(--gold)]">contact@sopkequilibre.fr</a>.</p>
+              <p>Pour toute question relative aux présentes CGU, contactez-nous à <a href="mailto:contact@healthcorner.fr" class="text-[var(--gold)]">contact@healthcorner.fr</a>.</p>
               <p class="mt-2">Voir aussi : <a href="mentions-legales.html" class="text-[var(--gold)]">Mentions légales</a> — <a href="politique-cookies.html" class="text-[var(--gold)]">Politique de cookies</a></p>
             </div>
 
@@ -264,7 +286,7 @@
       <div class="mx-auto max-w-7xl">
         <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
           <div>
-            <a href="index.html" class="font-display text-3xl font-semibold italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+            <a href="index.html" class="font-display text-3xl font-semibold italic">Health<span class="text-[var(--gold)]"> Corner</span></a>
             <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé SOPK : alimentation, fertilité, bien-être hormonal et compléments.</p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
@@ -294,7 +316,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 SOPK Équilibre. Tous droits réservés.</div>
+        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 Health Corner. Tous droits réservés.</div>
       </div>
     </footer>
 
@@ -304,7 +326,27 @@
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
-      lucide.createIcons();
+      lucide.createIcons()
+      // Dropdown accessibility
+      document.querySelectorAll('[aria-haspopup="true"]').forEach(function(btn) {
+        btn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+            if (!isExpanded) {
+              var firstLink = btn.closest('.group').querySelector('a[href]');
+              if (firstLink) setTimeout(function(){firstLink.focus();}, 50);
+            }
+          }
+          if (e.key === 'Escape') { btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
+        });
+      });
+      document.addEventListener('click', function(e) {
+        document.querySelectorAll('[aria-haspopup="true"]').forEach(function(btn) {
+          if (!btn.closest('.group').contains(e.target)) btn.setAttribute('aria-expanded', 'false');
+        });
+      });;
       const header=document.querySelector(".site-header"),btt=document.querySelector("[data-back-to-top]"),panel=document.querySelector("[data-mobile-panel]"),ob=document.querySelector("[data-menu-open]"),cb=document.querySelector("[data-menu-close]");
       function onScroll(){header.classList.toggle("is-scrolled",scrollY>24);btt.classList.toggle("is-visible",scrollY>400)}
       function setMenu(o){panel.classList.toggle("is-open",o);panel.setAttribute("aria-hidden",String(!o));ob.setAttribute("aria-expanded",String(o));document.body.style.overflow=o?"hidden":""}

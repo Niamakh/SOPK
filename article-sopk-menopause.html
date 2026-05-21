@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -10,10 +10,11 @@
     <meta property="og:description" content="Tout ce que les femmes SOPK doivent savoir sur l'après-ménopause : persistance hormonale, risques cardiovasculaires et métaboliques, et stratégies de prise en charge." />
     <meta property="og:type" content="article" />
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article","headline":"SOPK et ménopause : risques métaboliques amplifiés et prise en charge adaptée","description":"Guide médical sur le SOPK après la ménopause : persistance de l'hyperandrogénie, risques cardiovasculaires et métaboliques amplifiés, symptômes spécifiques et prise en charge par THS et lifestyle.","author":{"@type":"Person","name":"Dr. Amina Benali","jobTitle":"Endocrinologue — Diabétologue"},"publisher":{"@type":"Organization","name":"SOPK Équilibre"},"datePublished":"2026-05-19","dateModified":"2026-05-19"}
+    {"@context":"https://schema.org","@type":"Article","headline":"SOPK et ménopause : risques métaboliques amplifiés et prise en charge adaptée","description":"Guide médical sur le SOPK après la ménopause : persistance de l'hyperandrogénie, risques cardiovasculaires et métaboliques amplifiés, symptômes spécifiques et prise en charge par THS et lifestyle.","author":{"@type":"Person","name":"Dr. Amina Benali","jobTitle":"Endocrinologue — Diabétologue"},"publisher":{"@type":"Organization","name":"Health Corner"},"datePublished":"2026-05-19","dateModified":"2026-05-19"}
     </script>
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
-    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://unpkg.com" />    <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/playfair-display/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/cormorant/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/outfit/index.css" />
     <link rel="stylesheet" href="https://unpkg.com/@fontsource-variable/jetbrains-mono/index.css" />
@@ -56,6 +57,9 @@
       .reveal.visible{opacity:1;transform:none}
       a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
       @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.001ms!important}.reveal{opacity:1;transform:none}}
+          button.nav-link{background:none;border:none;padding:0;margin:0;font-family:inherit;font-size:inherit;color:inherit;font-weight:500;letter-spacing:.02em;cursor:pointer}
+          /* Dropdown accessible keyboard navigation */
+      .group:focus-within .group-hover\\:visible{visibility:visible!important}.group:focus-within .group-hover\\:opacity-100{opacity:1!important}.group:focus-within .group-hover\\:pointer-events-auto{pointer-events:auto!important}
     </style>
   </head>
   <body>
@@ -63,14 +67,31 @@
 
     <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-[var(--border)] bg-[rgba(253,250,246,.7)] backdrop-blur-xl">
       <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
-        <nav class="hidden items-center gap-7 text-sm font-medium text-[var(--ink)] lg:flex">
+        <a href="index.html" class="font-display text-3xl font-semibold italic tracking-tight text-[var(--ink)]">Health<span class="text-[var(--gold)]"> Corner</span></a>
+        <nav class="hidden items-center gap-7 text-sm font-medium text-[var(--ink)] lg:flex" aria-label="Navigation principale">
           <a class="nav-link" href="index.html">Accueil</a>
           <a class="nav-link" href="blog.html">Blog</a>
-          <a class="nav-link" href="article-sopk-symptomes.html">Symptômes</a>
-          <a class="nav-link" href="article-sopk-keto.html">Keto</a>
-          <a class="nav-link" href="article-sopk-grossesse.html">Grossesse</a>
-          <a class="nav-link" href="article-sopk-complements.html">Compléments</a>
+          <div class="group relative">
+            <button class="nav-link flex items-center gap-1.5" type="button" aria-haspopup="true" aria-expanded="false">
+              Rubriques <i data-lucide="chevron-down" class="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180"></i>
+            </button>
+            <div class="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 opacity-0 pointer-events-none transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto">
+              <div class="w-[500px] overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-white p-4 shadow-[0_20px_60px_rgba(44,36,32,.15)]">
+                <div class="grid grid-cols-2 gap-1.5">
+                  <a href="article-sopk-symptomes.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🧬</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Diagnostic &amp; Symptômes</p><p class="text-xs text-[var(--muted)] mt-0.5">Critères Rotterdam 2023</p></div></a>
+                  <a href="article-sopk-keto.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🥑</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Nutrition &amp; Keto</p><p class="text-xs text-[var(--muted)] mt-0.5">Régime cétogène, IG bas</p></div></a>
+                  <a href="article-sopk-grossesse.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🤰</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Fertilité &amp; Grossesse</p><p class="text-xs text-[var(--muted)] mt-0.5">Ovulation, FIV, suivi</p></div></a>
+                  <a href="article-sopk-bienetre.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🧘</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Bien-être &amp; Hormones</p><p class="text-xs text-[var(--muted)] mt-0.5">Acné, sport, stress</p></div></a>
+                  <a href="article-sopk-complements.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">💊</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Compléments</p><p class="text-xs text-[var(--muted)] mt-0.5">Inositol, berbérine, zinc</p></div></a>
+                  <a href="article-sopk-sexualite.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">💑</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Vie intime &amp; Couple</p><p class="text-xs text-[var(--muted)] mt-0.5">Libido, dyspareunie</p></div></a>
+                  <a href="article-sopk-menopause.html" class="col-span-2 flex items-center gap-3 rounded-xl p-3 transition hover:bg-[var(--sand)]"><span class="text-xl leading-none">🌸</span><div><p class="font-semibold text-[var(--ink)] text-sm leading-tight">Ménopause &amp; Après 50 ans</p><p class="text-xs text-[var(--muted)] mt-0.5">Risques amplifiés, THS adapté</p></div></a>
+                </div>
+                <div class="mt-2 border-t border-[var(--border)] pt-2">
+                  <a href="blog.html" class="flex items-center justify-center gap-2 rounded-xl bg-[var(--ink)] py-2.5 text-xs font-bold text-white transition hover:bg-[var(--gold)]">Voir tous les articles →</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a class="nav-link" href="a-propos.html">À propos</a>
         </nav>
         <button class="grid h-11 w-11 place-items-center rounded-full border border-[var(--border)] text-[var(--ink)] lg:hidden" type="button" aria-label="Ouvrir le menu" data-menu-open>
@@ -81,15 +102,25 @@
 
     <div class="mobile-panel fixed inset-0 z-[60] bg-[var(--dark)] px-6 py-7 text-white lg:hidden" data-mobile-panel aria-hidden="true">
       <div class="flex items-center justify-between">
-        <span class="font-display text-3xl italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></span>
+        <span class="font-display text-3xl italic">Health<span class="text-[var(--gold)]"> Corner</span></span>
         <button class="grid h-11 w-11 place-items-center rounded-full border border-white/15" type="button" data-menu-close><i data-lucide="x" class="h-5 w-5"></i></button>
       </div>
-      <nav class="mt-12 grid gap-4 font-serif text-3xl leading-none">
-        <a href="index.html" data-mobile-link>Accueil</a>
-        <a href="article-sopk-symptomes.html" data-mobile-link>Symptômes</a>
-        <a href="article-sopk-keto.html" data-mobile-link>Keto & SOPK</a>
-        <a href="article-sopk-bienetre.html" data-mobile-link>Bien-être</a>
-        <a href="a-propos.html" data-mobile-link>À propos</a>
+      <nav class="mt-8 grid gap-0" aria-label="Navigation mobile">
+        <a href="index.html" class="border-b border-white/10 py-3.5 font-serif text-3xl leading-none" data-mobile-link>Accueil</a>
+        <a href="blog.html" class="border-b border-white/10 py-3.5 font-serif text-3xl leading-none" data-mobile-link>Blog</a>
+        <div class="border-b border-white/10 py-4">
+          <p class="mb-3 font-mono text-[0.62rem] uppercase tracking-[0.22em] text-white/40">Rubriques</p>
+          <div class="grid gap-3 pl-2">
+            <a href="article-sopk-symptomes.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🧬</span> Diagnostic &amp; Symptômes</a>
+            <a href="article-sopk-keto.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🥑</span> Nutrition &amp; Keto</a>
+            <a href="article-sopk-grossesse.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🤰</span> Fertilité &amp; Grossesse</a>
+            <a href="article-sopk-bienetre.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🧘</span> Bien-être</a>
+            <a href="article-sopk-complements.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>💊</span> Compléments</a>
+            <a href="article-sopk-sexualite.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>💑</span> Vie intime</a>
+            <a href="article-sopk-menopause.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🌸</span> Ménopause</a>
+          </div>
+        </div>
+        <a href="a-propos.html" class="py-3.5 font-serif text-3xl leading-none" data-mobile-link>À propos</a>
       </nav>
     </div>
 
@@ -410,7 +441,7 @@
             </section>
 
             <div class="not-prose mt-12 reveal flex items-start gap-5 rounded-[1.5rem] border border-[var(--border)] bg-white p-6 shadow-[var(--shadow-card)]">
-              <img src="images/expert-endocrino.svg" alt="Dr. Amina Benali, endocrinologue diabétologue SOPK" class="h-16 w-16 rounded-full bg-[var(--sand)] flex-shrink-0" />
+              <img loading="lazy" src="images/expert-endocrino.svg" alt="Dr. Amina Benali, endocrinologue diabétologue SOPK" class="h-16 w-16 rounded-full bg-[var(--sand)] flex-shrink-0" />
               <div>
                 <p class="font-semibold text-[var(--ink)]">Dr. Amina Benali</p>
                 <p class="font-mono text-xs text-[var(--gold)] uppercase tracking-widest mt-0.5">Endocrinologue — Diabétologue</p>
@@ -449,7 +480,7 @@
       <div class="mx-auto max-w-7xl">
         <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
           <div>
-            <a href="index.html" class="font-display text-3xl font-semibold italic">SOPK<span class="text-[var(--gold)]"> Équilibre</span></a>
+            <a href="index.html" class="font-display text-3xl font-semibold italic">Health<span class="text-[var(--gold)]"> Corner</span></a>
             <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé SOPK : alimentation, fertilité, bien-être hormonal et compléments.</p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
@@ -482,7 +513,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 SOPK Équilibre. Tous droits réservés.</div>
+        <div class="mt-12 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.14em] text-white/40">© 2026 Health Corner. Tous droits réservés.</div>
       </div>
     </footer>
 
@@ -492,7 +523,27 @@
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script>
-      lucide.createIcons();
+      lucide.createIcons()
+      // Dropdown accessibility
+      document.querySelectorAll('[aria-haspopup="true"]').forEach(function(btn) {
+        btn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+            if (!isExpanded) {
+              var firstLink = btn.closest('.group').querySelector('a[href]');
+              if (firstLink) setTimeout(function(){firstLink.focus();}, 50);
+            }
+          }
+          if (e.key === 'Escape') { btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
+        });
+      });
+      document.addEventListener('click', function(e) {
+        document.querySelectorAll('[aria-haspopup="true"]').forEach(function(btn) {
+          if (!btn.closest('.group').contains(e.target)) btn.setAttribute('aria-expanded', 'false');
+        });
+      });;
       const header=document.querySelector(".site-header"),btt=document.querySelector("[data-back-to-top]"),panel=document.querySelector("[data-mobile-panel]"),ob=document.querySelector("[data-menu-open]"),cb=document.querySelector("[data-menu-close]"),prog=document.getElementById("read-progress");
       function onScroll(){header.classList.toggle("is-scrolled",scrollY>24);btt.classList.toggle("is-visible",scrollY>400);const art=document.querySelector("article");if(art){const h=art.offsetHeight-window.innerHeight;prog.style.width=Math.min(100,Math.max(0,(scrollY-art.offsetTop+window.innerHeight*.5)/h*100))+"%"}}
       function setMenu(o){panel.classList.toggle("is-open",o);panel.setAttribute("aria-hidden",String(!o));ob.setAttribute("aria-expanded",String(o));document.body.style.overflow=o?"hidden":""}
