@@ -1,5 +1,20 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Autoriser SearchGPT (visibilité sur OpenAI Search)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Bloquer l'entraînement GPT (protection contenu)
+User-agent: GPTBot
+Disallow: /
+
+# Bloquer l'entraînement Claude (protection contenu)
+User-agent: ClaudeBot
+Disallow: /
+
+# Bloquer Google Extended (protection usage Gemini)
+User-agent: Google-Extended
+Disallow: /
+
 Sitemap: https://healthcorner.fr/sitemap.xml
