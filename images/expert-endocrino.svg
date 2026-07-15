@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
-  <title id="title">Portrait �ditorial d'un endocrinologue</title>
-  <rect width="240" height="240" rx="120" fill="#F5EDE4"/>
-  <circle cx="120" cy="86" r="42" fill="#B8860B" opacity=".72"/>
-  <path d="M56 210c15-60 50-88 64-88s49 28 64 88" fill="#8FA3B0"/>
-  <path d="M83 76c20-34 58-34 76 0-10-16-66-16-76 0Z" fill="#2C2420" opacity=".55"/>
-  <rect x="84" y="112" width="72" height="10" rx="5" fill="#2C2420" opacity=".22"/>
-</svg>
