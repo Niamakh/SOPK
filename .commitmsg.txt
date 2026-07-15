@@ -1,0 +1,8 @@
+Retirer Nadia El Hassani (expert fictif) de tout le site
+
+- a-propos.html : suppression de la carte expert, du schema ProfilePage et
+  de l'entree dans employee (Organization JSON-LD)
+- article-sopk-sexualite.html : auteur (JSON-LD, byline hero, bio de fin
+  d'article) transfere a Camille Moreau, gynecologue
+- blog.html : vignette de l'article SOPK et libido mise a jour
+- article-sopk-bienetre.html : mention "Relu par" remplacee par Amina Benali
