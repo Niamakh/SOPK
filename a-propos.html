@@ -88,9 +88,6 @@
       .shimmer::after { content: ""; position: absolute; inset: 0; transform: translateX(-120%); background: linear-gradient(110deg, transparent, rgba(255,255,255,.3), transparent); transition: transform 600ms ease; }
       .shimmer:hover::after { transform: translateX(120%); }
 
-      .expert-card { transition: transform 260ms ease, box-shadow 260ms ease; }
-      .expert-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card-hover); }
-
       .value-icon { width: 3rem; height: 3rem; border-radius: .875rem; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
 
       details > summary { list-style: none; cursor: pointer; }
@@ -113,14 +110,7 @@
       "description": "Magazine spécialisé sur le syndrome des ovaires polykystiques (SOPK) : alimentation, fertilité, bien-être et compléments.",
       "url": "https://healthcorner.fr/",
       "foundingDate": "2024",
-      "knowsAbout": ["SOPK", "Syndrome des ovaires polykystiques", "Fertilité féminine", "Nutrition hormonale", "Compléments alimentaires"],
-      "employee": [
-        { "@type": "Person", "name": "Camille Moreau", "jobTitle": "Gynécologue" },
-        { "@type": "Person", "name": "Amina Benali", "jobTitle": "Endocrinologue" },
-        { "@type": "Person", "name": "Nora Bellanger", "jobTitle": "Diététicienne SOPK" },
-        { "@type": "Person", "name": "Prof. Adrien Morel", "jobTitle": "Endocrinologue" },
-        { "@type": "Person", "name": "Sophie Leroy", "jobTitle": "Coach bien-être hormonal" }
-      ]
+      "knowsAbout": ["SOPK", "Syndrome des ovaires polykystiques", "Fertilité féminine", "Nutrition hormonale", "Compléments alimentaires"]
     }
     </script>
       <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -302,7 +292,7 @@
       </section>
 
       <!-- ░░ PROCESSUS ÉDITORIAL ░░ -->
-      <section class="bg-sand px-5 py-24 sm:px-8" aria-labelledby="process-title">
+      <section id="equipe" class="bg-sand px-5 py-24 sm:px-8" aria-labelledby="process-title">
         <div class="mx-auto max-w-7xl">
           <div class="mb-14 text-center">
             <span class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Transparence éditoriale</span>
@@ -341,108 +331,6 @@
             <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-gold">Avertissement légal et médical</p>
             <p class="mt-3 leading-7 text-body">Les contenus de Health Corner sont à visée <strong>informative et éducative uniquement</strong>. Ils ne constituent pas un avis médical, ne remplacent pas une consultation avec un professionnel de santé, et ne doivent pas être utilisés pour l'auto-diagnostic ou l'auto-traitement. En cas de doutes sur votre santé, consultez toujours votre médecin ou gynécologue.</p>
           </div>
-        </div>
-      </section>
-
-      <!-- ░░ ÉQUIPE ░░ -->
-      <section id="equipe" class="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:py-32" aria-labelledby="equipe-title">
-        <div class="mb-14">
-          <span class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Notre comité médical</span>
-          <h2 id="equipe-title" class="mt-4 font-display text-5xl font-semibold text-ink">L'équipe derrière Health Corner</h2>
-          <p class="mt-5 max-w-2xl text-lg leading-8 text-body">Gynécologues, endocrinologues, diététiciennes et coachs bien-être — six professionnels engagés à rendre l'information SOPK plus accessible et plus juste.</p>
-        </div>
-
-        <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-
-          <!-- Expert 1 -->
-          <article class="expert-card reveal rounded-[1.75rem] border border-[var(--color-border)] bg-white p-7 shadow-[var(--shadow-card)]">
-            <div class="flex items-start gap-5">
-              <img class="h-20 w-20 shrink-0 rounded-[1.1rem] border-2 border-gold object-cover" src="images/expert-gyneco.svg" width="80" height="80" loading="lazy" alt="Portrait de Camille Moreau" />
-              <div>
-                <h3 class="font-serif text-2xl font-bold text-ink">Camille Moreau</h3>
-                <p class="font-mono text-xs uppercase tracking-[0.14em] text-rose">Gynécologie · Médecine reproductive</p>
-              </div>
-            </div>
-            <p class="mt-5 text-sm leading-7 text-body">Gynécologue depuis 14 ans, spécialisée dans les troubles hormonaux féminins et la fertilité. Elle supervise tous les dossiers liés au cycle menstruel, à l'ovulation, à la grossesse et à la vie intime avec SOPK. Auteure des articles de référence sur SOPK et grossesse et sur SOPK et libido.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full bg-rose/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-rose">Cycles</span>
-              <span class="rounded-full bg-rose/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-rose">Fertilité</span>
-              <span class="rounded-full bg-rose/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-rose">Grossesse</span>
-            </div>
-            <p class="mt-4 font-mono text-xs text-muted">42 articles rédigés ou validés</p>
-          </article>
-
-          <!-- Expert 2 -->
-          <article class="expert-card reveal rounded-[1.75rem] border border-[var(--color-border)] bg-white p-7 shadow-[var(--shadow-card)]">
-            <div class="flex items-start gap-5">
-              <img class="h-20 w-20 shrink-0 rounded-[1.1rem] border-2 border-gold object-cover" src="images/expert-endocrino.svg" width="80" height="80" loading="lazy" alt="Portrait d'Amina Benali" />
-              <div>
-                <h3 class="font-serif text-2xl font-bold text-ink">Amina Benali</h3>
-                <p class="font-mono text-xs uppercase tracking-[0.14em] text-gold">Endocrinologie · Médecine métabolique</p>
-              </div>
-            </div>
-            <p class="mt-5 text-sm leading-7 text-body">Endocrinologue spécialisée dans les troubles métaboliques féminins et la micronutrition clinique. Elle pilote les dossiers compléments, résistance à l'insuline et thérapies intégratives. Auteure du guide complet sur les compléments SOPK.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full bg-gold/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-gold">Insuline</span>
-              <span class="rounded-full bg-gold/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-gold">Compléments</span>
-              <span class="rounded-full bg-gold/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-gold">Métabolisme</span>
-            </div>
-            <p class="mt-4 font-mono text-xs text-muted">35 articles rédigés ou validés</p>
-          </article>
-
-          <!-- Expert 3 -->
-          <article class="expert-card reveal rounded-[1.75rem] border border-[var(--color-border)] bg-white p-7 shadow-[var(--shadow-card)]">
-            <div class="flex items-start gap-5">
-              <img class="h-20 w-20 shrink-0 rounded-[1.1rem] border-2 border-sage object-cover" src="images/expert-dietetique.svg" width="80" height="80" loading="lazy" alt="Portrait de Nora Bellanger" />
-              <div>
-                <h3 class="font-serif text-2xl font-bold text-ink">Nora Bellanger</h3>
-                <p class="font-mono text-xs uppercase tracking-[0.14em] text-sage">Diététique SOPK · Nutrition clinique</p>
-              </div>
-            </div>
-            <p class="mt-5 text-sm leading-7 text-body">Diététicienne diplômée spécialisée dans les pathologies hormonales féminines. Elle conçoit nos menus, nos guides de macros keto et valide toutes les recommandations nutritionnelles. Référente de notre rubrique alimentation et alimentation IG bas.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full bg-sage/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-sage">Alimentation</span>
-              <span class="rounded-full bg-sage/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-sage">Keto SOPK</span>
-              <span class="rounded-full bg-sage/12 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-sage">IG bas</span>
-            </div>
-            <p class="mt-4 font-mono text-xs text-muted">38 articles rédigés ou validés</p>
-          </article>
-
-          <!-- Expert 4 -->
-          <article class="expert-card reveal rounded-[1.75rem] border border-[var(--color-border)] bg-white p-7 shadow-[var(--shadow-card)]">
-            <div class="flex items-start gap-5">
-              <img class="h-20 w-20 shrink-0 rounded-[1.1rem] border-2 border-mist object-cover" src="images/expert-bien-etre.svg" width="80" height="80" loading="lazy" alt="Portrait de Sophie Leroy" />
-              <div>
-                <h3 class="font-serif text-2xl font-bold text-ink">Sophie Leroy</h3>
-                <p class="font-mono text-xs uppercase tracking-[0.14em] text-mist">Bien-être hormonal · Nutrithérapie</p>
-              </div>
-            </div>
-            <p class="mt-5 text-sm leading-7 text-body">Coach certifiée bien-être hormonal et nutrithérapeute, Sophie accompagne les femmes SOPK sur les aspects quotidiens&nbsp;: routine skincare, activité physique, gestion du stress et du sommeil. Auteure du guide bien-être acné, hirsutisme et sport.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full bg-mist/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-mist">Skincare</span>
-              <span class="rounded-full bg-mist/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-mist">Sport</span>
-              <span class="rounded-full bg-mist/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-mist">Stress</span>
-            </div>
-            <p class="mt-4 font-mono text-xs text-muted">31 articles rédigés ou validés</p>
-          </article>
-
-          <!-- Expert 5 -->
-          <article class="expert-card reveal rounded-[1.75rem] border border-[var(--color-border)] bg-white p-7 shadow-[var(--shadow-card)]">
-            <div class="flex items-start gap-5">
-              <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-[1.1rem] border-2 border-caramel bg-sand text-3xl">👨‍⚕️</div>
-              <div>
-                <h3 class="font-serif text-2xl font-bold text-ink">Prof. Adrien Morel</h3>
-                <p class="font-mono text-xs uppercase tracking-[0.14em] text-caramel">Endocrinologie · Recherche hormonale</p>
-              </div>
-            </div>
-            <p class="mt-5 text-sm leading-7 text-body">Professeur des universités — praticien hospitalier en endocrinologie. Il apporte son expertise sur les mécanismes biologiques du SOPK&nbsp;: résistance à l'insuline, androgenèse ovarienne et inflammation. Son regard critique garantit la précision scientifique de nos articles.</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              <span class="rounded-full bg-caramel/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-caramel">Recherche</span>
-              <span class="rounded-full bg-caramel/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-caramel">Hormones</span>
-              <span class="rounded-full bg-caramel/15 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wide text-caramel">Biologie</span>
-            </div>
-            <p class="mt-4 font-mono text-xs text-muted">25 articles rédigés ou validés</p>
-          </article>
         </div>
       </section>
 
