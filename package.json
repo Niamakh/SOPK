@@ -1,0 +1,14 @@
+{
+  "name": "healthcorner-sopk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build assets (Tailwind CSS) for the Health Corner SOPK static site.",
+  "scripts": {
+    "build:css:sexualite": "tailwindcss -i src/tailwind-input.css -o css/article-sopk-sexualite.css --minify",
+    "watch:css:sexualite": "tailwindcss -i src/tailwind-input.css -o css/article-sopk-sexualite.css --watch"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
