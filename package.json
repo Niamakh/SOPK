@@ -11,7 +11,9 @@
     "build:css:complements": "tailwindcss -c tailwind.config.complements.js -i src/tailwind-input.css -o css/article-sopk-complements.css --minify",
     "watch:css:complements": "tailwindcss -c tailwind.config.complements.js -i src/tailwind-input.css -o css/article-sopk-complements.css --watch",
     "build:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --minify",
-    "watch:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --watch"
+    "watch:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --watch",
+    "build:css:saignement-nidation": "tailwindcss -c tailwind.config.saignement-nidation.js -i src/tailwind-input.css -o css/saignement-nidation-couleur-duree.css --minify",
+    "watch:css:saignement-nidation": "tailwindcss -c tailwind.config.saignement-nidation.js -i src/tailwind-input.css -o css/saignement-nidation-couleur-duree.css --watch"
   },
   "license": "ISC",
   "devDependencies": {
