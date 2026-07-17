@@ -1,6 +1,6 @@
 # Health Corner
 
-> Magazine spécialisé sur le SOPK (syndrome des ovaires polykystiques), la nutrition hormonale, la fertilité et le bien-être féminin. Contenus vérifiés par des gynécologues, endocrinologues et diététiciennes.
+> Magazine indépendant sur la santé féminine : SOPK, fertilité, grossesse, ménopause et bien-être hormonal. Contenus rédigés par la rédaction à partir de sources médicales de référence (Ameli, HAS, CNGOF, Cerba), systématiquement citées.
 
 ## Guides SOPK
 
@@ -17,6 +17,12 @@
 - https://healthcorner.fr/renforcement-musculaire-femmes.html : Renforcement musculaire féminin — guide complet et bienfaits hormonaux
 - https://healthcorner.fr/nidation-combien-de-temps-apres-rapport.html : Nidation — délais réels après l'ovulation, symptômes fiables et quand tester
 - https://healthcorner.fr/saignement-nidation-couleur-duree.html : Saignement de nidation — couleur, aspect, durée et pourquoi il n'existe pas de vraies photos fiables
+
+## Outils grossesse
+
+- https://healthcorner.fr/disque-roue-grossesse-calcul-terme.html : Disque de grossesse en ligne — calculez votre DPA et SA (formule de Naegele) + disque à imprimer en PDF
+- https://healthcorner.fr/journal-grossesse-a-imprimer-gratuit.html : Journal de grossesse à imprimer gratuit — carnet PDF de 22 pages à remplir à la main
+- https://healthcorner.fr/prise-de-sang-grossesse-taux-beta-hcg.html : Prise de sang grossesse — comprendre son taux de bêta-hCG, tableau indicatif et calculateur de doublement
 
 ## À propos
 

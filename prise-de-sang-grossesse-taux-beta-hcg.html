@@ -1,5 +1,13 @@
 <!doctype html>
 <html lang="fr">
+  <!--
+    TODO ÉDITORIAL (YMYL) : cette page traite d'un sujet médical sensible
+    (interprétation d'un dosage sanguin). Elle devrait idéalement être relue
+    et validée par un professionnel de santé nommé (sage-femme ou médecin)
+    avant publication définitive. À date, le contenu s'appuie exclusivement
+    sur des sources citées (Cerba, Ameli) et ne fournit aucune interprétation
+    individualisée d'un résultat.
+  -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,22 +16,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preload" as="image" href="images/saignement-nidation-hero.webp" fetchpriority="high" />
-    <title>Saignement de nidation : à quoi ça ressemble ? | Health Corner</title>
-    <meta name="description" content="Saignement de nidation : couleur (rosé/brun), aspect, durée (quelques heures à 2 jours) et comment le distinguer des règles. Pourquoi il n'existe pas de vraies photos fiables." />
+    <link rel="preload" as="image" href="images/grossesse-article.webp" fetchpriority="high" />
+    <title>Prise de sang grossesse : comprendre son taux de bêta-hCG | Health Corner</title>
+    <meta name="description" content="Taux de bêta-hCG par semaine, seuils positif/négatif, calculateur de doublement : tout comprendre sur votre prise de sang de grossesse, sans surinterpréter un résultat isolé." />
     <meta name="author" content="Health Corner" />
-    <link rel="canonical" href="https://healthcorner.fr/saignement-nidation-couleur-duree.html" />
-    <meta property="og:title" content="Saignement de nidation : à quoi ça ressemble ? (couleur, durée)" />
-    <meta property="og:description" content="Couleur rosée ou brune, jamais rouge vif, sans caillot, 2 jours maximum : ce que disent les cliniques sur le spotting de nidation — et pourquoi la science n'a jamais prouvé le phénomène." />
+    <link rel="canonical" href="https://healthcorner.fr/prise-de-sang-grossesse-taux-beta-hcg.html" />
+    <meta property="og:title" content="Prise de sang grossesse : comprendre son taux de bêta-hCG" />
+    <meta property="og:description" content="Seuils positif/négatif, tableau indicatif par semaine (Cerba), calculateur de doublement. Ce que le taux dit — et surtout ce qu'il ne dit pas." />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://healthcorner.fr/saignement-nidation-couleur-duree.html" />
-    <meta property="og:image" content="https://healthcorner.fr/images/saignement-nidation-hero.webp" />
+    <meta property="og:url" content="https://healthcorner.fr/prise-de-sang-grossesse-taux-beta-hcg.html" />
+    <meta property="og:image" content="https://healthcorner.fr/images/grossesse-article.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-latin-wght-normal.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="fonts/playfair-display-latin-wght-normal.woff2" crossorigin />
-    <link rel="stylesheet" href="css/saignement-nidation-couleur-duree.css" />
+    <link rel="stylesheet" href="css/prise-de-sang-grossesse-taux-beta-hcg.css" />
     <style>
       @font-face{font-family:'Outfit Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url('fonts/outfit-latin-wght-normal.woff2') format('woff2-variations')}
       @font-face{font-family:'Playfair Display Variable';font-style:normal;font-display:swap;font-weight:400 900;src:url('fonts/playfair-display-latin-wght-normal.woff2') format('woff2-variations')}
@@ -74,15 +82,10 @@
       .callout { border-left: 3px solid var(--color-accent-primary); background: rgba(184,134,11,.06); padding: 1.25rem 1.5rem; border-radius: 0 .75rem .75rem 0; margin: 2rem 0; }
       .callout-rose { border-color: var(--color-accent-beauty); background: rgba(196,134,140,.07); }
       .callout-alert { border-color: #b3413a; background: rgba(179,65,58,.07); }
-      .mythe-box { border: 1px solid var(--color-border); border-radius: 1.25rem; padding: 1.5rem 1.75rem; margin: 2rem 0; background: linear-gradient(135deg, rgba(196,134,140,.05), rgba(143,163,176,.05)); }
-      .mythe-box p { margin-bottom: .9rem; font-size: .98rem; line-height: 1.75; }
-      .mythe-box p:last-child { margin-bottom: 0; }
-      .data-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
-      .data-table th { background: var(--color-bg-secondary); color: var(--color-text-primary); font-weight: 700; padding: .75rem 1rem; text-align: left; font-family: "JetBrains Mono Variable", monospace; font-size: .72rem; letter-spacing: .05em; text-transform: uppercase; }
-      .data-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--color-border); vertical-align: top; line-height: 1.6; }
+      .data-table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+      .data-table th { background: var(--color-bg-secondary); color: var(--color-text-primary); font-weight: 700; padding: .65rem .9rem; text-align: left; font-family: "JetBrains Mono Variable", monospace; font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; }
+      .data-table td { padding: .65rem .9rem; border-bottom: 1px solid var(--color-border); vertical-align: top; line-height: 1.5; font-size: .88rem; }
       .data-table tr:last-child td { border-bottom: none; }
-      .swatch { border-radius: 1rem; padding: 1.1rem; border: 1px solid var(--color-border); background: white; }
-      .swatch-chip { width: 100%; height: 3.25rem; border-radius: .75rem; border: 1px solid rgba(44,36,32,.08); }
       .faq-item { border-bottom: 1px solid var(--color-border); }
       .faq-item summary { list-style: none; cursor: pointer; padding: 1.1rem 0; font-weight: 700; color: var(--color-text-primary); display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-size: 1.02rem; }
       .faq-item summary::after { content: "+"; font-size: 1.4rem; color: var(--color-accent-beauty); flex-shrink: 0; transition: transform 240ms ease; }
@@ -96,13 +99,22 @@
       @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
       button.nav-link{background:none;border:none;padding:0;margin:0;font-family:inherit;font-size:inherit;color:inherit;font-weight:500;letter-spacing:.02em;cursor:pointer}
       .group:focus-within .group-hover\:visible{visibility:visible!important}.group:focus-within .group-hover\:opacity-100{opacity:1!important}.group:focus-within .group-hover\:pointer-events-auto{pointer-events:auto!important}
+      .alert-banner { border: 1.5px solid rgba(179,65,58,.35); background: rgba(179,65,58,.08); border-radius: 1.25rem; padding: 1.5rem 1.75rem; }
+      .calc-card { border-radius: 1.75rem; border: 1px solid var(--color-border); background: #fff; box-shadow: var(--shadow-elevated); }
+      .calc-input { width: 100%; border-radius: .9rem; border: 1px solid var(--color-border); background: var(--color-bg-primary); padding: .8rem 1rem; font-size: 1rem; color: var(--color-text-primary); font-family: "Outfit Variable", sans-serif; }
+      .calc-input:focus { outline: 2px solid var(--color-accent-beauty); outline-offset: 1px; }
+      .calc-label { font-family: "JetBrains Mono Variable", monospace; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--color-text-muted); }
+      .result-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: .85rem 0; border-bottom: 1px dashed var(--color-border); }
+      .result-row:last-child { border-bottom: none; }
+      .result-value { font-family: "Cormorant Variable", serif; font-weight: 700; color: var(--color-text-primary); font-size: 1.25rem; text-align: right; }
+      .result-label { font-size: .85rem; color: var(--color-text-body); }
     </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Saignement de nidation : à quoi ça ressemble ?",
-      "description": "Couleur rosée ou brune, jamais rouge vif, sans caillot, 2 jours maximum : ce que disent les cliniques sur le spotting de nidation — et pourquoi la science n'a jamais prouvé le phénomène.",
+      "headline": "Prise de sang grossesse : comprendre son taux de bêta-hCG",
+      "description": "Taux de bêta-hCG par semaine, seuils positif/négatif, calculateur de doublement : tout comprendre sur votre prise de sang de grossesse, sans surinterpréter un résultat isolé.",
       "author": {
         "@type": "Organization",
         "name": "Health Corner",
@@ -133,18 +145,24 @@
       "dateModified": "2026-07-17",
       "image": {
         "@type": "ImageObject",
-        "url": "https://healthcorner.fr/images/saignement-nidation-hero.webp",
+        "url": "https://healthcorner.fr/images/grossesse-article.webp",
         "width": 1200,
         "height": 630
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://healthcorner.fr/saignement-nidation-couleur-duree.html"
+        "@id": "https://healthcorner.fr/prise-de-sang-grossesse-taux-beta-hcg.html"
       },
       "inLanguage": "fr-FR",
-      "keywords": "saignement de nidation photo, spotting nidation photo, couleur perte nidation photo, saignement nidation couleur, spotting nidation durée, distinguer nidation et règles",
+      "keywords": "prise de sang grossesse positif pdf, taux beta hcg tableau, interpréter prise de sang grossesse, taux hcg par semaine",
       "articleSection": "Fertilité & Grossesse",
-      "timeRequired": "PT10M"
+      "timeRequired": "PT10M",
+      "associatedMedia": {
+        "@type": "MediaObject",
+        "contentUrl": "https://healthcorner.fr/pdf/fiche-taux-hcg-grossesse.pdf",
+        "encodingFormat": "application/pdf",
+        "name": "Comprendre mon taux de bêta-hCG — fiche PDF"
+      }
     }
     </script>
 
@@ -155,7 +173,7 @@
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://healthcorner.fr/"},
         {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://healthcorner.fr/blog.html"},
-        {"@type": "ListItem", "position": 3, "name": "Saignement de nidation : à quoi ça ressemble ?", "item": "https://healthcorner.fr/saignement-nidation-couleur-duree.html"}
+        {"@type": "ListItem", "position": 3, "name": "Prise de sang grossesse : comprendre son taux de bêta-hCG", "item": "https://healthcorner.fr/prise-de-sang-grossesse-taux-beta-hcg.html"}
       ]
     }
     </script>
@@ -167,50 +185,50 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "De quelle couleur est un saignement de nidation ?",
+          "name": "Quel taux de bêta-hCG confirme une grossesse ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Les cliniques le décrivent généralement rose clair à brun. Un saignement rouge vif ou rouge foncé, abondant ou avec des caillots n'est en principe pas un saignement de nidation (Cleveland Clinic)."
+            "text": "Un taux inférieur à 5 UI/l exclut une grossesse. Un taux supérieur à 5 UI/l est considéré comme positif. Entre 5 et 25 UI/l, on parle de zone grise : un nouveau dosage 48 heures plus tard permet de confirmer l'évolution."
           }
         },
         {
           "@type": "Question",
-          "name": "Existe-t-il de vraies photos de saignement de nidation ?",
+          "name": "Le taux de bêta-hCG permet-il de savoir si j'attends des jumeaux ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non, aucune source médicale de référence (Ameli, Cleveland Clinic, Mayo Clinic, ACOG, NHS) ne publie de photos de saignement de nidation. Le phénomène lui-même n'a jamais été démontré scientifiquement (Harville et al., Human Reproduction, 2003), et les images qui circulent en ligne ne peuvent donc pas être authentifiées comme telles."
+            "text": "Un taux nettement plus élevé que la moyenne peut l'évoquer, mais ce n'est jamais suffisant pour l'affirmer : seule l'échographie permet de confirmer le nombre d'embryons."
           }
         },
         {
           "@type": "Question",
-          "name": "Combien de temps dure un saignement de nidation ?",
+          "name": "Pourquoi mon taux ne correspond pas au tableau indicatif ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Selon les cliniques, de quelques heures à environ deux jours, de façon discontinue et sans s'intensifier — à l'inverse des règles, qui durent 3 à 7 jours et s'intensifient après le premier jour."
+            "text": "Les fourchettes de référence sont extrêmement larges (parfois un facteur de 1 à 10 pour une même semaine) et varient selon les laboratoires et les techniques de dosage. Un taux hors fourchette n'est pas nécessairement anormal : seul votre professionnel de santé peut l'interpréter dans votre contexte."
           }
         },
         {
           "@type": "Question",
-          "name": "Comment distinguer un saignement de nidation des règles ?",
+          "name": "Que faire si mon taux n'a pas doublé entre deux prises de sang ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Couleur (rosé/brun plutôt que rouge vif), quantité (spotting léger ne remplissant pas une protection), absence de caillots et durée plus courte sont les critères cités par les cliniques. Mais la distinction n'est pas fiable à l'échelle individuelle : seul un test de grossesse tranche."
+            "text": "Ne tentez pas d'interpréter ce résultat seule. Contactez rapidement votre médecin ou votre sage-femme, qui analysera cette évolution en fonction de votre situation clinique et pourra prescrire des examens complémentaires si nécessaire."
           }
         },
         {
           "@type": "Question",
-          "name": "Faut-il s'inquiéter d'un saignement en tout début de grossesse ?",
+          "name": "Quand consulter en urgence après une prise de sang positive ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Environ 25 % des femmes enceintes saignent au premier trimestre, et 93 % de ces grossesses évoluent normalement (Ameli, CNGOF). Mais un saignement abondant, des douleurs pelviennes unilatérales, de la fièvre ou un malaise doivent conduire à consulter en urgence pour écarter une grossesse extra-utérine ou une fausse couche."
+            "text": "En cas de douleurs pelviennes (surtout unilatérales) associées à un saignement, avec ou sans malaise ou fièvre. Ces signes peuvent évoquer une grossesse extra-utérine ou une fausse couche et nécessitent une consultation immédiate."
           }
         },
         {
           "@type": "Question",
-          "name": "L'absence de saignement de nidation est-elle un problème ?",
+          "name": "Le taux de bêta-hCG permet-il de connaître le sexe du bébé ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non. L'absence de saignement est le cas le plus fréquent — les estimations françaises situent entre 60 et 90 % des grossesses sans aucun saignement de nidation constaté. Cela ne dit rien sur la santé de la grossesse."
+            "text": "Non. Aucune corrélation scientifiquement prouvée n'existe entre le niveau de bêta-hCG et le sexe du fœtus, malgré des croyances populaires répandues."
           }
         }
       ]
@@ -243,7 +261,7 @@
                   <a href="saignement-nidation-couleur-duree.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">🩸</span><div><p class="font-semibold text-ink text-sm leading-tight">Saignement de nidation</p><p class="text-xs text-muted mt-0.5">Couleur, durée, différences</p></div></a>
                   <a href="disque-roue-grossesse-calcul-terme.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">🧮</span><div><p class="font-semibold text-ink text-sm leading-tight">Disque de grossesse</p><p class="text-xs text-muted mt-0.5">Calcul DPA &amp; SA en ligne</p></div></a>
                   <a href="journal-grossesse-a-imprimer-gratuit.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">📔</span><div><p class="font-semibold text-ink text-sm leading-tight">Journal de grossesse</p><p class="text-xs text-muted mt-0.5">Carnet à imprimer gratuit</p></div></a>
-                  <a href="prise-de-sang-grossesse-taux-beta-hcg.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">🧪</span><div><p class="font-semibold text-ink text-sm leading-tight">Taux bêta-hCG</p><p class="text-xs text-muted mt-0.5">Comprendre sa prise de sang</p></div></a>
+                  <a href="prise-de-sang-grossesse-taux-beta-hcg.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand" aria-current="page"><span class="text-xl leading-none">🧪</span><div><p class="font-semibold text-ink text-sm leading-tight">Taux bêta-hCG</p><p class="text-xs text-muted mt-0.5">Comprendre sa prise de sang</p></div></a>
                   <a href="article-sopk-bienetre.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">🧘</span><div><p class="font-semibold text-ink text-sm leading-tight">Bien-être &amp; Hormones</p><p class="text-xs text-muted mt-0.5">Acné, sport, stress</p></div></a>
                   <a href="article-sopk-complements.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">💊</span><div><p class="font-semibold text-ink text-sm leading-tight">Compléments</p><p class="text-xs text-muted mt-0.5">Inositol, berbérine, zinc</p></div></a>
                   <a href="article-sopk-sexualite.html" class="flex items-center gap-3 rounded-xl p-3 transition hover:bg-sand"><span class="text-xl leading-none">💑</span><div><p class="font-semibold text-ink text-sm leading-tight">Vie intime &amp; Couple</p><p class="text-xs text-muted mt-0.5">Libido, dyspareunie</p></div></a>
@@ -297,7 +315,6 @@
             <a href="symptomes-perimenopause.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🌀</span> Périménopause</a>
             <a href="endobelly-ventre-gonfle-hormonal.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🌿</span> Endobelly</a>
             <a href="renforcement-musculaire-femmes.html" class="flex items-center gap-3 font-serif text-2xl leading-none" data-mobile-link><span>🏋️</span> Musculation</a>
-
           </div>
         </div>
         <a href="a-propos.html" class="py-3.5 font-serif text-3xl leading-none" data-mobile-link>À propos</a>
@@ -319,10 +336,10 @@
           </nav>
           <span class="mb-6 inline-block rounded-full bg-rose/15 px-4 py-1.5 font-mono text-[0.68rem] font-bold uppercase tracking-[0.22em] text-rose">Fertilité &amp; Grossesse</span>
           <h1 class="font-display text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-ink sm:text-5xl lg:text-6xl">
-            Saignement de nidation&nbsp;: à quoi ça ressemble vraiment&nbsp;?
+            Prise de sang grossesse&nbsp;: comprendre son taux de bêta-hCG
           </h1>
           <p class="mt-7 text-xl leading-9 text-body">
-            Couleur <strong>rosée ou brune</strong> (jamais rouge vif), <strong>sans caillot</strong>, quelques heures à <strong>2 jours</strong> maximum&nbsp;: voici ce que décrivent les cliniques. Mais attention&nbsp;: l'étude de référence sur le sujet n'a <strong>jamais démontré</strong> que l'implantation provoque réellement un saignement (Harville et al., 2003).
+            Un chiffre, deux zéros, et beaucoup d'interrogations. Voici ce que dit — et surtout ce que <strong>ne dit pas</strong> — un taux de bêta-hCG isolé, avec les vrais seuils cliniques et un tableau indicatif sourcé.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-[var(--color-border)] pt-6 font-mono text-xs uppercase tracking-[0.14em] text-muted">
             <span>Par <strong class="text-ink">la rédaction de Health Corner</strong></span>
@@ -336,181 +353,145 @@
         </div>
       </div>
 
-      <!-- Image -->
-      <div class="mx-auto max-w-5xl px-5 sm:px-8">
-        <div class="-mt-8 overflow-hidden rounded-[2rem] shadow-elevated">
-          <img loading="eager" fetchpriority="high" src="images/saignement-nidation-hero.webp" width="1200" height="630"
-               class="w-full object-cover" style="height:clamp(260px,45vw,560px)"
-               alt="Nuancier illustrant les couleurs d'un spotting en début de cycle : rosé, brun et rouge" />
-        </div>
-      </div>
-
       <!-- Layout -->
-      <div class="mx-auto mt-16 max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
+      <div class="mx-auto mt-10 max-w-7xl px-5 pb-24 sm:px-8 lg:pb-32">
         <div class="grid gap-14 lg:grid-cols-[1fr_280px]">
 
           <article class="prose min-w-0">
 
-            <div class="callout callout-rose">
-              <p class="font-semibold text-ink">Avertissement</p>
-              <p class="mt-2 text-sm leading-7">Cet article est informatif et ne remplace pas un avis médical. En cas de saignement abondant, de douleur pelvienne unilatérale, de fièvre ou de malaise, consultez en urgence : ces signes peuvent évoquer une grossesse extra-utérine ou une fausse couche.</p>
+            <div class="not-prose alert-banner">
+              <p class="font-bold text-[#b3413a]">⚠ Un taux isolé ne s'interprète jamais seul</p>
+              <p class="mt-2 text-sm leading-7 text-body">Les fourchettes « normales » de bêta-hCG sont extrêmement larges (parfois un facteur de 1 à 10 pour une même semaine) et varient selon les laboratoires. <strong>Aucun contenu de cette page ne doit être utilisé pour interpréter votre résultat personnel.</strong> Seul votre médecin ou votre sage-femme, qui connaît votre dossier et peut comparer plusieurs dosages, est en mesure de le faire. En cas de doute, contactez-le sans attendre.</p>
             </div>
 
-            <section id="pas-de-photos" class="reveal">
-              <h2>Pourquoi cet article ne contient pas de « vraies photos »</h2>
+            <section id="definition" class="reveal">
+              <h2>Qu'est-ce que la bêta-hCG&nbsp;?</h2>
               <p>
-                Beaucoup de femmes cherchent des photos pour comparer ce qu'elles observent. C'est une intention légitime — mais aucune source médicale de référence (Ameli, Cleveland Clinic, Mayo Clinic, ACOG, NHS) ne publie de photographies de « saignement de nidation ».
+                L'hormone chorionique gonadotrope (hCG), et plus précisément sa sous-unité bêta (bêta-hCG), est une hormone produite par le placenta en formation dès les tout premiers jours de la grossesse. Elle assure le maintien du corps jaune ovarien, qui sécrète la progestérone nécessaire à la poursuite de la grossesse.
               </p>
               <p>
-                Il y a une raison de fond à cela&nbsp;: le phénomène lui-même n'a <strong>jamais été prouvé scientifiquement</strong> comme étant causé par l'implantation (voir plus bas). Une image trouvée en ligne et étiquetée « nidation » peut donc tout aussi bien être des règles légères, un spotting d'ovulation ou un saignement d'une autre origine — impossible à authentifier visuellement, et la couleur perçue varie fortement selon l'éclairage et l'écran.
-              </p>
-              <p>
-                Plutôt que des photos trompeuses, cet article propose une description précise, sourcée, et un nuancier de couleurs pour t'aider à situer ce que tu observes.
+                Détectable dans le sang dès environ <strong>6 jours après la fécondation</strong>, elle double généralement toutes les <strong>48 à 72 heures</strong> en tout début de grossesse, atteint un pic entre <strong>8 et 11 SA</strong>, puis redescend et se stabilise en plateau jusqu'au terme.
               </p>
             </section>
 
-            <section id="quest-ce-que-cest" class="reveal">
-              <h2>Ce qu'on appelle « saignement de nidation »&nbsp;: définition et limites</h2>
-              <p>
-                Le mécanisme généralement avancé par les cliniques grand public (Cleveland Clinic, Mayo Clinic)&nbsp;: quand l'embryon s'attache à la muqueuse utérine, il perturberait de petits vaisseaux sanguins, provoquant un saignement léger.
-              </p>
-              <div class="callout">
-                <p class="font-semibold text-ink">⚠️ Ce mécanisme est une hypothèse, pas un fait établi</p>
-                <p class="mt-2 text-sm leading-7">L'étude prospective de référence sur le sujet — Harville, Wilcox, Baird &amp; Weinberg, <em>Human Reproduction</em>, 2003, menée sur 221 femmes suivies au jour le jour — conclut textuellement&nbsp;: <em>« we found no support for the hypothesis that implantation can produce vaginal bleeding »</em> (« nous n'avons trouvé aucun élément soutenant l'hypothèse selon laquelle l'implantation peut produire un saignement vaginal »).</p>
-              </div>
-              <p>
-                Dans cette étude, sur 151 grossesses cliniques suivies, <strong>14 femmes (9&nbsp;%)</strong> ont rapporté au moins un jour de saignement durant les 8 premières semaines. Mais ces épisodes survenaient <strong>rarement le jour de l'implantation</strong> — plutôt autour de la date attendue des règles, ce qui explique une grande partie de la confusion avec un « saignement de nidation ».
-              </p>
-            </section>
-
-            <section id="couleur-aspect" class="reveal">
-              <h2>Couleur, aspect et quantité</h2>
-              <p>
-                Malgré l'absence de preuve du mécanisme, les cliniques décrivent un phénomène cohérent lorsqu'il est rapporté par les femmes&nbsp;:
-              </p>
-              <ul>
-                <li><strong>Couleur</strong>&nbsp;: rose clair à brun (parfois qualifié de couleur « rouille »). Un sang rouge vif ou rouge foncé n'est en principe <strong>pas</strong> un saignement de nidation (Cleveland Clinic).</li>
-                <li><strong>Quantité</strong>&nbsp;: une trace sur le papier toilette ou les sous-vêtements — pas de quoi remplir une protection.</li>
-                <li><strong>Caillots</strong>&nbsp;: absents. Leur présence oriente vers autre chose (règles, fausse couche).</li>
-                <li><strong>Douleur</strong>&nbsp;: aucune, ou de très légères crampes, nettement moins intenses que des douleurs de règles.</li>
-              </ul>
-
-              <div class="not-prose my-8 grid gap-3 sm:grid-cols-3">
-                <div class="swatch">
-                  <div class="swatch-chip" style="background:#e3b7ae"></div>
-                  <p class="mt-3 text-xs font-bold uppercase tracking-wide text-ink">Rosé clair</p>
-                  <p class="mt-1 text-xs leading-5 text-muted">Évoqué pour le spotting de nidation ou d'ovulation.</p>
+            <section id="seuils" class="reveal not-prose">
+              <h2 class="prose">Les seuils positif / négatif</h2>
+              <div class="mt-6 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-[1.25rem] border border-[var(--color-border)] bg-sand p-6 text-center">
+                  <p class="font-serif text-3xl font-bold text-ink">&lt; 5 UI/l</p>
+                  <p class="mt-2 text-sm text-muted">Négatif</p>
                 </div>
-                <div class="swatch">
-                  <div class="swatch-chip" style="background:#8a5a3c"></div>
-                  <p class="mt-3 text-xs font-bold uppercase tracking-wide text-ink">Brun / rouille</p>
-                  <p class="mt-1 text-xs leading-5 text-muted">Sang oxydé, évacué lentement — également évoqué pour le spotting de nidation.</p>
+                <div class="rounded-[1.25rem] border border-[var(--color-border)] bg-sand p-6 text-center">
+                  <p class="font-serif text-3xl font-bold text-gold">&gt; 5 UI/l</p>
+                  <p class="mt-2 text-sm text-muted">Positif</p>
                 </div>
-                <div class="swatch">
-                  <div class="swatch-chip" style="background:#a8201a"></div>
-                  <p class="mt-3 text-xs font-bold uppercase tracking-wide text-ink">Rouge vif / foncé</p>
-                  <p class="mt-1 text-xs leading-5 text-muted">Évoque des règles ou un saignement à surveiller — pas un spotting de nidation.</p>
+                <div class="rounded-[1.25rem] border border-[#b3413a]/25 bg-[#b3413a]/6 p-6 text-center">
+                  <p class="font-serif text-3xl font-bold text-[#b3413a]">5 à 25 UI/l</p>
+                  <p class="mt-2 text-sm text-muted">Zone grise — recontrôle à 48 h</p>
                 </div>
               </div>
-              <p class="text-sm text-muted">
-                Ce nuancier est indicatif et ne remplace pas un avis médical. La perception des couleurs varie selon l'écran, l'éclairage et chaque personne.
-              </p>
+              <p class="prose mt-6 text-sm text-muted">Le taux usuel de bêta-hCG en dehors de toute grossesse est inférieur à 8 UI/l chez la femme (Cerba). En dessous de 5 UI/l, la grossesse est exclue.</p>
             </section>
 
-            <section id="duree" class="reveal">
-              <h2>Durée&nbsp;: quelques heures à deux jours</h2>
-              <p>
-                Selon Cleveland Clinic et Mayo Clinic, ce type de saignement s'arrête généralement de lui-même en <strong>un à deux jours</strong>, de façon discontinue — parfois seulement quelques heures. Il ne s'intensifie pas avec le temps.
-              </p>
-              <p>
-                À l'inverse, des règles durent typiquement <strong>3 à 7 jours</strong> et ont tendance à s'intensifier après le premier jour avant de décroître progressivement.
-              </p>
-            </section>
-
-            <section id="timing" class="reveal">
-              <h2>À quel moment du cycle survient-il&nbsp;?</h2>
-              <p>
-                Les cliniques situent ce spotting environ <strong>6 à 12 jours après l'ovulation</strong> — soit, selon les sources qui comptent à partir de la conception, <strong>10 à 14 jours après celle-ci</strong>. Dans tous les cas, cela tombe quelques jours avant la date attendue des règles, ce qui alimente la confusion. Pour rappel, l'implantation elle-même a lieu en moyenne entre le 8<sup>e</sup> et le 10<sup>e</sup> jour après l'ovulation (Wilcox, <em>NEJM</em>, 1999). <a href="nidation-combien-de-temps-apres-rapport.html">Voir notre article détaillé sur les délais de la nidation →</a>
-              </p>
-              <p>
-                Une nuance scientifique importante&nbsp;: selon la même étude de Wilcox (1999), une implantation plus tardive dans cette fenêtre est associée à un risque de perte précoce nettement plus élevé — de 13&nbsp;% pour une implantation à J9 ou avant, jusqu'à 82&nbsp;% après J11. Cela ne concerne pas directement la présence ou l'absence de saignement, mais rappelle que le timing de l'implantation a, lui, une vraie valeur biologique documentée — contrairement au saignement.
-              </p>
-            </section>
-
-            <section id="tableau-comparatif" class="reveal">
-              <h2>Nidation ou règles&nbsp;? Le tableau comparatif</h2>
+            <section id="tableau-sa" class="reveal">
+              <h2>Tableau indicatif du taux d'hCG par semaine</h2>
+              <div class="callout callout-alert">
+                <p class="font-semibold text-[#b3413a]">Valeurs indicatives uniquement</p>
+                <p class="mt-2 text-sm leading-7">Ces fourchettes, issues du <em>Guide des analyses spécialisées</em> du laboratoire Cerba, varient fortement selon les laboratoires et les femmes. Elles ne remplacent en aucun cas l'avis médical et ne permettent pas, à elles seules, de dater précisément une grossesse.</p>
+              </div>
               <div class="not-prose my-8 overflow-x-auto rounded-[1.25rem] border border-[var(--color-border)] bg-white shadow-card">
                 <table class="data-table">
-                  <thead>
-                    <tr>
-                      <th>Critère</th>
-                      <th>Spotting de nidation (supposé)</th>
-                      <th>Règles</th>
-                    </tr>
-                  </thead>
+                  <thead><tr><th>Semaines d'aménorrhée (SA)</th><th>Taux d'hCG (UI/l)</th></tr></thead>
                   <tbody>
-                    <tr><td>Couleur</td><td>Rosé clair ou brun ; jamais rouge vif</td><td>Rouge vif à rouge foncé</td></tr>
-                    <tr><td>Quantité</td><td>Traces, ne remplit pas une protection</td><td>Remplit serviette/tampon/cup</td></tr>
-                    <tr><td>Évolution</td><td>Stable ou décroissante</td><td>S'intensifie après le 1er jour</td></tr>
-                    <tr><td>Durée</td><td>Quelques heures à 2 jours, discontinu</td><td>3 à 7 jours</td></tr>
-                    <tr><td>Caillots</td><td>Absents</td><td>Fréquents</td></tr>
-                    <tr><td>Douleur</td><td>Absente ou très légère</td><td>Crampes typiques, parfois marquées</td></tr>
+                    <tr><td>4–5 SA</td><td>200 à 8 000</td></tr>
+                    <tr><td>5–6 SA</td><td>4 000 à 90 000</td></tr>
+                    <tr><td>6–7 SA</td><td>8 000 à 170 000</td></tr>
+                    <tr><td>7–8 SA</td><td>12 000 à 230 000</td></tr>
+                    <tr><td>8–9 SA</td><td>16 000 à 256 000</td></tr>
+                    <tr><td>9–10 SA</td><td>44 000 à 260 000</td></tr>
+                    <tr><td>10–11 SA</td><td>34 000 à 240 000</td></tr>
+                    <tr><td>11–12 SA</td><td>30 000 à 220 000</td></tr>
+                    <tr><td>12–13 SA</td><td>24 000 à 168 000</td></tr>
+                    <tr><td>13–15 SA</td><td>16 000 à 144 000</td></tr>
+                    <tr><td>15–17 SA</td><td>8 000 à 120 000</td></tr>
+                    <tr><td>17–19 SA</td><td>8 000 à 70 000</td></tr>
+                    <tr><td>19–21 SA</td><td>8 000 à 44 000</td></tr>
+                    <tr><td>21–23 SA</td><td>8 000 à 36 000</td></tr>
+                    <tr><td>23–25 SA</td><td>8 000 à 34 000</td></tr>
+                    <tr><td>25–27 SA</td><td>6 000 à 38 000</td></tr>
+                    <tr><td>27–29 SA</td><td>10 000 à 46 000</td></tr>
+                    <tr><td>29–31 SA</td><td>16 000 à 48 000</td></tr>
+                    <tr><td>31–33 SA</td><td>22 000 à 44 000</td></tr>
+                    <tr><td>33–35 SA</td><td>18 000 à 42 000</td></tr>
+                    <tr><td>35–40 SA</td><td>12 000 à 34 000</td></tr>
                   </tbody>
                 </table>
               </div>
-              <div class="callout">
-                <p class="font-semibold text-ink">La limite honnête de ce tableau</p>
-                <p class="mt-2 text-sm leading-7">Même les cliniques qui le publient reconnaissent qu'il est difficile de trancher à l'échelle individuelle. Cleveland Clinic&nbsp;: <em>« Il peut être difficile de déterminer si vous saignez à cause de l'implantation, de vos règles ou d'autre chose. »</em> Le seul moyen fiable de trancher reste un <strong>test de grossesse</strong>, réalisé idéalement à partir du premier jour de retard des règles pour éviter un faux négatif.</p>
+              <p class="text-sm text-muted">SA = semaines d'aménorrhée, comptées depuis le premier jour des dernières règles. Retrouvez aussi ce tableau dans notre <a href="pdf/fiche-taux-hcg-grossesse.pdf" target="_blank" rel="noopener">fiche PDF à télécharger</a>.</p>
+            </section>
+
+            <!-- CALCULATEUR -->
+            <section id="calculateur" class="reveal not-prose">
+              <div class="calc-card p-6 sm:p-9" data-calc>
+                <p class="calc-label text-gold">Outil descriptif</p>
+                <h2 class="mt-2 font-serif text-3xl font-bold text-ink">Calculateur d'évolution entre deux dosages</h2>
+                <p class="mt-3 text-sm leading-6 text-muted">Cet outil calcule uniquement la variation entre deux valeurs que vous saisissez. Il ne fournit <strong>aucune interprétation médicale</strong> : seul un professionnel de santé peut analyser cette évolution.</p>
+                <div class="mt-6 grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label class="calc-label mb-2 block" for="date1">Date du 1er dosage</label>
+                    <input class="calc-input" type="date" id="date1" name="date1" />
+                  </div>
+                  <div>
+                    <label class="calc-label mb-2 block" for="val1">Valeur du 1er dosage (UI/l)</label>
+                    <input class="calc-input" type="number" min="0" step="1" id="val1" name="val1" placeholder="ex : 120" />
+                  </div>
+                  <div>
+                    <label class="calc-label mb-2 block" for="date2">Date du 2e dosage</label>
+                    <input class="calc-input" type="date" id="date2" name="date2" />
+                  </div>
+                  <div>
+                    <label class="calc-label mb-2 block" for="val2">Valeur du 2e dosage (UI/l)</label>
+                    <input class="calc-input" type="number" min="0" step="1" id="val2" name="val2" placeholder="ex : 260" />
+                  </div>
+                </div>
+                <button class="mt-6 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold text-white transition hover:scale-[1.02]" type="button" id="calc-btn">
+                  Calculer l'évolution <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </button>
+                <p id="calc-error" class="mt-3 hidden text-sm font-semibold text-[#b3413a]"></p>
+
+                <div id="calc-results" class="mt-8 hidden">
+                  <div class="rounded-[1.25rem] bg-sand p-6">
+                    <div class="result-row"><span class="result-label">Intervalle entre les deux dosages</span><span class="result-value" id="res-interval">—</span></div>
+                    <div class="result-row"><span class="result-label">Évolution du taux</span><span class="result-value" id="res-evolution">—</span></div>
+                    <div class="result-row"><span class="result-label">Temps de doublement estimé</span><span class="result-value" id="res-doubling">—</span></div>
+                  </div>
+                  <p id="calc-note" class="mt-4 rounded-[1.25rem] border border-[#b3413a]/25 bg-[#b3413a]/6 p-5 text-sm leading-6 text-body"></p>
+                  <p class="mt-5 text-xs leading-6 text-muted">Ce résultat est purement descriptif et ne constitue pas un diagnostic. Seul votre médecin ou votre sage-femme peut l'interpréter dans le contexte de votre grossesse. Aucune donnée saisie n'est envoyée ni conservée.</p>
+                </div>
               </div>
             </section>
 
-            <section id="autres-causes" class="reveal">
-              <h2>Les autres causes possibles d'un saignement hors règles</h2>
-              <h3>Spotting d'ovulation</h3>
-              <p>
-                Un léger saignement peut survenir en milieu de cycle, lié à la chute rapide des œstrogènes après le pic ovulatoire. Couleur rose ou brun clair, 1 à 2 jours, souvent mêlé à la glaire cervicale.
-              </p>
-              <h3>Saignement post-rapport (ectropion du col)</h3>
-              <p>
-                Pendant la grossesse, le col de l'utérus est plus vascularisé et fragile sous l'effet des œstrogènes. Un rapport ou un examen gynécologique peut provoquer un saignement bref, rosé ou rouge, sans gravité.
-              </p>
-              <h3>Contraception hormonale</h3>
-              <p>
-                Les pilules progestatives et, dans une moindre mesure, les œstroprogestatifs, provoquent fréquemment des saignements intermenstruels (spotting) durant les premiers mois d'utilisation, qui cessent généralement avec l'adaptation de l'organisme.
-              </p>
+            <section id="ce-que-ca-ne-dit-pas" class="reveal">
+              <h2>Ce que le taux ne dit PAS</h2>
+              <ul>
+                <li><strong>Il ne date pas précisément la grossesse</strong>&nbsp;: la fourchette possible pour une même semaine est immense. Seule l'échographie de datation (11 à 13 SA + 6 j) permet une datation précise. Voir notre <a href="disque-roue-grossesse-calcul-terme.html">calculateur de terme en ligne</a>.</li>
+                <li><strong>Il n'indique pas, à lui seul, une grossesse gémellaire</strong>&nbsp;: un taux élevé peut l'évoquer, mais seule l'échographie confirme le nombre d'embryons.</li>
+                <li><strong>Il ne prédit pas, à lui seul, une fausse couche</strong>&nbsp;: c'est l'évolution sur plusieurs dosages — pas une valeur isolée — qui oriente le diagnostic, en complément de l'échographie.</li>
+                <li><strong>Il ne détermine pas le sexe du bébé</strong>&nbsp;: aucune corrélation scientifiquement prouvée n'existe entre le taux de bêta-hCG et le sexe fœtal.</li>
+              </ul>
             </section>
 
-            <section id="signaux-alerte" class="reveal not-prose">
+            <section id="urgence" class="reveal not-prose">
               <div class="callout callout-alert my-8">
-                <h2 class="prose" style="margin-top:0">⚠️ Signaux d'alerte&nbsp;: quand consulter en urgence</h2>
-                <p class="mt-3 text-sm leading-7">Selon Ameli, il faut consulter <strong>en urgence</strong> si&nbsp;:</p>
+                <h2 class="prose" style="margin-top:0">⚠️ Quand consulter en urgence</h2>
+                <p class="mt-3 text-sm leading-7">Après une prise de sang positive, consultez <strong>en urgence</strong> si vous ressentez&nbsp;:</p>
                 <ul class="mt-3 text-sm leading-7 pl-5" style="list-style:disc">
-                  <li>saignement génital abondant, associé à une impression de malaise ;</li>
-                  <li>retard de règles + saignement + douleurs pelviennes, surtout si unilatérales ;</li>
-                  <li>saignement associé à de la fièvre.</li>
+                  <li>des douleurs pelviennes, surtout unilatérales ;</li>
+                  <li>associées à un saignement, avec ou sans malaise ;</li>
+                  <li>ou de la fièvre.</li>
                 </ul>
-                <p class="mt-3 text-sm leading-7">Ces signes peuvent évoquer une <strong>grossesse extra-utérine</strong> (environ 2 grossesses sur 100, selon le CNGOF) ou une <strong>fausse couche</strong>. Le principe retenu en pratique clinique&nbsp;: « toute grossesse qui saigne est une grossesse extra-utérine jusqu'à preuve du contraire ». En cas de doute, ne pas attendre pour consulter.</p>
+                <p class="mt-3 text-sm leading-7">Ces signes peuvent évoquer une <strong>grossesse extra-utérine</strong> ou une <strong>fausse couche</strong>. En cas de doute, ne pas attendre pour consulter.</p>
               </div>
-            </section>
-
-            <section id="frequence" class="reveal">
-              <h2>Quelle est la fréquence réelle des saignements en début de grossesse&nbsp;?</h2>
-              <p>
-                Il faut distinguer deux chiffres souvent confondus. D'un côté, certaines cliniques (Cleveland Clinic) estiment qu'environ <strong>1 femme enceinte sur 4</strong> observe un saignement d'implantation spécifiquement. De l'autre, les données françaises (Ameli, CNGOF) indiquent que <strong>25&nbsp;% des femmes enceintes</strong> saignent au premier trimestre, toutes causes confondues — ce n'est pas la même population, et ce chiffre n'est pas spécifique à la nidation.
-              </p>
-              <p>
-                Point important et rassurant&nbsp;: dans <strong>93&nbsp;%</strong> des cas de saignement sur une grossesse intra-utérine, la grossesse évolue normalement jusqu'au terme (Ameli, CNGOF). Un saignement précoce, en lui-même, n'est donc pas un facteur défavorable.
-              </p>
-            </section>
-
-            <section id="sans-saignement" class="reveal">
-              <h2>Et si je n'ai eu aucun saignement&nbsp;?</h2>
-              <p>
-                C'est en réalité le cas le plus fréquent. Les estimations françaises situent entre <strong>60 et 90&nbsp;%</strong> des grossesses sans aucun saignement de nidation rapporté. Cleveland Clinic le résume simplement&nbsp;: <em>« Tout le monde ne fait pas l'expérience du saignement d'implantation. »</em>
-              </p>
-              <p>
-                L'absence de saignement ne dit donc rien sur l'existence ou la santé d'une grossesse — tout comme sa présence n'en est pas la preuve. Seul un test de grossesse (urinaire ou dosage sanguin d'hCG) confirme. <a href="nidation-combien-de-temps-apres-rapport.html">Voir quand et comment tester →</a>
-              </p>
             </section>
 
             <section id="faq" class="reveal not-prose">
@@ -518,38 +499,38 @@
               <div class="mt-4 divide-y divide-[var(--color-border)]">
                 <div class="faq-item">
                   <details>
-                    <summary>De quelle couleur est un saignement de nidation&nbsp;?</summary>
-                    <div class="faq-body">Les cliniques le décrivent généralement rose clair à brun. Un saignement rouge vif ou rouge foncé, abondant ou avec des caillots n'est en principe pas un saignement de nidation (Cleveland Clinic).</div>
+                    <summary>Quel taux de bêta-hCG confirme une grossesse&nbsp;?</summary>
+                    <div class="faq-body">Un taux supérieur à 5 UI/l est considéré comme positif. Entre 5 et 25 UI/l, un nouveau dosage 48 h plus tard confirme l'évolution.</div>
                   </details>
                 </div>
                 <div class="faq-item">
                   <details>
-                    <summary>Existe-t-il de vraies photos de saignement de nidation&nbsp;?</summary>
-                    <div class="faq-body">Non. Aucune source médicale de référence n'en publie, car le phénomène lui-même n'a jamais été démontré scientifiquement (Harville et al., 2003). Les images en ligne étiquetées « nidation » ne peuvent pas être authentifiées comme telles.</div>
+                    <summary>Le taux de bêta-hCG permet-il de savoir si j'attends des jumeaux&nbsp;?</summary>
+                    <div class="faq-body">Un taux nettement plus élevé peut l'évoquer, mais seule l'échographie confirme le nombre d'embryons.</div>
                   </details>
                 </div>
                 <div class="faq-item">
                   <details>
-                    <summary>Combien de temps dure un saignement de nidation&nbsp;?</summary>
-                    <div class="faq-body">De quelques heures à environ deux jours, de façon discontinue et sans s'intensifier — contrairement aux règles, qui durent 3 à 7 jours.</div>
+                    <summary>Pourquoi mon taux ne correspond pas au tableau indicatif&nbsp;?</summary>
+                    <div class="faq-body">Les fourchettes sont extrêmement larges et varient selon les laboratoires. Un taux hors fourchette n'est pas nécessairement anormal : seul votre professionnel de santé peut l'interpréter.</div>
                   </details>
                 </div>
                 <div class="faq-item">
                   <details>
-                    <summary>Comment distinguer un saignement de nidation des règles&nbsp;?</summary>
-                    <div class="faq-body">Couleur, quantité, absence de caillots et durée plus courte sont les critères cités. Mais la distinction n'est pas fiable à l'échelle individuelle : seul un test de grossesse tranche.</div>
+                    <summary>Que faire si mon taux n'a pas doublé entre deux prises de sang&nbsp;?</summary>
+                    <div class="faq-body">Contactez rapidement votre médecin ou votre sage-femme, qui analysera cette évolution selon votre situation clinique.</div>
                   </details>
                 </div>
                 <div class="faq-item">
                   <details>
-                    <summary>Faut-il s'inquiéter d'un saignement en tout début de grossesse&nbsp;?</summary>
-                    <div class="faq-body">25 % des femmes enceintes saignent au premier trimestre, et 93 % de ces grossesses évoluent normalement. Mais un saignement abondant, des douleurs pelviennes unilatérales, de la fièvre ou un malaise doivent conduire à consulter en urgence.</div>
+                    <summary>Quand consulter en urgence après une prise de sang positive&nbsp;?</summary>
+                    <div class="faq-body">En cas de douleurs pelviennes (surtout unilatérales) associées à un saignement, avec ou sans malaise ou fièvre.</div>
                   </details>
                 </div>
                 <div class="faq-item">
                   <details>
-                    <summary>L'absence de saignement de nidation est-elle un problème&nbsp;?</summary>
-                    <div class="faq-body">Non. C'est le cas le plus fréquent (60 à 90 % des grossesses selon les estimations françaises). Cela ne dit rien sur la santé de la grossesse.</div>
+                    <summary>Le taux de bêta-hCG permet-il de connaître le sexe du bébé&nbsp;?</summary>
+                    <div class="faq-body">Non, aucune corrélation scientifiquement prouvée n'existe entre le taux de bêta-hCG et le sexe du fœtus.</div>
                   </details>
                 </div>
               </div>
@@ -558,7 +539,7 @@
             <section id="resume" class="reveal">
               <h2>En résumé</h2>
               <p>
-                Ce que les cliniques appellent « saignement de nidation » se décrit comme rosé ou brun, léger, sans caillot, sur quelques heures à deux jours — mais son existence même comme phénomène causé par l'implantation n'a jamais été démontrée scientifiquement. Aucune photo fiable n'existe pour l'illustrer. Le seul repère fiable en cas de doute reste le test de grossesse, et le seul réflexe de sécurité en cas de saignement abondant, douloureux ou fébrile reste de consulter sans attendre.
+                Un taux de bêta-hCG supérieur à 5 UI/l confirme une grossesse, mais sa valeur exacte varie énormément d'une femme à l'autre — les tableaux indicatifs ne sont que des repères larges. C'est l'évolution entre plusieurs dosages, et non un chiffre isolé, qui a une valeur clinique, et seul un professionnel de santé peut l'interpréter. En cas de douleur ou de saignement associé, consultez sans attendre.
               </p>
             </section>
 
@@ -567,18 +548,12 @@
               <div class="mt-12 rounded-[1.25rem] border border-[var(--color-border)] bg-sand p-6">
                 <h2 class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Sources et références</h2>
                 <ul class="mt-4 grid gap-2 text-xs leading-6 text-muted">
-                  <li>Harville EW, Wilcox AJ, Baird DD, Weinberg CR. — Vaginal bleeding in very early pregnancy, <em>Hum Reprod</em>, 2003. <a href="https://pubmed.ncbi.nlm.nih.gov/12923154/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/12923154</a></li>
-                  <li>Wilcox AJ, Baird DD, Weinberg CR. — Time of implantation of the conceptus and loss of pregnancy, <em>N Engl J Med</em>, 1999. <a href="https://pubmed.ncbi.nlm.nih.gov/10362823/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/10362823</a></li>
-                  <li>Cleveland Clinic — Implantation Bleeding. <a href="https://my.clevelandclinic.org/health/symptoms/24536-implantation-bleeding" target="_blank" rel="noopener">my.clevelandclinic.org</a></li>
-                  <li>Mayo Clinic — Implantation bleeding: Common in early pregnancy? <a href="https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/expert-answers/implantation-bleeding/faq-20058257" target="_blank" rel="noopener">mayoclinic.org</a></li>
-                  <li>American Pregnancy Association — What is Implantation Bleeding?</li>
-                  <li>Ameli — Saignements gynécologiques du premier trimestre de la grossesse. <a href="https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/saignements-gynecologiques-grossesse/saignements-gynecologiques-du-premier-trimestre-de-la-grossesse" target="_blank" rel="noopener">ameli.fr</a></li>
+                  <li>Laboratoire Cerba — Guide des analyses spécialisées, fiche hCG. <a href="https://documents.lab-cerba.com/files/FR/0268F.pdf" target="_blank" rel="noopener">documents.lab-cerba.com/files/FR/0268F.pdf</a></li>
+                  <li>Ameli — Suivi de la grossesse. <a href="https://www.ameli.fr/assure/sante/devenir-parent/grossesse" target="_blank" rel="noopener">ameli.fr</a></li>
                   <li>Ameli — Grossesse extra-utérine. <a href="https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/grossesse-extra-uterine" target="_blank" rel="noopener">ameli.fr</a></li>
                   <li>Ameli — Fausse couche. <a href="https://www.ameli.fr/assure/sante/devenir-parent/grossesse/difficultes-et-maladies-pendant-la-grossesse/fausse-couche" target="_blank" rel="noopener">ameli.fr</a></li>
-                  <li>CNGOF — Prise en charge de la grossesse extra-utérine (RPC 2003). <a href="http://www.cngof.asso.fr/data/RCP/GEU_2003.pdf" target="_blank" rel="noopener">cngof.asso.fr</a> ; EMC « Métrorragies du premier trimestre de la grossesse », Arthuis et al., 2022.</li>
-                  <li>NHS — Doing a pregnancy test. <a href="https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/" target="_blank" rel="noopener">nhs.uk</a></li>
                 </ul>
-                <p class="mt-4 text-xs leading-6 text-muted">Les données de couleur, durée et fréquence proviennent des sources cliniques et officielles citées ci-dessus. Le lien entre saignement et implantation reste scientifiquement non démontré (Harville et al., 2003) et est présenté comme tel tout au long de l'article.</p>
+                <p class="mt-4 text-xs leading-6 text-muted">Cette page ne fournit aucune interprétation médicale individualisée et ne remplace pas une consultation avec un professionnel de santé.</p>
               </div>
             </section>
 
@@ -590,26 +565,28 @@
               <nav aria-label="Table des matières" class="rounded-[1.5rem] border border-[var(--color-border)] bg-white p-6 shadow-card">
                 <p class="font-mono text-xs font-bold uppercase tracking-[0.22em] text-gold">Dans cet article</p>
                 <ol class="mt-5 grid gap-3 text-sm text-body">
-                  <li><a href="#pas-de-photos" class="toc-link block leading-6 hover:text-ink">Pourquoi pas de photos</a></li>
-                  <li><a href="#quest-ce-que-cest" class="toc-link block leading-6 hover:text-ink">Définition &amp; limites</a></li>
-                  <li><a href="#couleur-aspect" class="toc-link block leading-6 hover:text-ink">Couleur &amp; aspect</a></li>
-                  <li><a href="#duree" class="toc-link block leading-6 hover:text-ink">Durée</a></li>
-                  <li><a href="#timing" class="toc-link block leading-6 hover:text-ink">Timing dans le cycle</a></li>
-                  <li><a href="#tableau-comparatif" class="toc-link block leading-6 hover:text-ink">Nidation ou règles ?</a></li>
-                  <li><a href="#signaux-alerte" class="toc-link block leading-6 hover:text-ink">Signaux d'alerte</a></li>
-                  <li><a href="#frequence" class="toc-link block leading-6 hover:text-ink">Fréquence réelle</a></li>
+                  <li><a href="#definition" class="toc-link block leading-6 hover:text-ink">Qu'est-ce que la bêta-hCG</a></li>
+                  <li><a href="#seuils" class="toc-link block leading-6 hover:text-ink">Seuils positif/négatif</a></li>
+                  <li><a href="#tableau-sa" class="toc-link block leading-6 hover:text-ink">Tableau par SA</a></li>
+                  <li><a href="#calculateur" class="toc-link block leading-6 hover:text-ink">Calculateur d'évolution</a></li>
+                  <li><a href="#ce-que-ca-ne-dit-pas" class="toc-link block leading-6 hover:text-ink">Ce que ça ne dit pas</a></li>
+                  <li><a href="#urgence" class="toc-link block leading-6 hover:text-ink">Quand consulter</a></li>
                   <li><a href="#faq" class="toc-link block leading-6 hover:text-ink">FAQ</a></li>
                 </ol>
               </nav>
               <div class="mt-5 rounded-[1.5rem] border border-[var(--color-border)] bg-white p-5 shadow-card">
                 <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted">Lire aussi</p>
+                <a href="disque-roue-grossesse-calcul-terme.html" class="mt-4 flex items-start gap-3 group">
+                  <div class="grid h-16 w-16 shrink-0 place-items-center rounded-xl bg-sand text-2xl">🧮</div>
+                  <p class="text-sm leading-6 text-body group-hover:text-ink transition">Disque de grossesse en ligne : calculez votre terme</p>
+                </a>
+                <a href="journal-grossesse-a-imprimer-gratuit.html" class="mt-4 flex items-start gap-3 group">
+                  <div class="grid h-16 w-16 shrink-0 place-items-center rounded-xl bg-sand text-2xl">📔</div>
+                  <p class="text-sm leading-6 text-body group-hover:text-ink transition">Journal de grossesse à imprimer gratuitement</p>
+                </a>
                 <a href="nidation-combien-de-temps-apres-rapport.html" class="mt-4 flex items-start gap-3 group">
                   <img class="h-16 w-16 shrink-0 rounded-xl object-cover" src="images/grossesse-article.webp" width="64" height="64" loading="lazy" alt="" />
-                  <p class="text-sm leading-6 text-body group-hover:text-ink transition">Nidation : combien de temps après le rapport et comment la reconnaître ?</p>
-                </a>
-                <a href="article-sopk-grossesse.html" class="mt-4 flex items-start gap-3 group">
-                  <img class="h-16 w-16 shrink-0 rounded-xl object-cover" src="images/grossesse-sopk.svg" width="64" height="64" loading="lazy" alt="" />
-                  <p class="text-sm leading-6 text-body group-hover:text-ink transition">SOPK et grossesse : fertilité, risques et accompagnement</p>
+                  <p class="text-sm leading-6 text-body group-hover:text-ink transition">Nidation : combien de temps après le rapport ?</p>
                 </a>
               </div>
             </div>
@@ -618,12 +595,12 @@
 
         <!-- Auteur -->
         <div class="reveal mt-16 flex items-start gap-6 rounded-[2rem] border border-[var(--color-border)] bg-white p-7 shadow-card md:p-10">
-          <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-sand text-3xl">🩸</div>
+          <div class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-sand text-3xl">🧪</div>
           <div>
             <p class="font-mono text-xs font-bold uppercase tracking-[0.18em] text-gold">Rédigé par</p>
             <h2 class="mt-2 text-2xl font-bold text-ink">Health Corner</h2>
             <p class="font-mono text-xs uppercase tracking-[0.14em] text-muted">Rédaction indépendante · sources vérifiées</p>
-            <p class="mt-4 leading-7 text-body">Health Corner est un magazine indépendant de vulgarisation santé. Nos articles ne sont pas rédigés par des professionnels de santé : ils s'appuient exclusivement sur des sources médicales de référence — études scientifiques (Harville 2003, Wilcox 1999) et recommandations d'organismes officiels (Ameli, CNGOF, NHS) — systématiquement citées et liées. Ils ont une vocation informative et ne remplacent jamais l'avis d'un médecin ou d'une sage-femme.</p>
+            <p class="mt-4 leading-7 text-body">Health Corner est un magazine indépendant de vulgarisation santé. Cet article n'est pas rédigé par des professionnels de santé&nbsp;: il s'appuie exclusivement sur des sources médicales de référence — le guide des analyses spécialisées du laboratoire Cerba et les recommandations d'Ameli — systématiquement citées et liées. Il ne fournit aucune interprétation individualisée d'un résultat et ne remplace jamais l'avis d'un médecin ou d'une sage-femme.</p>
           </div>
         </div>
 
@@ -631,17 +608,17 @@
         <div class="reveal mt-16">
           <h2 class="font-serif text-4xl font-semibold text-ink">Articles liés</h2>
           <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <a href="disque-roue-grossesse-calcul-terme.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
+              <div class="flex h-48 w-full items-center justify-center bg-sand text-6xl transition duration-500 group-hover:scale-[1.04]">🧮</div>
+              <div class="p-5"><span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-mist">Grossesse</span><h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Disque de grossesse en ligne : calculez votre terme</h3></div>
+            </a>
+            <a href="journal-grossesse-a-imprimer-gratuit.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
+              <div class="flex h-48 w-full items-center justify-center bg-sand text-6xl transition duration-500 group-hover:scale-[1.04]">📔</div>
+              <div class="p-5"><span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-mist">Grossesse</span><h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Journal de grossesse à imprimer gratuitement</h3></div>
+            </a>
             <a href="nidation-combien-de-temps-apres-rapport.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
               <div class="overflow-hidden"><img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/grossesse-article.webp" width="600" height="300" loading="lazy" alt="" /></div>
               <div class="p-5"><span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-mist">Grossesse</span><h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Nidation : combien de temps après le rapport ?</h3></div>
-            </a>
-            <a href="article-sopk-grossesse.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
-              <div class="overflow-hidden"><img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/grossesse-sopk.svg" width="600" height="300" loading="lazy" alt="" /></div>
-              <div class="p-5"><span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-mist">Grossesse</span><h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">SOPK et grossesse : fertilité, risques et accompagnement</h3></div>
-            </a>
-            <a href="article-sopk-symptomes.html" class="group overflow-hidden rounded-[1.5rem] bg-white shadow-card transition hover:shadow-hover">
-              <div class="overflow-hidden"><img class="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]" src="images/keto-sopk.svg" width="600" height="300" loading="lazy" alt="" /></div>
-              <div class="p-5"><span class="font-mono text-[0.62rem] font-bold uppercase tracking-[0.18em] text-gold">Diagnostic</span><h3 class="mt-3 font-serif text-2xl font-semibold leading-tight text-ink">Symptômes du SOPK : le guide diagnostic complet</h3></div>
             </a>
           </div>
         </div>
@@ -651,7 +628,7 @@
       <section class="px-5 py-10 sm:px-8">
         <div class="mx-auto max-w-4xl overflow-hidden rounded-[2.4rem] bg-[var(--color-bg-dark)] px-6 py-16 text-center text-[var(--color-text-inverse)] shadow-elevated sm:px-10 lg:py-20">
           <p class="font-mono text-xs uppercase tracking-[0.22em] text-caramel">Newsletter Health Corner</p>
-          <h2 class="mx-auto mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight md:text-5xl">Fertilité, grossesse et santé hormonale : directement dans votre boîte</h2>
+          <h2 class="mx-auto mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight md:text-5xl">Fertilité, grossesse et santé hormonale&nbsp;: directement dans votre boîte</h2>
           <form class="mx-auto mt-8 flex max-w-xl flex-col gap-3 p-1 sm:flex-row" action="#" method="post">
             <label class="sr-only" for="nl-email">Votre email</label>
             <input id="nl-email" class="min-h-14 flex-1 rounded-full border border-white/10 bg-white px-6 text-ink placeholder:text-muted focus:outline-none" type="email" name="email" placeholder="votre@email.com" required />
@@ -667,18 +644,15 @@
         <div class="grid gap-10 md:grid-cols-[1.2fr_2fr]">
           <div>
             <a href="index.html" class="font-display text-3xl font-semibold italic">Health<span class="text-gold"> Corner</span></a>
-            <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé santé féminine : SOPK, fertilité, grossesse, ménopause et compléments.</p>
+            <p class="mt-4 max-w-sm leading-7 text-white/60">Magazine spécialisé santé féminine : SOPK, fertilité, grossesse, ménopause et bien-être hormonal.</p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-4">
             <div><h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Rubriques</h2>
               <ul class="mt-4 grid gap-2.5 text-sm text-white/65">
                 <li><a class="hover:text-gold" href="article-sopk-grossesse.html">Grossesse</a></li>
-                <li><a class="hover:text-gold" href="nidation-combien-de-temps-apres-rapport.html">Nidation</a></li>
-                <li><a class="hover:text-gold" href="saignement-nidation-couleur-duree.html">Saignement de nidation</a></li>
                 <li><a class="hover:text-gold" href="disque-roue-grossesse-calcul-terme.html">Disque de grossesse</a></li>
                 <li><a class="hover:text-gold" href="journal-grossesse-a-imprimer-gratuit.html">Journal de grossesse</a></li>
                 <li><a class="hover:text-gold" href="prise-de-sang-grossesse-taux-beta-hcg.html">Taux bêta-hCG</a></li>
-                <li><a class="hover:text-gold" href="article-sopk-complements.html">Compléments</a></li>
               </ul>
             </div>
             <div><h2 class="font-mono text-xs uppercase tracking-[0.2em] text-gold">Informations</h2>
@@ -758,6 +732,51 @@
       document.querySelectorAll("section[id]").forEach(s => new IntersectionObserver(([e]) => { if (e.isIntersecting) { tocLinks.forEach(l => l.classList.remove("active")); const a = document.querySelector(`.toc-link[href="#${s.id}"]`); if (a) a.classList.add("active"); } }, { rootMargin: "-20% 0px -70% 0px" }).observe(s));
       window.addEventListener("scroll", onScroll, { passive: true });
       onScroll();
+
+      /* ---- Calculateur d'évolution hCG (100% client-side, aucune collecte, aucune interprétation) ---- */
+      const calcBtn = document.getElementById('calc-btn');
+      if (calcBtn) {
+        calcBtn.addEventListener('click', function () {
+          const d1 = document.getElementById('date1').value;
+          const d2 = document.getElementById('date2').value;
+          const v1 = parseFloat(document.getElementById('val1').value);
+          const v2 = parseFloat(document.getElementById('val2').value);
+          const errorEl = document.getElementById('calc-error');
+          const resultsEl = document.getElementById('calc-results');
+          errorEl.classList.add('hidden');
+          resultsEl.classList.add('hidden');
+
+          if (!d1 || !d2 || isNaN(v1) || isNaN(v2) || v1 <= 0 || v2 < 0) {
+            errorEl.textContent = 'Merci de renseigner les deux dates et les deux valeurs (nombres positifs).';
+            errorEl.classList.remove('hidden');
+            return;
+          }
+          const date1 = new Date(d1 + 'T00:00:00');
+          const date2 = new Date(d2 + 'T00:00:00');
+          const hours = (date2 - date1) / 3600000;
+          if (hours <= 0) {
+            errorEl.textContent = 'La date du 2e dosage doit être postérieure à celle du 1er dosage.';
+            errorEl.classList.remove('hidden');
+            return;
+          }
+
+          const ratio = v2 / v1;
+          const evolutionPct = (ratio - 1) * 100;
+          document.getElementById('res-interval').textContent = Math.round(hours) + ' h';
+          document.getElementById('res-evolution').textContent = (evolutionPct >= 0 ? '+' : '') + evolutionPct.toFixed(0) + ' %';
+
+          const noteEl = document.getElementById('calc-note');
+          if (ratio > 1) {
+            const doublingHours = hours * Math.log(2) / Math.log(ratio);
+            document.getElementById('res-doubling').textContent = Math.round(doublingHours) + ' h (environ ' + (doublingHours / 24).toFixed(1) + ' j)';
+            noteEl.textContent = 'Ce calcul est purement descriptif (extrapolation exponentielle entre vos deux valeurs). Il ne s\u2019agit ni d\u2019un diagnostic ni d\u2019une confirmation que votre grossesse évolue normalement : seul un professionnel de santé peut interpréter cette évolution dans votre contexte clinique.';
+          } else {
+            document.getElementById('res-doubling').textContent = '—';
+            noteEl.textContent = 'Le taux n\u2019a pas augmenté entre les deux dosages. Ce résultat ne doit pas être interprété seule : contactez rapidement votre médecin ou votre sage-femme.';
+          }
+          resultsEl.classList.remove('hidden');
+        });
+      }
     });
     </script>
   </body>

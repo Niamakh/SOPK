@@ -13,7 +13,13 @@
     "build:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --minify",
     "watch:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --watch",
     "build:css:saignement-nidation": "tailwindcss -c tailwind.config.saignement-nidation.js -i src/tailwind-input.css -o css/saignement-nidation-couleur-duree.css --minify",
-    "watch:css:saignement-nidation": "tailwindcss -c tailwind.config.saignement-nidation.js -i src/tailwind-input.css -o css/saignement-nidation-couleur-duree.css --watch"
+    "watch:css:saignement-nidation": "tailwindcss -c tailwind.config.saignement-nidation.js -i src/tailwind-input.css -o css/saignement-nidation-couleur-duree.css --watch",
+    "build:css:disque-grossesse": "tailwindcss -c tailwind.config.disque-grossesse.js -i src/tailwind-input.css -o css/disque-roue-grossesse-calcul-terme.css --minify",
+    "watch:css:disque-grossesse": "tailwindcss -c tailwind.config.disque-grossesse.js -i src/tailwind-input.css -o css/disque-roue-grossesse-calcul-terme.css --watch",
+    "build:css:journal-grossesse": "tailwindcss -c tailwind.config.journal-grossesse.js -i src/tailwind-input.css -o css/journal-grossesse-a-imprimer-gratuit.css --minify",
+    "watch:css:journal-grossesse": "tailwindcss -c tailwind.config.journal-grossesse.js -i src/tailwind-input.css -o css/journal-grossesse-a-imprimer-gratuit.css --watch",
+    "build:css:hcg": "tailwindcss -c tailwind.config.hcg.js -i src/tailwind-input.css -o css/prise-de-sang-grossesse-taux-beta-hcg.css --minify",
+    "watch:css:hcg": "tailwindcss -c tailwind.config.hcg.js -i src/tailwind-input.css -o css/prise-de-sang-grossesse-taux-beta-hcg.css --watch"
   },
   "license": "ISC",
   "devDependencies": {
