@@ -9,7 +9,9 @@
     "build:css:keto": "tailwindcss -c tailwind.config.keto.js -i src/tailwind-input.css -o css/article-sopk-keto.css --minify",
     "watch:css:keto": "tailwindcss -c tailwind.config.keto.js -i src/tailwind-input.css -o css/article-sopk-keto.css --watch",
     "build:css:complements": "tailwindcss -c tailwind.config.complements.js -i src/tailwind-input.css -o css/article-sopk-complements.css --minify",
-    "watch:css:complements": "tailwindcss -c tailwind.config.complements.js -i src/tailwind-input.css -o css/article-sopk-complements.css --watch"
+    "watch:css:complements": "tailwindcss -c tailwind.config.complements.js -i src/tailwind-input.css -o css/article-sopk-complements.css --watch",
+    "build:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --minify",
+    "watch:css:nidation": "tailwindcss -c tailwind.config.nidation.js -i src/tailwind-input.css -o css/nidation-combien-de-temps-apres-rapport.css --watch"
   },
   "license": "ISC",
   "devDependencies": {
